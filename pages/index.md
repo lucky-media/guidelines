@@ -5,6 +5,7 @@ At [Lucky Media](https://www.luckymedia.dev) we use various tools to build our w
 #### Technologies
 Here is a list of all the technologies that we use and we will go in depth about each one of them.
 
+- Editor Configuration
 - Version Control
   - Git
   - Github
