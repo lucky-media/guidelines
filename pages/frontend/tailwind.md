@@ -29,7 +29,7 @@ npx tailwindcss init
 ```
 
 This will create a minimal config at the root of the project:
-```js
+```javascript
 module.exports = {
   purge: {
     content: ['./components/**/*.js', './pages/**/*.js']
@@ -61,7 +61,7 @@ Almost all our projects include the following plugins:
 ### Using Plugins
 In order to use the plugins you have to include them inside the `tailwind.config.js` file in the root of your project:
 
-```js
+```javascript
 module.exports = {
   purge: {
     content: ['./components/**/*.js', './pages/**/*.js']

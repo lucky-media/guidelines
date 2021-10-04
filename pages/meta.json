@@ -1,4 +1,6 @@
 {
     "index": "Introduction",
-    "version-control": "Version Control"
+    "editor": "Editor Configuration",
+    "version-control": "Version Control",
+    "frontend": "Frontend"
 }
