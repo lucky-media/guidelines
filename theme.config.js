@@ -3,7 +3,7 @@
 export default {
   github: 'https://github.com/lucky-media/guidelines', // GitHub link in the navbar
   docsRepositoryBase: 'https://github.com/lucky-media/guidelines/blob/master', // base URL for the docs repository
-  titleSuffix: ' – Guidelines',
+  titleSuffix: ' – Roadmap',
   nextLinks: true,
   prevLinks: true,
   search: true,
@@ -14,7 +14,7 @@ export default {
   footerEditLink: `Edit this page on GitHub`,
   logo: (
     <>
-      <span>Developer Guideline</span>
+      <span>Developer Roadmap</span>
     </>
   ),
   head: (
