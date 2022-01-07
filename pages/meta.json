@@ -3,5 +3,6 @@
     "roadmaps": "Roadmaps",
     "editor": "Editor Configuration",
     "version-control": "Version Control",
-    "frontend": "Frontend"
+    "frontend": "Frontend",
+    "debugging": "Debugging"
 }
