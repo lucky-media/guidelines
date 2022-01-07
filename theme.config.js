@@ -1,9 +1,11 @@
+import Logo from './components/Logo'
+
 // theme.config.js
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   github: 'https://github.com/lucky-media/guidelines', // GitHub link in the navbar
   docsRepositoryBase: 'https://github.com/lucky-media/guidelines/blob/master', // base URL for the docs repository
-  titleSuffix: ' – Roadmap',
+  titleSuffix: ' – Guide',
   nextLinks: true,
   prevLinks: true,
   search: true,
@@ -14,7 +16,7 @@ export default {
   footerEditLink: `Edit this page on GitHub`,
   logo: (
     <>
-      <span>Developer Roadmap</span>
+      <Logo />
     </>
   ),
   head: (
@@ -22,6 +24,7 @@ export default {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="Lucky Media Developer Guideline" />
       <meta name="og:title" content="Lucky Media Developer Guideline" />
+      <meta name="og:image" content="https://guidelines.luckymedia.dev/meta.jpeg" />
     </>
   ),
 }

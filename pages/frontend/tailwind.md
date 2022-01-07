@@ -36,10 +36,7 @@ This will create a minimal config at the root of the project:
 
 ```javascript
 module.exports = {
-  purge: {
-    content: ["./components/**/*.js", "./pages/**/*.js"],
-  },
-  mode: "jit",
+  content: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
     extend: {},
   },
