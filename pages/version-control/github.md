@@ -26,3 +26,30 @@ After clicking on Compare & pull request you can enter a name for your Pull Requ
 ![Merging](/images/git_3.png)
 
 After merging the Pull Request please _delete_ the branch.
+
+### Removing all history from a repo
+
+This is useful when publishing a new package and you want to remove the commit history.
+
+```bash
+# clone the repo (skip if you already have a cloned repo locally)
+git clone git@github.com:USERNAME/REPOSITORY.git
+cd REPOSITORY
+
+# remove all history locally
+rm -rf .git
+
+# create a new local repo
+git init
+
+## if your default branch is master, switch to main.
+git branch -M main
+
+# add everything
+git add .
+git commit -m "First commit"
+
+# nuke history on GitHub (irreversable)
+git remote add origin git@github.com:USERNAME/REPOSITORY.git
+git push -u --force origin main
+```
