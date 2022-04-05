@@ -15,6 +15,7 @@ Please Note that here we assume you already know the basics of HTML, CSS and Jav
 ### Tailwind CSS
 - [From zero to hero](https://www.youtube.com/watch?v=elgqxmdVms8&list=PL5f_mz_zU5eXWYDXHUDOLBE0scnuJofO0)
 - [Build a Modern Landing Page](https://www.youtube.com/watch?v=00gyCtIQp8E)
+- [Tailwind Crash Course](https://www.youtube.com/watch?v=dFgzHOX84xQ)
 
 ### Javascript
 - [Javascript Crash Course](https://www.youtube.com/watch?v=hdI2bqOjy3c)
