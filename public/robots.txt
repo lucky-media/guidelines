@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: 
+User-agent: googlebot-image
+	@@ -9,4 +8,4 @@ Disallow:
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Sitemap: https://guidelines.luckymedia.dev/sitemap.xml
