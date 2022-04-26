@@ -16,4 +16,4 @@ Please Note that here we assume you already know the basics of Databases, MVC et
 ### Laravel Basics
 - [Laravel 8 From Scratch](https://laracasts.com/series/laravel-8-from-scratch)
 - [Laravel Crash Course](https://www.youtube.com/watch?v=MFh0Fd7BsjE)
-- [Laravel from Scratch 2020](https://www.youtube.com/watch?v=MYyJ4PuL4pY)
+- [Laravel from Scratch 2022](https://www.youtube.com/watch?v=MYyJ4PuL4pY)
