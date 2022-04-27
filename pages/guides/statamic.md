@@ -45,3 +45,9 @@ Now to migrate run:
 ```bash
 php please migrate:site
 ```
+
+Important things to check:
+1. On the layout file make sure the assets are loading with the correct path.
+2. Check for depreciated tags for ex: `entries`, `relate`, `pages` etc.
+3. Check routes on `web.php` and remove unnecessary ones.
+4. Check templates for usage of `field_name | url` it should be either removed or replaced with `field_name:url`.
