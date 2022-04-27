@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@netlify/plugin-nextjs': ^4.1.1
   next: 12.0.7
+  next-sitemap: ^2.5.20
   nextra: 2.0.0-beta.5
   nextra-theme-docs: 2.0.0-beta.5
   prism-react-renderer: ^1.2.1
@@ -12,6 +13,7 @@ specifiers:
 
 dependencies:
   next: 12.0.7_react-dom@17.0.2+react@17.0.2
+  next-sitemap: 2.5.20_next@12.0.7
   nextra: 2.0.0-beta.5_react@17.0.2
   nextra-theme-docs: 2.0.0-beta.5_d837ce8f3acb2f60f8b7454672a9bcea
   prism-react-renderer: 1.2.1_react@17.0.2
@@ -71,6 +73,10 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.15.7
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@corex/deepmerge/2.6.148:
+    resolution: {integrity: sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA==}
     dev: false
 
   /@hapi/accept/5.0.2:
@@ -3013,6 +3019,10 @@ packages:
   /minimist/1.2.5:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
 
+  /minimist/1.2.6:
+    resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
+    dev: false
+
   /mkdirp-classic/0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
     dev: true
@@ -3054,6 +3064,18 @@ packages:
   /napi-build-utils/1.0.2:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
     dev: true
+
+  /next-sitemap/2.5.20_next@12.0.7:
+    resolution: {integrity: sha512-Qbm4N2WGA6VHemFN0C9PNWQav9RKwMEbVrNgVvDQhG0sDBmNBgKii54WklOjCvVJVHgQPgtXLBhlNaJGS+RVQA==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      next: '*'
+    dependencies:
+      '@corex/deepmerge': 2.6.148
+      minimist: 1.2.6
+      next: 12.0.7_react-dom@17.0.2+react@17.0.2
+    dev: false
 
   /next-themes/0.0.8_d837ce8f3acb2f60f8b7454672a9bcea:
     resolution: {integrity: sha512-dyrh+/bZW4hkecFEg2rfwOLLzU2UnE7KfiwcV0mIwkPrO+1n1WvwkC8nabgKA5Eoi8stkYfjmA72FxTaWEOHtg==}
