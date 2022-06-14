@@ -50,3 +50,24 @@ git push -u origin main
 ```bash
 git switch -c branch-name
 ```
+
+## Remove all commit history and start fresh
+```bash
+# clone the repo
+git clone git@github.com:USERNAME/REPOSITORY.git
+cd REPOSITORY
+
+# remove all history locally
+rm -rf .git
+
+# create a new local repo
+git init
+
+# add everything
+git add .
+git commit -m "First commit"
+
+# nuke history on GitHub (irreversable)
+git remote add origin git@github.com:USERNAME/REPOSITORY.git
+git push -u --force origin main
+```
