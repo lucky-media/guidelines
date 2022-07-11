@@ -7,11 +7,11 @@ team rules that we try to hold on to, we are always open to change them if the n
 those rules if a certain team member has a special case. Yep, that's right. We are all a team, but we also have 
 different personalities and needs.
 
-We can split our team in two major groups, part-time and full-time employees. For the sake of keeping things simple, 
-let's abbreviate them as **PTE** and **FTE**. We will explain their differences down the road.
+We can split our team in two major groups, part-time and full-time employees. 
+We will explain their differences down the road.
 
 ## Teamwork
-That's probably our most beloved and powerful company asset. We are not just a team, we are like family. 
+That's probably our most beloved and powerful company asset.  
 We expect all members to help each other for problem solving, brainstorming ideas or sharing knowledge. The 
 time spent for teamwork is counted as effective work (explained below) and we strongly encourage it. This has 
 greatly benefited the professional development of our team and it boosts our daily morale.
@@ -25,8 +25,8 @@ humble.
 ## Working Hours
 We have flexible working hours, where each employee can decide when to start working according to their needs 
 and daily routine. Our employees begin their work between:
-- 8 am and 10 am (FTE)
-- 10 am and 1 pm (PTE)
+- 8 am and 10 am (full-time)
+- 10 am and 1 pm (part-time)
 
 ### Effective Work
 No, it's not the total hours we do actual programming. There is a lot of work throughout the day that isn't 
@@ -51,15 +51,15 @@ as part of effective work and what not? A rule of thumb is that everything under
 Wait a sec, time tracking? Really? No, this is not standard managerial control. It's a wonderful
 tool for allowing employees to better organize their working hours.
 
-Let's take a few examples for the PTE:
+Let's take a few examples for the part-time employees:
 - If they work more on a given day, they go earlier the next day.
 - Worked 2 extra hours yesterday, took a break today, will add 2 extra hours tomorrow.
 - They can even take a day off and compensate during the weekend.
 
 They decide their time management and we expect to see 20 effective hours a week.
 
-As for the FTE, it's impossible to do combinations during the day because we know how hard it is to be 
-concetrated and do intellectual work for long hours. However, they can also:
+As for the full-time employees, it's impossible to do combinations during the day because we know how hard 
+it is to be concetrated and do intellectual work for long hours. However, they can also:
 - Take a day off and compensate during the weekend.
 - Or work a few hours less and compensate during the weekend.
 
