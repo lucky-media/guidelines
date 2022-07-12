@@ -41,11 +41,11 @@ programming but it is still work. It includes the time we invest for:
 - Documenting the code to simplify future changes and updates
 - Monthly team meetings and quarterly individual progress meetings
 
-And of course we understand that sometimes we need to get a drink at the kitchen, answer a quick phone call, 
-urinate, respond to messages, tell/hear a joke, etc. We don't expect to pause the effective hours for that. 
-But, let's be fair, effective work is not a lunch break, or taking a walk outside, long coffee breaks and 
-similar activities. We mention these examples because it's totally fine to do them. So what is acceptable 
-as part of effective work and what not? A rule of thumb is that everything under 5 minutes is fine.
+We don't expect someone to pause the effective hours for every single activity. It's very normal to do 
+some everyday activities such as using the kitchen for drinks 🍹, answering a phone call 📞, 
+responding to messages 💬, telling/hearing a joke 😆, etc.
+
+> A good rule of thumb is that 5 minutes/activity is totally fine 👍
 
 ### Time Tracking
 Wait a sec, time tracking? Really? No, this is not standard managerial control. It's a wonderful
