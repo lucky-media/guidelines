@@ -45,7 +45,7 @@ We don't expect someone to pause the effective hours for every single activity. 
 some everyday activities such as using the kitchen for drinks 🍹, answering a phone call 📞, 
 responding to messages 💬, telling/hearing a joke 😆, etc.
 
-> A good rule of thumb is that 5 minutes/activity is totally fine 👍
+> A good rule of thumb is that about 5 minutes/activity is totally fine 👍
 
 ### Time Tracking
 Wait a sec, time tracking? Really? No, this is not standard managerial control. It's a wonderful
