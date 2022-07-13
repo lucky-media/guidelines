@@ -1,26 +1,39 @@
 # Team
 In our company, we are all equal. We only differ by responsibilities and salaries.
-The more we develop our professional skills, the more responsibilities we take, the higher the salary.
+The more we develop our professional skills, the more we get responsibilities, the higher the salary.
 
 We try to build a friendly atmosphere where everyone is important and every idea counts. Although we have general 
-team rules that we try to hold on to, we are always open to change them if the need arises. Better yet, we even break 
+team rules that we try to hold on to, we are always open to changing them if the need arises. Better yet, we even break 
 those rules if a certain team member has a special case. Yep, that's right. We are all a team, but we also have 
 different personalities and needs.
 
-We can split our team in two major groups, part-time and full-time employees. 
+We can split our team into two major groups, part-time and full-time employees. 
 We will explain their differences down the road.
 
 ## Teamwork
 That's probably our most beloved and powerful company asset.  
-We expect all members to help each other for problem solving, brainstorming ideas or sharing knowledge. The 
+We expect all members to help each other for solving issues, brainstorming ideas or sharing knowledge. The 
 time spent for teamwork is counted as effective work (explained below) and we strongly encourage it. This has 
 greatly benefited the professional development of our team and it boosts our daily morale.
 
 A more experienced developer helps a younger motivated teammate to learn all the required techniques that 
-we use on a daily basis. The junior quickly learns more and more, until he gets to help his previous teacher 
-for solving issues he has knowledge about. Solving a certain issue doesn't immediately mean that the student 
+we use daily. The junior quickly learns more and more, until he gets to help his previous teacher 
+for solving issues he knows about. Solving a certain issue doesn't immediately mean that the student 
 has already overtaken the teacher. It simply shows that we can learn from everyone and we should be 
 humble.
+
+## Communication
+Our main communication tool is Discord. We have a channel where we organize all our daily activities.
+The #general channel includes our main company notifications and discussions. The #fun channel is 
+most used, we share funny gifs, jokes and have fun. We have other important channels too, but we also 
+make a specific channel for each project and we gather only the members that will work on that project. 
+This helps us stay organized without distracting members with information they don't need. We have 
+integrated our Github organization account to show every activity.
+
+Sometimes we create channels for our clients and we keep them informed about the project. It's very useful 
+for both parties because the communication is much faster and we build a lasting relationship.
+
+> We even have our own bot with many custom commands. It's our favorite Discord friend.
 
 ## Working Hours
 We have flexible working hours, where each employee can decide when to start working according to their needs 
@@ -29,9 +42,9 @@ and daily routine. Our employees begin their work between:
 - 10 am and 1 pm (part-time)
 
 ### Effective Work
-No, it's not the total hours we do actual programming. There is a lot of work throughout the day that isn't 
-programming but it is still work. It includes the time we invest for:
-- Brainstorming and discussing about the best tech stack
+No, it's not the total hours we do programming. There is a lot of work throughout the day that isn't 
+programming but it still counts as work. It includes the time we invest for:
+- Brainstorming and discussing the best tech stack
 - Researching the best solutions for present issues
 - Reading/watching a tutorial for a new feature/technology
 - Setting up the environment for development
@@ -51,28 +64,28 @@ responding to messages 💬, telling/hearing a joke 😆, etc.
 Wait a sec, time tracking? Really? No, this is not standard managerial control. It's a wonderful
 tool for allowing employees to better organize their working hours.
 
-Let's take a few examples for the part-time employees:
+Let's take a few examples for part-time employees:
 - If they work more on a given day, they go earlier the next day.
-- Worked 2 extra hours yesterday, took a break today, will add 2 extra hours tomorrow.
+- Worked 2 extra hours yesterday, took a break today, and will add 2 extra hours tomorrow.
 - They can even take a day off and compensate during the weekend.
 
 They decide their time management and we expect to see 20 effective hours a week.
 
-As for the full-time employees, it's impossible to do combinations during the day because we know how hard 
-it is to be concetrated and do brain intensive tasks for long hours. However, they can also:
+As for full-time employees, it's impossible to do combinations during the day because we know how hard 
+it is to be concetrated and do brain-intensive tasks for long hours. However, they can also:
 - Take a day off and compensate during the weekend.
 - Or work a few hours less and compensate during the weekend.
 
 They decide their time management and we expect to see 30 effective hours a week.
 
 ## Company Culture
-We have always believed that it's our duty to always perform at the highest level, no matter if the client 
+We believe that we must always perform at the highest level, no matter if the client 
 understands the quality we provide or not. That's what we try to instill into our team members as well.
 
-Our project deadlines are always longer and flexible so we have enough time to produce qualitative work 
-without stressing ourself or our team members. We encourage our employees to take their time, 
+Our project deadlines are always longer and flexible so we have enough time to produce quality work 
+without stressing ourselves or our team members. We encourage our employees to take their time, 
 have a deep breath, think about the solution, plan their steps and start working at their own pace. 
-Every employee has it's strength or weaknesses, and that's very normal for all human beings.
+Every employee has its strength or weaknesses, and that's very normal for all human beings.
 
 We tell many jokes and have lots of fun. But, we always try not to hurt other members' feelings. If a team 
 member has a problem with another member, we encourage them to either let it go or let us know about it. 
