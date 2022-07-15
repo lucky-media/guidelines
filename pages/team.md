@@ -22,6 +22,12 @@ for solving issues he knows about. Solving a certain issue doesn't immediately m
 has already overtaken the teacher. It simply shows that we can learn from everyone and we should be 
 humble.
 
+Our experience has proven to us that help can be misused sometimes. That's why we encourage our members 
+not to exceed 30 min/day of helping a fellow colleague. That's because they get spoiled, lazy and start 
+asking questions for solutions that can be found on the first Google Search result. So, we usually help 
+each other by recommending how specific issues can be solved. But, if the issue looks more 
+complicated, we start coding together to find the best ways to solve the issue, always within the time limit.
+
 ## Communication
 Our main communication tool is Discord. We have a channel where we organize all our daily activities.
 The #general channel includes our main company notifications and discussions. The #fun channel is 
