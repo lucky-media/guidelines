@@ -11,10 +11,10 @@ We can split our team into two major groups, part-time and full-time employees.
 We will explain their differences down the road.
 
 ## Teamwork
-That's probably our most beloved and powerful company asset.  
-We expect all members to help each other for solving issues, brainstorming ideas or sharing knowledge. The 
-time spent for teamwork is counted as effective work (explained below) and we strongly encourage it. This has 
-greatly benefited the professional development of our team and it boosts our daily morale.
+That's probably our most beloved and powerful company asset. We expect all members to help each other for 
+solving issues, brainstorming ideas or sharing knowledge. The time spent for teamwork is counted as 
+effective work (explained below) and we strongly encourage it. This has greatly benefited the professional 
+development of our team and it boosts our daily morale.
 
 A more experienced developer helps a younger motivated teammate to learn all the required techniques that 
 we use daily. The junior quickly learns more and more, until he gets to help his previous teacher 
