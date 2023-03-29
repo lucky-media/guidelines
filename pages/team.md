@@ -1,4 +1,4 @@
-# Team
+# Company Philosophy: Equality and Teamwork
 In our company, we are all equal. We only differ by responsibilities and salaries.
 The more we develop our professional skills, the more we get responsibilities, the higher the salary.
 
@@ -10,7 +10,7 @@ different personalities and needs.
 We can split our team into two major groups, part-time and full-time employees. 
 We will explain their differences down the road.
 
-## Teamwork
+## Teamwork: A Powerful Asset
 That's probably our most beloved and powerful company asset. We expect all members to help each other for 
 solving issues, brainstorming ideas or sharing knowledge. The time spent for teamwork is counted as 
 effective work (explained below) and we strongly encourage it. This has greatly benefited the professional 
@@ -41,11 +41,9 @@ for both parties because the communication is much faster and we build a lasting
 
 > We even have our own bot with many custom commands. It's our favorite Discord friend.
 
-## Working Hours
+## Working Hours and Effective Work
 We have flexible working hours, where each employee can decide when to start working according to their needs 
-and daily routine. Our employees begin their work between:
-- 8 am and 10 am (full-time)
-- 10 am and 1 pm (part-time)
+and daily routine.
 
 ### Effective Work
 No, it's not the total hours we do programming. There is a lot of work throughout the day that isn't 
@@ -82,7 +80,15 @@ it is to be concetrated and do brain-intensive tasks for long hours. However, th
 - Take a day off and compensate during the weekend.
 - Or work a few hours less and compensate during the weekend.
 
-They decide their time management and we expect to see 30 effective hours a week.
+They decide their time management and we expect to see 35 effective hours a week.
+
+A day at work is organized as follows:
+- Full-time
+  - 6 hours of coding
+  - 1 hour of reviews and teamwork
+- Part-time
+  - 3.5 hours of coding
+  - 30 minutes of reviews and teamwork
 
 ## Company Culture
 We believe that we must always perform at the highest level, no matter if the client 
