@@ -1,4 +1,7 @@
 {
     "git": "Git",
-    "github": "Github"
+    "github": "Github",
+    "pull-requests": "Pull Requests",
+    "pr-example": "PR Example",
+    "pr-rules": "PR Rules"
 }
