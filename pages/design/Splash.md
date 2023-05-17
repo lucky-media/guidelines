@@ -4,11 +4,11 @@ One of the main advantages of using a starter kit is that it saves time and effo
 LuckyMedia's starter kit includes:
 - Buttons,
 - Checkboxes,
-- Radio Buttons,
 - Dropdowns,
 - Icons,
 - Input Fields,
 - Pills/Badges,
+- Radio Buttons,
 and many more.
 
 These components can be easily customized to fit the needs of any project, by being consistent you make sure that if you need a change, that can be achieved only by tweaking one frame.

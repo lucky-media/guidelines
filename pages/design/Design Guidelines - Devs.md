@@ -6,24 +6,28 @@ At [Lucky Media](https://www.luckymedia.dev) we use various tools to build our w
 Almost all of our projects are made with our Project Starter. Our Project Starter is a Figma project made specifically by us, and adapted for the technologies we use to develop websites.
 
 Before you start to develop, based on the project you could find:
-- Thumbnail
-- Components and Variants
-- Color Styles
-- Text Styles
-- Buttons
-- Input Groups
+- 404 Page
 - Alerts
-- Paginaters
-- Navigation Bars
+- Buttons
+- Checkbox
+- Color Styles
+- Cookie Notice Modal
+- Dropdown
+- Favicon
 - Footers
+- Icons
+- Input Fields
 - Modals
+- Navigation Bars
+- OG/Meta Image
+- Paginators
+- Pills/Badges
+- Radio Buttons
+- Text Styles
+- Thumbnail page
+- [12/4 Column Grid system · Bootstrap 4)](https://getbootstrap.com/docs/4.0/layout/grid/)
 - [V3 TailwindCSS Color Palette](https://tailwindcss.com/docs/customizing-colors)
 - [V3 TailwindCSS Shadows](https://tailwindcss.com/docs/drop-shadow)
-- 404 Page
-- OG/Meta Image
-- Favicon
-- [12/4 Column Grid system · Bootstrap 4)](https://getbootstrap.com/docs/4.0/layout/grid/)
-- Cookie Notice Modal
 
 The Project Starter is divided into pages, depending on the project and the requirements of the client, however most of the times the pages presented are as:
 - Thumbnail

@@ -9,7 +9,7 @@ This work process is defined into 4 stages:
 ### Meeting with the client
 The management and design team arrange a one-on-one meeting with their client to discuss and understand the client's requirements. During this meeting, they take notes and define a moodboard to ensure clarity. We firmly believe that conducting such individual meetings enhances the relationship between our company and the client. As the meeting progresses, the designers gain a better understanding of the client's expectations, enabling them to address any technical queries or concerns directly.
 
-The design team assumes responsibility for determining the website's sections and establishing the workflow. They consolidate information gathered from various sources such as emails, documents, and client requirements to form a comprehensive summary.
+The design team assumes responsibility for determining the website's sections and establishing the workflow. They consolidate information gathered from various sources such as emails, documents, and client requirements to form a comprehensive summary. This process enables us to determine the scope of work and consider the necessary resources, which in turn helps us estimate the timeframe for completing the project. We understand the importance of providing our clients with an estimate of the duration, as it allows them to plan and allocate resources effectively.
 
 ### Product, it's purpose and Research
 Following our insightful client meeting, our dedicated UI/UX team embarked on a journey to define the value and purpose of the product/website they are about to make. We carefully analyzed the client's requirements, considered their target audience, and defined the core objectives they aim to achieve.
