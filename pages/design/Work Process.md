@@ -1,3 +1,4 @@
+# Work Process
 The guideline includes information on work steps used by Lucky Media on creating a new project, provided in details which contains various elements that can make the design more efficiently and consistent.
 
 This work process is defined into 4 stages:
@@ -6,21 +7,21 @@ This work process is defined into 4 stages:
 3. Design
 4. Development and Testing
 
-### Meeting with the client
+## Meeting with the client
 The management and design team arrange a one-on-one meeting with their client to discuss and understand the client's requirements. During this meeting, they take notes and define a moodboard to ensure clarity. We firmly believe that conducting such individual meetings enhances the relationship between our company and the client. As the meeting progresses, the designers gain a better understanding of the client's expectations, enabling them to address any technical queries or concerns directly.
 
 The design team assumes responsibility for determining the website's sections and establishing the workflow. They consolidate information gathered from various sources such as emails, documents, and client requirements to form a comprehensive summary. This process enables us to determine the scope of work and consider the necessary resources, which in turn helps us estimate the timeframe for completing the project. We understand the importance of providing our clients with an estimate of the duration, as it allows them to plan and allocate resources effectively.
 
-### Product, it's purpose and Research
+## Product, it's purpose and Research
 Following our insightful client meeting, our dedicated UI/UX team embarked on a journey to define the value and purpose of the product/website they are about to make. We carefully analyzed the client's requirements, considered their target audience, and defined the core objectives they aim to achieve.
 
 With a deep understanding of the client's vision, we set out to craft a user-centric experience that not only fulfills their needs but also exceeds their expectations. We conducted extensive research to identify user pain points, preferences, and behaviors, enabling us to create a seamless and intuitive interface.
 
-Our team diligently brainstormed and ideated innovative design concepts that align with the product/website's objectives. We sought to strike a harmonious balance between aesthetics and functionality, ensuring a visually captivating and user-friendly experience.
+Our team diligently brainstormed and ideated innovative design concepts that align with the product/website's objectives and timeframe. We sought to strike a harmonious balance between aesthetics and functionality, ensuring a visually captivating and user-friendly experience.
 
 By focusing on the value proposition and purpose of the product/website, our UI/UX team is determined to deliver a compelling solution that not only meets the client's objectives but also resonates with their target audience, ultimately driving success and achieving the desired impact.
 
-### Design
+## Design
 Upon obtaining the client's approval for the technical aspects and work process, we kindly request them to provide us with content related to their company, including logos, descriptions, images, color styles, and other relevant materials.
 
 Our UI/UX team follows a systematic approach consisting of four key phases:
@@ -28,6 +29,7 @@ Our UI/UX team follows a systematic approach consisting of four key phases:
 2. Initial Design
 3. Feedback and Adaption
 4. Isnification
+
 
 1. Wireframing
 
@@ -56,7 +58,7 @@ We ensure the design is responsive and optimally presented on various devices in
 
 The idea for the word Isnification came from Art (Yes, that's his name), our first designer ( Yes, our designer is named Art 🤷‍♂️ ), who was working with a developer called Isni. Nowadays we have a much bigger team of developers and designers, but Isnification is still used regularly. And yes, Isni is still with us, as well as the designer, Art.
 
-### Development and Testing
+## Development and Testing
 Following the design phase, the Design Team initiates a meeting with the Development Team to share the project details, explain the structure, and provide necessary assets and configuration files. This collaborative session ensures seamless coordination and enables the Development Team to select the most suitable technology stack for programming the product. The Design Team remains readily available throughout the development process, addressing inquiries and assisting with use cases that may arise.
 
 Once all the aforementioned processes are completed, the website progresses to the staging phase. At this stage, the Design Team employs a comprehensive checklist to verify the successful completion of tasks. Issues are created on the corresponding GitHub repository to track and ensure task completion. If all tasks are successfully accomplished, the website undergoes internal testing by the team to evaluate its functionality. Following the internal testing phase, the product is delivered to the client for their review, ensuring its proper behavior and adherence to requirements.
