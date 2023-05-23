@@ -22,8 +22,8 @@ export default {
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Lucky Media Developer Guideline" />
-      <meta name="og:title" content="Lucky Media Developer Guideline" />
+      <meta name="description" content="Lucky Media Developer Guide" />
+      <meta name="og:title" content="Lucky Media Developer Guide" />
       <meta name="og:image" content="https://guidelines.luckymedia.dev/meta.jpeg" />
     </>
   ),
