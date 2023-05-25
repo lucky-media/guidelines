@@ -17,15 +17,14 @@ npm install cypress --save-dev
 ```json
 {
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "test": "npx cypress open",
   }
 }
 ```
 
 3. Run Cypress for the first time:
 ```bash
-npm run cypress:open
+npm run test
 ```
 
 ## A Simple Cypress Test Example
@@ -46,7 +45,7 @@ describe('My First Test', () => {
 
 3. Start your development server, then run Cypress:
 ```bash
-npm run cypress:open
+npm run test
 ```
 
 4. Select the new test file from the Cypress Test Runner, and watch the magic happen.
