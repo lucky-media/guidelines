@@ -1,7 +1,7 @@
 # Editor
-For frontend work we recommend usage of [Visual Studio Code Editor](https://code.visualstudio.com/).
+When it comes to frontend work, we're smitten with the [Visual Studio Code Editor](https://code.visualstudio.com/).
 
-Here are some common extension that we install:
+To elevate your experience, make sure you install these top-notch extensions that are part of our digital tool belt:
 
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -15,8 +15,9 @@ Here are some common extension that we install:
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 
-## Editor Config
-For the config we use the following setup for almost all our projects:
+## Fine-Tuned Editor Config
+Embrace the power of a personalized setup in almost all of our projects with these configurations:
+
 ```bash
 root = true
 
@@ -30,7 +31,8 @@ insert_final_newline = true
 ```
 
 ## VSCode Settings
-For VSCode we recommend the following settings:
+Boost your VSCode experience with our expert recommendations for optimal settings:
+
 ```json
 {
   "editor.formatOnSave": true,

@@ -1,6 +1,7 @@
 # Backend Roadmap
-Below we will least some of tutorials that we think are a great way to jump start your career in backend development.
-Please Note that here we assume you already know the basics of Databases, MVC etc.
+Ready to power up your backend development skills? Explore our selection of tutorials designed to give you a swift lift-off.
+
+Remember, we're assuming you're already equipped with the basics of databases and MVC.
 
 ### Object Oriented Programming
 - [SOLID Principles in PHP](https://laracasts.com/series/solid-principles-in-php)

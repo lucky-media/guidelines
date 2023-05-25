@@ -1,6 +1,8 @@
 # Frontend Roadmap
-Below we will least some of tutorials that we think are a great way to jump start your career in frontend development.
-Please Note that here we assume you already know the basics of HTML, CSS and Javascript.
+Embark on an exciting adventure in frontend development with our curated list of tutorials.
+
+Keep in mind that we're diving headfirst, so be prepared with your basic knowledge of HTML, CSS, and JavaScript.
+
 
 ### HTML & CSS
 - [HTML Crash Course](https://www.youtube.com/watch?v=UB1O30fR-EE)
