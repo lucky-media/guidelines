@@ -1,108 +1,34 @@
-# Company Philosophy: Equality and Teamwork
-In our company, we are all equal. We only differ by responsibilities and salaries.
-The more we develop our professional skills, the more we get responsibilities, the higher the salary.
+# Lucky Media: Built on Equality, Teamwork, and Fun
+At Luckymedia, we champion equality, where the only things setting us apart are our responsibilities and salaries. The more we hone our skills, the bigger our roles and income grow.
 
-We try to build a friendly atmosphere where everyone is important and every idea counts. Although we have general 
-team rules that we try to hold on to, we are always open to changing them if the need arises. Better yet, we even break 
-those rules if a certain team member has a special case. Yep, that's right. We are all a team, but we also have 
-different personalities and needs.
+We've crafted a friendly environment where everyone matters, and every idea shines. We've got our general team rules, but flex them to accommodate special cases and unique needs. After all, we're a tight-knit team with a diverse range of personalities.
 
-We can split our team into two major groups, part-time and full-time employees. 
-We will explain their differences down the road.
+Our crew can be divided into part-timers and full-timers, and we'll dive into their differences shortly.
 
-## Teamwork: A Powerful Asset
-That's probably our most beloved and powerful company asset. We expect all members to help each other for 
-solving issues, brainstorming ideas or sharing knowledge. The time spent for teamwork is counted as 
-effective work (explained below) and we strongly encourage it. This has greatly benefited the professional 
-development of our team and it boosts our daily morale.
+## Teamwork: Our Winning Secret Ingredient
+Teamwork is our most cherished asset. We count on our members to lend a hand, brainstorm together, and share knowledge. Helping out isn't just a nice thing to do — we treat it as actual work. This culture has boosted our team's professional growth and daily motivation.
 
-A more experienced developer helps a younger motivated teammate to learn all the required techniques that 
-we use daily. The junior quickly learns more and more, until he gets to help his previous teacher 
-for solving issues he knows about. Solving a certain issue doesn't immediately mean that the student 
-has already overtaken the teacher. It simply shows that we can learn from everyone and we should be 
-humble.
+Picture this: an experienced developer guiding an eager junior, who quickly learns the ropes and starts supporting their mentor too! That's the magic of our teamwork. It shows that everyone has something to offer, and we should always be humble.
 
-Our experience has proven to us that help can be misused sometimes. We encourage our members 
-not to exceed 30 min/day of helping a fellow colleague. That's because they get spoiled, lazy and start 
-asking questions for solutions that can be found on the first Google Search result. So, we usually help 
-each other by recommending how specific issues can be solved. But, if the issue looks more 
-complicated, we start coding together to find the best ways to solve the issue, always within the time limit.
+Of course, we've noticed a limit to the wonders of helping each other. We cap assistance at 30 minutes per day to prevent teammates from becoming too dependent or lazy. We usually start by recommending solutions, and when things get tricky, we'll code together, keeping an eye on the clock, of course!
 
-## Communication
-Our main communication tool is Discord. We have a channel where we organize all our daily activities.
-The #general channel includes our main company notifications and discussions. The #fun channel is 
-most used, we share funny gifs, jokes and have fun. We have other important channels too, but we also 
-make a specific channel for each project and we gather only the members that will work on that project. 
-This helps us stay organized without distracting members with information they don't need. We have 
-integrated our Github organization account to show every activity.
+## Staying in Touch
+Discord is our go-to communication hub where we organize daily operations. We have channels for company notifications, project-specific discussions, and sharing laughs. Sometimes, we even include our clients to enhance collaboration and build lasting relationships.
 
-Sometimes we create channels for our clients and we keep them informed about the project. It's very useful 
-for both parties because the communication is much faster and we build a lasting relationship.
+> And yes, we have our own custom bot — the life of the (Discord) party!
 
-> We even have our own bot with many custom commands. It's our favorite Discord friend.
+## Productivity & Work-Life Balance
+We believe in flexible working hours, so everyone's routine accommodates their needs. And "work" isn't just coding — research, planning, and testing also count toward our effective work hours.
 
-## Working Hours and Effective Work
-We have flexible working hours, where each employee can decide when to start working according to their needs 
-and daily routine.
+We don't nitpick over small breaks, but time tracking helps our part-time and full-time employees manage their hours. Clever adjustments to fit personal schedules are welcomed.
 
-### Effective Work
-No, it's not the total hours we do programming. There is a lot of work throughout the day that isn't 
-programming but it still counts as work. It includes the time we invest for:
-- Brainstorming and discussing the best tech stack
-- Researching the best solutions for present issues
-- Reading/watching a tutorial for a new feature/technology
-- Setting up the environment for development
-- Teamwork and helping each other
-- Designers talk to clients to better understand their needs and desires
-- Testing before merging a Pull Request
-- Documenting the code to simplify future changes and updates
-- Monthly team meetings and quarterly individual progress meetings
+A typical day looks like this:
+- Full-time: 6 hours coding, 1 hour reviews & teamwork
+- Part-time: 3.5 hours coding, 30 minutes reviews & teamwork
 
-We don't expect someone to pause the effective hours for every single activity. It's very normal to do 
-some everyday activities such as using the kitchen for drinks 🍹, answering a phone call 📞, 
-responding to messages 💬, telling/hearing a joke 😆, etc.
+## Our Laugh-Filled, High-Quality Culture
+We take pride in delivering top-notch work, regardless of whether clients recognize the quality. Generous and flexible project deadlines allow us to thrive without stress or burnout. We encourage employees to breathe, ponder, plan, and work at their own pace, while respecting their individual strengths and weaknesses.
 
-> A good rule of thumb is that about 5 minutes/activity is totally fine 👍
+Our team is all about jokes and fun, but we're also considerate of each other's feelings. If issues arise, we mediate to help resolve misunderstandings. So far, so good — smooth sailing here at Luckymedia!
 
-### Time Tracking
-Wait a sec, time tracking? Really? No, this is not standard managerial control. It's a wonderful
-tool for allowing employees to better organize their working hours.
-
-Let's take a few examples for part-time employees:
-- If they work more on a given day, they go earlier the next day.
-- Worked 2 extra hours yesterday, took a break today, and will add 2 extra hours tomorrow.
-- They can even take a day off and compensate during the weekend.
-
-They decide their time management and we expect to see 20 effective hours a week.
-
-As for full-time employees, it's impossible to do combinations during the day because we know how hard 
-it is to be concetrated and do brain-intensive tasks for long hours. However, they can also:
-- Take a day off and compensate during the weekend.
-- Or work a few hours less and compensate during the weekend.
-
-They decide their time management and we expect to see 35 effective hours a week.
-
-A day at work is organized as follows:
-- Full-time
-  - 6 hours of coding
-  - 1 hour of reviews and teamwork
-- Part-time
-  - 3.5 hours of coding
-  - 30 minutes of reviews and teamwork
-
-## Company Culture
-We believe that we must always perform at the highest level, no matter if the client 
-understands the quality we provide or not. That's what we try to instill into our team members as well.
-
-Our project deadlines are always longer and flexible so we have enough time to produce quality work 
-without stressing ourselves or our team members. We encourage our employees to take their time, 
-have a deep breath, think about the solution, plan their steps and start working at their own pace. 
-Every employee has its strength or weaknesses, and that's very normal for all human beings.
-
-We tell many jokes and have lots of fun. But, we always try not to hurt other members' feelings. If a team 
-member has a problem with another member, we encourage them to either let it go or let us know about it. 
-We've seen that it's best if we mediate and try to help solve the misunderstandings. So far, there hasn't 
-been a single major problem between any of us and we hope it's always this way.
-
-
-> Do you want to be part of us? Have a look at our **[open positions](https://www.luckymedia.dev/careers)** and apply!
+> Interested in joining our merry band of tech wizards? Check out our **[open positions](https://www.luckymedia.dev/careers)** and apply today!
