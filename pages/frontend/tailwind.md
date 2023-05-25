@@ -1,6 +1,6 @@
-# Tailwind CSS
+# Tailwind CSS: Styling with Flair
 
-Almost all our projects include TailwindCSS as the default styling framework and on this document we will focus on some tips and tricks to make working with Tailwind easier.
+Infuse your projects with the vibrant hues of Tailwind CSS, our go-to styling framework. We've compiled tips, tricks, and best practices to make your Tailwind journey a breeze.
 
 ## Extensions
 
@@ -9,13 +9,13 @@ Almost all our projects include TailwindCSS as the default styling framework and
 
 ## Installation
 
-First step to install is to run:
+Kick things off by running:
 
 ```bash
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
-Create a new `postcss.config.js` file in the root directory with the following code:
+Create a fresh `postcss.config.js` file in the root directory with the following code:
 
 ```js
 module.exports = {
@@ -26,13 +26,13 @@ module.exports = {
 };
 ```
 
-Now create your configuration file:
+Now generate your configuration file:
 
 ```bash
 npx tailwindcss init
 ```
 
-This will create a minimal config at the root of the project:
+This will produce a minimal config at the root of your project:
 
 ```javascript
 module.exports = {
@@ -44,7 +44,7 @@ module.exports = {
 };
 ```
 
-Now include tailwind in your css file:
+Inject Tailwind into your CSS file:
 
 ```css
 @tailwind base;
@@ -54,40 +54,38 @@ Now include tailwind in your css file:
 
 ## Plugins
 
-Almost all our projects include the following plugins:
+Most of our projects fancy these indispensable plugins:
 
 - [Tailwind Debug Screens](https://github.com/jorenvanhee/tailwindcss-debug-screens)
 - [Tailwind Boostrap Grid](https://github.com/karolis-sh/tailwind-bootstrap-grid)
 - [Tailwind Forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
-### Using Plugins
+### Harnessing Plugins
 
-In order to use the plugins you have to include them inside the `tailwind.config.js` file in the root of your project:
+Slot in the plugins within the `tailwind.config.js` file at the root of your project:
 
 ```javascript
 module.exports = {
-  content: ['./components/**/*.js', './pages/**/*.js']
+  content: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
-    extend: {},
+      extend: {},
   },
   corePlugins: {
-    // Default container needs to be disabled in order to use the Bootstrap plugin
+      // To use the Bootstrap plugin, the default container must be disabled
     container: false,
   },
   plugins: [
-    // eslint-disable-next-line no-undef
     require('tailwind-bootstrap-grid')({
       gridGutterWidth: '32px',
       containerMaxWidths: {
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
-        '2xl': '1536px',
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1536px',
       },
     }),
-    // eslint-disable-next-line no-undef
     require('tailwindcss-debug-screens'),
     require('@tailwindcss/typography'),
   ],
@@ -96,30 +94,29 @@ module.exports = {
 
 #### Tailwind Debug Screens
 
-A Tailwind CSS component that shows the currently active screen (responsive breakpoint). In order to use it in your project you have to include it in the `<body>` tag or `<Layout>` component. The following example is in React:
+A nifty Tailwind CSS component that displays the active screen (responsive breakpoint) on the page. To power it up, include it in the `<body>` tag or `<Layout>` component. See the React example below:
 
 ```jsx
 const Layout = ({ children }) => {
-   const dev = process.env.NODE_ENV === 'development'
+  const inDevelopment = process.env.NODE_ENV === 'development';
 
-    return (
-      <div className={`${dev ? 'debug-screens' : ''}`}>
-        {children}
-      </div>
-    </>
-    )
-}
+  return (
+    <div className={`${inDevelopment ? 'debug-screens' : ''}`}>
+      {children}
+    </div>
+  );
+};
 
 export default Layout;
 ```
 
-The code above checks if the environment is on `development` and will display the responsive indicator, otherwise in `production` it will not display anything.
+The code checks if the environment is in `development`, revealing the responsive indicator. In `production`, it remains concealed.
 
 #### Tailwind Bootstrap Grid
 
-This plugin provides all the Bootstrap grid names for Tailwind, and we find it more convenient to use `col-6` instead of `w-3/5`. It also provides gutters by default and you can easily change them from the config.
+This plugin gifts you with every Bootstrap grid name in Tailwind style, making `col-6` in lieu of `w-3/5` more appealing. It comes equipped with default gutters and allows for easy adjustments via config.
 
-An example grid made with this plugin:
+Here's a grid example crafted with this plugin:
 
 ```html
 <div class="container">
