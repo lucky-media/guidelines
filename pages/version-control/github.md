@@ -1,23 +1,23 @@
-# Github
+# GitHub
 
-All our projects are hosted in Github, so the first thing to do here is to open a new Github Account if you haven't already.
+All our projects reside in GitHub's welcoming embrace — the first thing you need to do is open a new GitHub account, if you haven't already.
 
-### Using Github
+### Embracing GitHub
 
-We have an equal split of team members who use the command line and some who prefer Github Desktop.
+Our team showcases a perfect blend — some boldly command the command line, while others find comfort in GitHub Desktop.
 
-- For CLI there is no extra step, just make sure you are authenticated with Github using a PA token.
-- Here you can [download](https://desktop.github.com/) Github Desktop.
+- For CLI aficionados, there's no need for an extra step — just make sure you're authenticated with GitHub, using a PA token.
+- You can [download](https://desktop.github.com/) GitHub Desktop and unleash your potential.
 
 ### Creating Pull Requests
 
-After you have finished working on your `feature` branch and pushed to `origin`, if you visit the Repo you will see this notification.
+Once you've wrapped up your work on the `feature` branch and pushed it to `origin`, pay a visit to the repository and bask in the glow of this notification.
 
 ![Pull Request](/images/git_1.png)
 
-After clicking on Compare & pull request you can enter a name for your Pull Request and Description.
+Then, click on Compare & pull request to grace your pull request with a fitting name and description.
 
-### Asking for Review
+### Asking for Reviews
 
 ![Review](/images/git_2.png)
 
@@ -25,31 +25,31 @@ After clicking on Compare & pull request you can enter a name for your Pull Requ
 
 ![Merging](/images/git_3.png)
 
-After merging the Pull Request please _delete_ the branch.
+Once you've merged the pull request, please give the branch a ceremonious _delete_.
 
-### Removing all history from a repo
+### Removing the Repo's Entire History
 
-This is useful when publishing a new package and you want to remove the commit history.
+When you're keen to publish a fresh package and say goodbye to the commit history, these steps hold the answer:
 
 ```bash
-# clone the repo (skip if you already have a cloned repo locally)
+# Clone the repo (skip if you've already got a cloned repo)
 git clone git@github.com:USERNAME/REPOSITORY.git
 cd REPOSITORY
 
-# remove all history locally
+# Bid adieu to all local history
 rm -rf .git
 
-# create a new local repo
+# Establish a new local repository
 git init
 
-## if your default branch is master, switch to main.
+## If your default branch is 'master,' boldly switch to 'main.'
 git branch -M main
 
-# add everything
+# Engage in a thorough addition
 git add .
 git commit -m "First commit"
 
-# nuke history on GitHub (irreversable)
+# Launch historical annihilation on GitHub (irreversible)
 git remote add origin git@github.com:USERNAME/REPOSITORY.git
 git push -u --force origin main
 ```
