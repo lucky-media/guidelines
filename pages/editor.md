@@ -1,4 +1,3 @@
-# Editor
 When it comes to frontend work, we're smitten with the [Visual Studio Code Editor](https://code.visualstudio.com/).
 
 To elevate your experience, make sure you install these top-notch extensions that are part of our digital tool belt:
@@ -16,6 +15,7 @@ To elevate your experience, make sure you install these top-notch extensions tha
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 
 ## Fine-Tuned Editor Config
+
 Embrace the power of a personalized setup in almost all of our projects with these configurations:
 
 ```bash
@@ -31,6 +31,7 @@ insert_final_newline = true
 ```
 
 ## VSCode Settings
+
 Boost your VSCode experience with our expert recommendations for optimal settings:
 
 ```json
@@ -44,6 +45,6 @@ Boost your VSCode experience with our expert recommendations for optimal setting
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  },
+  }
 }
 ```

@@ -1,30 +1,42 @@
-import Logo from './components/Logo'
+import Logo from "./components/Logo";
 
 // theme.config.js
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  github: 'https://github.com/lucky-media/guidelines', // GitHub link in the navbar
-  docsRepositoryBase: 'https://github.com/lucky-media/guidelines/blob/master', // base URL for the docs repository
-  titleSuffix: ' – Guide',
-  nextLinks: true,
-  prevLinks: true,
-  search: true,
-  customSearch: null, // customizable, you can use algolia for example
+  project: {
+    link: "https://github.com/lucky-media/guidelines",
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s – Guide",
+    };
+  },
+  docsRepositoryBase: "https://github.com/lucky-media/guidelines/blob/master", // base URL for the docs repository
   darkMode: true,
-  footer: true,
-  footerText: `MIT ${new Date().getFullYear()} © Lucky Media.`,
-  footerEditLink: `Edit this page on GitHub`,
+  footer: {
+    text: `MIT ${new Date().getFullYear()} © Lucky Media.`,
+  },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
   logo: (
     <>
       <Logo />
     </>
   ),
+  logoLink: "/",
+  search: {
+    placeholder: "Search...",
+  },
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="Lucky Media Developer Guide" />
       <meta name="og:title" content="Lucky Media Developer Guide" />
-      <meta name="og:image" content="https://guidelines.luckymedia.dev/meta.jpeg" />
+      <meta
+        name="og:image"
+        content="https://guidelines.luckymedia.dev/meta.jpeg"
+      />
     </>
   ),
-}
+};

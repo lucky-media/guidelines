@@ -1,11 +1,9 @@
-# Introduction
-
 Welcome to our "Developer's Guide", a treasure trove tailored for software companies and developers who seek insights into our company culture, best practices, and technological prowess. Join us on this journey of discovery as we unwrap how we work, manage our schedules, and form a cohesive team.
-
 
 At [Lucky Media](https://www.luckymedia.dev) we create game-changing digital solutions.
 
 ## Technologies
+
 Set your compass straight with an overview of this enriching guide:
 
 - Roadmaps - Master the digital landscape with tutorials on frontend and backend technologies.

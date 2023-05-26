@@ -1,10 +1,13 @@
 # Introduction
+
 Here at [Lucky Media](https://www.luckymedia.dev), we cleverly craft our websites and apps with an array of distinctive tools. Curious developers, fear not – this guideline serves as your trusty reference point, illuminating our unique structure for Figma Starter Projects.
 
-# Project Starter
+## Web UI Starter
+
 We custom-make the majority of our projects with our ingenious Project Starter. Tailored specifically for our development techniques, our Project Starter is a Figma project brimming with innovation.
 
 As a developer, prepare to encounter these remarkable components and frames:
+
 - 404 Page
 - Alerts
 - Buttons
@@ -29,16 +32,20 @@ As a developer, prepare to encounter these remarkable components and frames:
 - [V3 TailwindCSS Shadows](https://tailwindcss.com/docs/drop-shadow)
 
 Our Project Starter is deftly divided into pages, which may vary according to project requirements and client desires. Fear not, as you'll typically find pages such as:
+
 - Thumbnail
 - Components
 - Page
 - And more.
 
-## Thumbnail
+### Thumbnail
+
 The thumbnail page presents an Open Graph Image highlighting the Project Name and status. Though not explicitly for developers, it enhances our Figma Dashboard's view and boosts overall organization.
 
-## Components
+### Components
+
 On the enthralling Components page, you'll discover:
+
 - 404 Page
 - Color Styles
 - Components and Variants
@@ -52,14 +59,18 @@ On the enthralling Components page, you'll discover:
 - [12/4 Column Grid system · Bootstrap 4)](https://getbootstrap.com/docs/4.0/layout/grid/)
 
 ### 404 Page
+
 Behold a Frame for a `404 Page`, primed for Desktop and Mobile Screen sizes.
 
 ### Color Styles
+
 Crafted to suit client needs, our design team generates dazzling color palettes with shading and tints. A `Branding&Guideline booklet` may be provided, in which case, we'll import colors as styles. Additionally, each color is presented on a Frame with a name and HEX value, often accompanied by a JSON file for seamless Tailwind integration.
 
 ### Components and Variants
+
 We toil tirelessly over components and variants, ensuring effortless changes and time efficiency.
 In the Starter, prepare to find global components and variants such as:
+
 - Alerts
 - Buttons
 - Checkbox
@@ -76,13 +87,16 @@ In the Starter, prepare to find global components and variants such as:
 
 For clarity, Components are labeled, and Figma utilizes layer naming construction and properties.
 
-#### And so much more…
+### And so much more…
+
 From Alerts to User Dropdowns, the Starter is packed with an assortment of components intricately crafted for maximum efficiency and ease of use.
 
 ### Favicon, Footers, Navigation Bars, & OG/Meta Image
+
 Our Starter also contains Favicons with safe zone markers and containers, Footer and Navigation Bar variants for both desktop and mobile screens, and a default frame screen for OG/Meta Image.
 
 ### Text Styles & Tailwind Goodness
+
 The Components page integrates a sleek typography structure for 'Heading' and 'Paragraph' Styles. Additionally, you'll find the default TailwindCSS Color Palette and Shadows, eliminating the need for config file tweaks.
 
 Get ready to embark on an exhilarating adventure through the wondrous world of Lucky Media's Project Starter – a unique, game-changing approach to web and app development.

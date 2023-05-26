@@ -1,6 +1,7 @@
 Here at [Lucky Media](https://www.luckymedia.dev), we've cooked up a fantastic Figma starter kit that's full of versatile components, crowd-pleasing color palettes, on-point typography styles, sleek shadow styles, a snazzy layout grid, and so much more.
 
 Why start from scratch when our starter kit saves you time and energy by offering:
+
 - Buttons
 - Checkboxes
 - Dropdowns
@@ -8,7 +9,7 @@ Why start from scratch when our starter kit saves you time and energy by offerin
 - Input Fields
 - Pills/Badges
 - Radio Buttons
-and a whole lot more!
+  and a whole lot more!
 
 Customize these components in a jiffy to fit any project's needs while ensuring design consistency that makes future tweaks a breeze.
 

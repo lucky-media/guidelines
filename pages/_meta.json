@@ -1,0 +1,33 @@
+{
+    "index": "Introduction",
+    "roadmaps": "Roadmaps",
+    "editor": "Editor Configuration",
+    "version-control": "Version Control",
+    "design": "Design",
+    "frontend": "Frontend",
+    "debugging": "Debugging",
+    "testing": "Testing",
+    "guides": "Guides",
+    "team": "Team",
+    "company": {
+        "title": "Company",
+        "type": "menu",
+        "items": {
+            "home": {
+                "title": "Home",
+                "href": "https://www.luckymedia.dev/",
+                "newWindow": true
+            },
+            "about": {
+                "title": "About",
+                "href": "https://www.luckymedia.dev/about",
+                "newWindow": true
+            },
+            "contact": {
+                "title": "Contact",
+                "href": "https://www.luckymedia.dev/contact",
+                "newWindow": true
+            }
+        }
+    }
+}

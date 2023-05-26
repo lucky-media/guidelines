@@ -1,5 +1,3 @@
-# Code Reviews
-
 ### Always remember - it’s a human being on the other end of the review
 
 Review other people’s code like you’d like your code to be reviewed. To make sure you are communicating correctly, read your code review to yourself out loud and ask yourself, is this something I would want to be said to me? If not, think about changing the tone or content.

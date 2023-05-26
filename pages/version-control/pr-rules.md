@@ -1,5 +1,3 @@
-# Pull Request Principles
-
 Discover the five golden rules for creating sleek and manageable pull requests:
 
 ### Laser-Focused Pull Requests
