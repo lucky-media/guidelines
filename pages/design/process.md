@@ -1,64 +1,55 @@
-# Work Process
-The guideline includes information on work steps used by Lucky Media on creating a new project, provided in details which contains various elements that can make the design more efficiently and consistent.
+# The Lucky Way
+Our [Lucky Media](https://www.luckymedia.dev) guide outlines our unique approach to bringing groundbreaking projects to life, highlighting key steps and elements that ensure efficiency and consistency throughout the design process.
 
-This work process is defined into 4 stages:
-1. Meeting with the client
-2. Product, it's purpose and Research
-3. Design
-4. Development and Testing
+Our work process can be broken down into four magical stages:
+1. Getting to know the client
+2. Product, purpose, and research
+3. Brilliant designs
+4. Development and testing
 
-## Meeting with the client
-The management and design team arrange a one-on-one meeting with their client to discuss and understand the client's requirements. During this meeting, they take notes and define a moodboard to ensure clarity. We firmly believe that conducting such individual meetings enhances the relationship between our company and the client. As the meeting progresses, the designers gain a better understanding of the client's expectations, enabling them to address any technical queries or concerns directly.
+## Getting to Know The Client
+Our approachable management and design team love to sit down with our clients for a one-on-one chat to get to the heart of their vision. We take detailed notes and whip up a mood board to ensure we're all on the same page. By making personal connections and digging into their expectations, we tackle any technical questions head-on and make them feel like part of the family.
 
-The design team assumes responsibility for determining the website's sections and establishing the workflow. They consolidate information gathered from various sources such as emails, documents, and client requirements to form a comprehensive summary. This process enables us to determine the scope of work and consider the necessary resources, which in turn helps us estimate the timeframe for completing the project. We understand the importance of providing our clients with an estimate of the duration, as it allows them to plan and allocate resources effectively.
+Responsibility for mapping out their website's structure and workflow falls to our phenomenal design team. We gather information from every source we can – emails, documents, meetings – to create a big-picture summary. This helps us to scope out the project, plan our resources, and give a more accurate timeframe for completion.
 
-## Product, it's purpose and Research
-Following our insightful client meeting, our dedicated UI/UX team embarked on a journey to define the value and purpose of the product/website they are about to make. We carefully analyzed the client's requirements, considered their target audience, and defined the core objectives they aim to achieve.
+## Product, Purpose, and Research
+With a solid understanding of their vision, our lovable UI/UX team dives into determining what the heart and soul of their product or website should be. By examining their requirements, target audience, and core objectives, we create an experience centered around users that consistently over-delivers.
 
-With a deep understanding of the client's vision, we set out to craft a user-centric experience that not only fulfills their needs but also exceeds their expectations. We conducted extensive research to identify user pain points, preferences, and behaviors, enabling us to create a seamless and intuitive interface.
+Our extensive research into user pain points, preferences, and behaviors guides us in crafting a seamless and intuitive interface. Our team collaborates on innovative design concepts that balance aesthetics and functionality, resulting in a captivating and user-friendly product.
 
-Our team diligently brainstormed and ideated innovative design concepts that align with the product/website's objectives and timeframe. We sought to strike a harmonious balance between aesthetics and functionality, ensuring a visually captivating and user-friendly experience.
+Our focus on value and purpose means we're committed to delivering a solution that not only meets client goals but resonates with their target audience, driving success and making a real impact.
 
-By focusing on the value proposition and purpose of the product/website, our UI/UX team is determined to deliver a compelling solution that not only meets the client's objectives but also resonates with their target audience, ultimately driving success and achieving the desired impact.
+## Brilliant Designs
+With the client approval on technical aspects and our work process, we ask them to provide any content relevant to their company, like logos, descriptions, images, color styles, and other essential materials.
 
-## Design
-Upon obtaining the client's approval for the technical aspects and work process, we kindly request them to provide us with content related to their company, including logos, descriptions, images, color styles, and other relevant materials.
-
-Our UI/UX team follows a systematic approach consisting of four key phases:
+Our whip-smart UI/UX team follows a foolproof approach consisting of:
 1. Wireframing
 2. Initial Design
-3. Feedback and Adaption
+3. Feedback and Adaptation
 4. Isnification
 
+Here's a sum up of the points above, if you don't want to read the detailed explanations further down the road:
+> Starting with wireframing, we establish a basic structure for the website, share it with the client, and tweak it based on their feedback. In the initial design phase, we build on the wireframe to create a visually stunning design. During the feedback and adaptation phase, we fine-tune and modify the design based on your input, and finally, we get the design ready for development in the Isnification phase (shoutout to Art and Isni!).
 
-1. Wireframing
+1. Wireframing Wonder
 
-To begin, we duplicate our Figma Starter Project and make adjustments to our foundational components. We meticulously consider the related components that are crucial for effective wireframing. This typically involves refining margins, paddings, radiuses, fonts, and other relevant components necessary for wireframing. Once these adjustments are complete, we proceed with creating the wireframe for the project. 
+Beginning with our Figma Starter Project, we craft and refine the building blocks that make up the wireframe. Our attention to detail ensures every component, margin, padding, radius, and font is spot-on. With the wireframe complete, we share it with the client via Figma, eagerly awaiting their valuable feedback to make sure our design aligns perfectly with their expectations.
 
-During the wireframing phase, we initially establish a basic structure of the website and it's flow. This serves as a foundation that we can share with the client to ensure alignment and verify that we are in sync with their expectations. We ensure seamless communication with the client by sharing a Figma link that presents the basic concept of the website. We eagerly await their valuable feedback to incorporate their input and align our design with their expectations.
+2. Dazzling Design
 
-2. Initial Design
+In the Initial Design phase, we morph the wireframe into a polished, visually captivating design. We adjust colors, components, and typography while making sure to consider client preferences and the nature of the project. Continual collaboration and refinement of each section are essential elements of this phase, and they can leave comments and suggestions through the Figma Project as we go!
 
-Moving on to the Initial Design phase, we transform the wireframe into a polished and visually appealing design. This stage involves adapting the wireframe elements into tangible design components. Colors are defined, components receive detailed attention regarding attributes like color, radius, widths, and typography. The design process may vary based on client preferences and the nature of the product.
+3. Feedback and Adaptation
 
-Throughout this phase, we engage in a collaborative process, continually refining the components. We iterate on the design, making tweaks and adjustments until we achieve an optimal solution for each object or section. The client remains involved in the process, by being a part of the Figma Project where they can leave comments and suggest changes whenever necessary.
+Now, we focus on incorporating the provided content into the design and making adjustments based on client approvals and feedback. This ensures the final design flows seamlessly with client requirements and preferences.
 
-3. Feedback and Adaption
+4. Our Special Isnification
 
-In the Feedback and Adaptation phase, we focus on incorporating client-provided content such as images and other relevant materials. We also adapt and refactor the website based on the client's approvals and feedback received during the Initial Design and this phase. This ensures that the final design aligns seamlessly with their requirements and preferences.
+Isnification – our fun term for getting the design ready for development – takes center stage. Once we have client approval of the desktop version, we adapt the website for mobile screens and refine our components. We prepare pictures, SVG logos, fonts, and colors in various formats, so the design looks stunning on different devices.
 
-4. Isnification
-
-Isnification is the word we use when the design team gets the design ready for development.
-After getting the final approval from the client on the desktop version, we proceed to adapt the website for mobile screens. 
-Throughout this process we start by refactoring our components, states and present all the repeatable objects on a page that can be defined from the beggining on the development process. 
-
-We export pictures, we prepare the SVG logos, export the list of the icons used by their name, provide the link for the fonts used and we make sure that the font provided have the following WOFF,WOFF2 formats (to ensure compatibility across different devices), provide the colors in HEX formats with their tints and shades in a JSON format. 
-We ensure the design is responsive and optimally presented on various devices in order to provide top tier quality. 
-
-The idea for the word Isnification came from Art (Yes, that's his name), our first designer ( Yes, our designer is named Art 🤷‍♂️ ), who was working with a developer called Isni. Nowadays we have a much bigger team of developers and designers, but Isnification is still used regularly. And yes, Isni is still with us, as well as the designer, Art.
+The word "Isnification" hails from Art, our first designer (yes, his name is Art 🤷‍♂️ ), who was working with our developer named Isni. Even though our team has expanded, Isnification lives on, and both Art and Isni are still with us.
 
 ## Development and Testing
-Following the design phase, the Design Team initiates a meeting with the Development Team to share the project details, explain the structure, and provide necessary assets and configuration files. This collaborative session ensures seamless coordination and enables the Development Team to select the most suitable technology stack for programming the product. The Design Team remains readily available throughout the development process, addressing inquiries and assisting with use cases that may arise.
+When it's time for development, our design and development teams come together to discuss project details, choose the best technology stack, and ensure a smooth transition between design and development. Our designers remain on hand to support the developers throughout this process.
 
-Once all the aforementioned processes are completed, the website progresses to the staging phase. At this stage, the Design Team employs a comprehensive checklist to verify the successful completion of tasks. Issues are created on the corresponding GitHub repository to track and ensure task completion. If all tasks are successfully accomplished, the website undergoes internal testing by the team to evaluate its functionality. Following the internal testing phase, the product is delivered to the client for their review, ensuring its proper behavior and adherence to requirements.
+With the project nearing completion, we move to the staging phase, where we dive into our comprehensive checklist to ensure all tasks are wrapped up. Any issues we discover are added to the GitHub repository, and an internal review of the project takes place. Finally, our masterpiece is presented to the client for review – a beautiful, functional, expertly designed product that went through The Lucky Way.
