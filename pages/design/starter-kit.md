@@ -1,6 +1,6 @@
-Here at [Lucky Media](https://www.luckymedia.dev), we've cooked up a fantastic Figma starter kit that's full of versatile components, crowd-pleasing color palettes, on-point typography styles, sleek shadow styles, a snazzy layout grid, and so much more.
+Here at [Lucky Media](https://www.luckymedia.dev), we've cooked up a fantastic Figma starter kit, nicknamed [Web UI Starter](https://www.figma.com/community/file/1243858237628374539), that's full of versatile components, crowd-pleasing color palettes, on-point typography styles, sleek shadow styles, a snazzy layout grid, and so much more.
 
-Why start from scratch when our starter kit saves you time and energy by offering:
+Why start from scratch when our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) saves you time and energy by offering:
 
 - Buttons
 - Checkboxes
@@ -15,9 +15,9 @@ Customize these components in a jiffy to fit any project's needs while ensuring 
 
 Our default color palettes, straight from the popular TailwindCSS framework, set you up for vibrant, cohesive color schemes that are easy to adjust. We've also got you covered with spot-on typography and shadow styles for a functional, fabulous look.
 
-Featuring a layout grid that guides you in designing divinely balanced sections, Lucky Media's starter kit makes the design process swift and satisfying.
+Featuring a layout grid that guides you in designing divinely balanced sections, Lucky Media's [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) makes the design process swift and satisfying.
 
-In essence, our starter kit is the ultimate toolbox for designers and developers to whip up web applications with flair and finesse. Use our components, color palettes, typography styles, shadow styles, layout grid, and even a 404 page, and you'll save time crafting designs while developers ensure consistency throughout.
+In essence, our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is the ultimate toolbox for designers and developers to whip up web applications with flair and finesse. Use our components, color palettes, typography styles, shadow styles, layout grid, and even a 404 page, and you'll save time crafting designs while developers ensure consistency throughout.
 
 A well-stocked set of components lets designers effectively convey their vision to developers, who bring it to life swiftly and smoothly. Say goodbye to miscommunications and mistakes, and hello to a streamlined development process.
 

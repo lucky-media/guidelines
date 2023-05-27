@@ -1,10 +1,10 @@
 # Web UI Starter
 
-The majority of our projects leap headfirst into our custom-built Figma Project Starter. Crafted with precision and designed specifically with our technological choices in mind, it will ensure your design journey takes flight.
+The majority of our projects leap headfirst into our custom-built Figma [Web UI Starter](https://www.figma.com/community/file/1243858237628374539). Crafted with precision and designed specifically with our technological choices in mind, it will ensure your design journey takes flight.
 
-Prior to designing, duplicate the Project Starter to your drafts or team.
+Prior to designing, duplicate the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) to your drafts or team.
 
-Inside our Starter, you will uncover:
+Inside our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539), you will uncover:
 
 - 404 Page
 - Alerts
@@ -29,14 +29,14 @@ Inside our Starter, you will uncover:
 - [V3 TailwindCSS Color Palette](https://tailwindcss.com/docs/customizing-colors)
 - [V3 TailwindCSS Shadows](https://tailwindcss.com/docs/drop-shadow)
 
-Our Project Starter is organized into pages based on project and client requirements, but the usual suspects include:
+Our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is organized into pages based on project and client requirements, but the usual suspects include:
 
 - Thumbnail Page
 - Components Page
 - Design Page
 - And more.
 
-Each section of the Project Starter comes with in-depth explanations on the components, their properties, and how to effectively use them within the design process. This ensures a seamless experience for the designer while maintaining the high standards of Lucky Media's creations.
+Each section of the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) comes with in-depth explanations on the components, their properties, and how to effectively use them within the design process. This ensures a seamless experience for the designer while maintaining the high standards of Lucky Media's creations.
 
 ### Thumbnail Page
 
@@ -116,7 +116,7 @@ This component set includes 3 instances:
 
 ### Color Styles
 
-Our Starter showcases the default TailwindCSS colors, easily accessible via the `Style Icon`.
+Our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) showcases the default TailwindCSS colors, easily accessible via the `Style Icon`.
 
 ### Cookie Notice Modal
 
@@ -160,7 +160,7 @@ Choose from two Navigation variants, each furnished with a Logo, Menu Content, N
 
 ### OG/Meta Image
 
-In the Starter, bask in a default screen with a `4x2,1` aspect ratio, Safe zone markers, and containers.
+In the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539), bask in a default screen with a `4x2,1` aspect ratio, Safe zone markers, and containers.
 
 ### Paginators
 
@@ -190,4 +190,4 @@ These Dropdown components feature User Avatars and Text Only instances.
 
 Discover default TailwindCSS Shadows, ready to be summoned through the `Style Icon` and the search input field.
 
-> By following these guidelines and leveraging the tools provided in the Project Starter, any designer will be well-equipped to create game-changing digital solutions that fit like a glove for any business.
+> By following these guidelines and leveraging the tools provided in the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539), any designer will be well-equipped to create game-changing digital solutions that fit like a glove for any business.

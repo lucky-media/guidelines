@@ -1,10 +1,10 @@
 # Introduction
 
-Here at [Lucky Media](https://www.luckymedia.dev), we cleverly craft our websites and apps with an array of distinctive tools. Curious developers, fear not – this guideline serves as your trusty reference point, illuminating our unique structure for Figma Starter Projects.
+Here at [Lucky Media](https://www.luckymedia.dev), we cleverly craft our websites and apps with an array of distinctive tools. Curious developers, fear not – this guideline serves as your trusty reference point, illuminating our unique structure for Figma Starter Projects, the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539).
 
 ## Web UI Starter
 
-We custom-make the majority of our projects with our ingenious Project Starter. Tailored specifically for our development techniques, our Project Starter is a Figma project brimming with innovation.
+We custom-make the majority of our projects with our ingenious Project Starter. Tailored specifically for our development techniques, our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is a Figma project brimming with innovation.
 
 As a developer, prepare to encounter these remarkable components and frames:
 
@@ -31,7 +31,7 @@ As a developer, prepare to encounter these remarkable components and frames:
 - [V3 TailwindCSS Color Palette](https://tailwindcss.com/docs/customizing-colors)
 - [V3 TailwindCSS Shadows](https://tailwindcss.com/docs/drop-shadow)
 
-Our Project Starter is deftly divided into pages, which may vary according to project requirements and client desires. Fear not, as you'll typically find pages such as:
+Our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is deftly divided into pages, which may vary according to project requirements and client desires. Fear not, as you'll typically find pages such as:
 
 - Thumbnail
 - Components
@@ -69,7 +69,7 @@ Crafted to suit client needs, our design team generates dazzling color palettes 
 ### Components and Variants
 
 We toil tirelessly over components and variants, ensuring effortless changes and time efficiency.
-In the Starter, prepare to find global components and variants such as:
+In the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539), prepare to find global components and variants such as:
 
 - Alerts
 - Buttons
@@ -89,14 +89,14 @@ For clarity, Components are labeled, and Figma utilizes layer naming constructio
 
 ### And so much more…
 
-From Alerts to User Dropdowns, the Starter is packed with an assortment of components intricately crafted for maximum efficiency and ease of use.
+From Alerts to User Dropdowns, the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is packed with an assortment of components intricately crafted for maximum efficiency and ease of use.
 
 ### Favicon, Footers, Navigation Bars, & OG/Meta Image
 
-Our Starter also contains Favicons with safe zone markers and containers, Footer and Navigation Bar variants for both desktop and mobile screens, and a default frame screen for OG/Meta Image.
+Our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) also contains Favicons with safe zone markers and containers, Footer and Navigation Bar variants for both desktop and mobile screens, and a default frame screen for OG/Meta Image.
 
 ### Text Styles & Tailwind Goodness
 
 The Components page integrates a sleek typography structure for 'Heading' and 'Paragraph' Styles. Additionally, you'll find the default TailwindCSS Color Palette and Shadows, eliminating the need for config file tweaks.
 
-Get ready to embark on an exhilarating adventure through the wondrous world of Lucky Media's Project Starter – a unique, game-changing approach to web and app development.
+Get ready to embark on an exhilarating adventure through the wondrous world of Lucky Media's [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) – a unique, game-changing approach to web and app development.
