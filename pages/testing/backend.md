@@ -10,14 +10,16 @@ In the digital realm, trust is paramount. Backend testing in Laravel safeguards 
 
 ### Unit Tests
 
-Unit tests focus on small pieces of code or individual functions. They help us maintain code integrity and verify that tiny components work as intended. Create unit tests within the `tests/Unit` directory.
+Unit tests focus on small pieces of code or individual functions. They help us maintain code integrity and verify that tiny components work as intended. Create unit tests within the `tests/Unit` directory. Let's say we have a specific functionality where we calculate the discount for a specific product.
 
 ```php
 // Example of a simple unit test in Laravel
-public function testSum()
+public function test_discount_for_product()
 {
-  $result = add(2, 3);
-  $this->assertEquals(5, $result);
+  $product = Product::factory()->create(); // generate a fake product
+  $discounted_price = CalculateDiscount::run($product->price, $product->discount);
+  $result = $product->price - ($product->price * ($product->discount/100));
+  $this->assertEquals($result, $discounted_price);
 }
 ```
 
@@ -27,16 +29,13 @@ Feature tests check how different parts of an application interact. They are inv
 
 ```php
 // Example of a simple feature test in Laravel
-public function testUserLogin()
+public function test_admin_can_view_patients_index()
 {
-  $user = factory(User::class)->create();
-
-  $response = $this->post('/login', [
-    'email' => $user->email,
-    'password' => 'password'
-  ]);
-
-  $response->assertRedirect('/dashboard');
+    $this
+        ->loginAs(Role::ADMIN)
+        ->get(route('patients.index'))
+        ->assertStatus(200)
+        ->assertSessionHasNoErrors();
 }
 ```
 
@@ -48,19 +47,15 @@ Pest is a testing framework built on top of PHPUnit, offering a cleaner syntax a
 composer require pestphp/pest --dev
 ```
 
-Once installed, Pest tests can be created alongside unit and feature tests.
+Once installed, Pest tests can be created alongside unit and feature tests. Pest tests are cleaner and more readable.
 
 ```php
 // Pest Test example
-it('returns the current user', function () {
-  $user = factory(User::class)->create();
-
-  $response = $this->actingAs($user)->getJson('/api/user');
-
-  $response->assertJson([
-    'id' => $user->id,
-    'name' => $user->name,
-    'email' => $user->email,
-  ]);
-});
+it('allows admin to view patients index', function () {
+    $this
+      ->loginAs(Role::ADMIN)
+      ->get(route('patients.index'))
+      ->assertStatus(200)
+      ->assertSessionHasNoErrors();
+}    
 ```
