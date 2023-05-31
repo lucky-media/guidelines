@@ -1,41 +1,40 @@
-# Statamic Releases
+# Statamic Releases Guide
+This guide provides the process for creating a new version/release of a Starter Kit, using the Resume App as an example.
 
-Let's understand some things:
+### Overview
+- The `resume` project represents the live version of the Starter Kit.
+- The `resumeapp` project is used by developers. They make changes here and then publish/release those changes to the `resume` project.
 
-- `resume` project is the Live version of the Starter Kit.
-- `resumeapp` is for the developers to make changes and then we publish/release them to `resume `.
+### Release Process
+Follow the steps below to create a new release for the Resume App:
 
-### Steps to follow
+1. In `resumeapp`, merge all changes into the `main` branch.
+2. Test the project to ensure everything is working correctly.
+3. Execute the command `npm run build`.
+4. Ensure you have cloned both the `resume` and `resumeapp` repositories.
+5. Run the command `php please starter-kit:export ../resume`. This exports the build files from `resumeapp` to the `resume` repository.
+6. Open the `resume` project to review the new changes. Discard any unnecessary files as needed.
+7. In the `resume` project, create a new branch for the release with a specific version number. For example, use `git switch -c 1.5` if `1.5` is the new release number. Commit and push the changes in the new branch.
+8. Create a Pull Request (PR) for the new branch (e.g., 1.5).
+9. Review the PR and address any feedback or issues.
+10. Merge the PR into the `main` branch of the `resume` project.
+11. In the `main` branch, execute `git pull` to fetch the latest changes.
+12. Navigate to the Releases section, and click on "Draft new Release."
+13. Create a new release tag, such as `v1.5`, set the `Target` to the latest commit, and set the `Title` to the release version (e.g., v1.5).
+14. Format the release description using the following template:
+15. 
+```md
+This release adds support for Statamic v4
 
-When you want to do a brand new version/release of a Starter Kit (for this example we will use Resume App), follow these simple steps:
-
-1. Go to Resume App (`resumeapp`) and merge everything in `main` branch
-2. Test everything if it works correctly.
-3. Next, run `npm run build`.
-4. Make sure you have cloned both repos, `resume` and `resumeapp`.
-5. Now run `php please starter-kit:export ../resume`
-   (This command will export the files you previously ran with `npm run build` and export them to the `resume` repository.)
-6. Now open up `resume` project, you will see new changes - Review the changes and remove unnecessary files.
-7. Before you commit or do anything when you open `resume` project, switch to a new branch with the new release number, like this: `git switch -c 1.5`, 1.5 is the example release. Now commit and push the changes in the new branch (1.5 in this case).
-8. Open PR
-9. Review the PR.
-10. Merge the PR to `main`.
-11. Go back to `main` and git pull the changes.
-12. Click on Releases, then on Draft new Release.
-13. Create a new release tag, example `v1.5` and choose Target: to latest commit, and Title to v1.5
-14. In the description follow this format:
-
-```
 ### What's New
 - Added LuckySEO for simple SEO Management
 
-
-### What's improved
+### What's Improved
 - Updated dependencies
 
 ### What's Changed
 - Removed old Antlers Config file
 ```
 
-15. Publish Release.
-16. That's it, you're done!
+15. Click "Publish Release" to finalize the new release.
+16. The release is now live.
