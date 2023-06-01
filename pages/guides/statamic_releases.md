@@ -1,28 +1,29 @@
-# Statamic Releases Guide
-This guide provides the process for creating a new version/release of a Starter Kit, using the Resume App as an example.
+# Statamic Starter Kit Releases Guide
 
-### Overview
+Unveil the secrets of creating a new version/release for a Starter Kit. Let's use the Resume App as our shining example.
+
+### Glimpse into the Process
+
 - The `resume` project represents the live version of the Starter Kit.
 - The `resumeapp` project is used by developers. They make changes here and then publish/release those changes to the `resume` project.
 
 ### Release Process
-Follow the steps below to create a new release for the Resume App:
 
-1. In `resumeapp`, merge all changes into the `main` branch.
-2. Test the project to ensure everything is working correctly.
-3. Execute the command `npm run build`.
-4. Ensure you have cloned both the `resume` and `resumeapp` repositories.
-5. Run the command `php please starter-kit:export ../resume`. This exports the build files from `resumeapp` to the `resume` repository.
+1. Merge all changes with the `main` branch in `resumeapp`.
+2. Give the project a thorough check-up; make sure everything's spick and span.
+3. Hit `npm run build`.
+4. Got both `resume` and `resumeapp` repositories cloned? Perfect!
+5. Run this beauty: `php please starter-kit:export ../resume`. Watch as it exports build files from `resumeapp` to `resume` repository.
 6. Open the `resume` project to review the new changes. Discard any unnecessary files as needed.
-7. In the `resume` project, create a new branch for the release with a specific version number. For example, use `git switch -c 1.5` if `1.5` is the new release number. Commit and push the changes in the new branch.
+7. Pick a fancy version number, like `1.5`, and forge a new branch in the `resume` project (e.g., `git switch -c 1.5`). Commit, push, and show off your shiny new branch.
 8. Create a Pull Request (PR) for the new branch (e.g., 1.5).
 9. Review the PR and address any feedback or issues.
-10. Merge the PR into the `main` branch of the `resume` project.
-11. In the `main` branch, execute `git pull` to fetch the latest changes.
+10. Merge that PR into the `resume` project's `main` branch.
+11. Get latest changes with a `git pull` in the `main` branch.
 12. Navigate to the Releases section, and click on "Draft new Release."
-13. Create a new release tag, such as `v1.5`, set the `Target` to the latest commit, and set the `Title` to the release version (e.g., v1.5).
+13. Tag it (e.g., `v1.5`), lock down the `Target` to the newest commit, and title it with your version number (e.g., `v1.5`).
 14. Format the release description using the following template:
-15. 
+
 ```md
 This release adds support for Statamic v4
 
@@ -37,4 +38,4 @@ This release adds support for Statamic v4
 ```
 
 15. Click "Publish Release" to finalize the new release.
-16. The release is now live.
+16. Voila! Your release is now live, kicking, and ready to rumble.
