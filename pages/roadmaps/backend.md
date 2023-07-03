@@ -3,16 +3,15 @@ Ready to power up your backend development skills? Explore our selection of tuto
 
 Remember, we're assuming you're already equipped with the basics of databases and MVC.
 
-### Object Oriented Programming
-- [SOLID Principles in PHP](https://laracasts.com/series/solid-principles-in-php)
+### The Laravel Path
+- [Learn the Laravel Path](https://laracasts.com/path)
 
 ### PHP Basics
-- [PHP For Beginners](https://www.youtube.com/watch?v=2eebptXfEvw)
-- [PHP Practitioner](https://laracasts.com/series/php-for-beginners)
-- [PHP The Right Way](https://phptherightway.com/)
-- [PHP School](https://www.phpschool.io/)
-- [PHP Exercises](https://exercism.org/tracks/php)
-- [Code Course PHP Basics](https://codecourse.com/courses/php-basics)
+- [PHP For Beginners](https://laracasts.com/series/php-for-beginners-2023-edition)
+
+### Object Oriented Programming
+- [OOP in PHP](https://laracasts.com/series/object-oriented-principles-in-php)
+- [SOLID Principles in PHP](https://laracasts.com/series/solid-principles-in-php)
 
 ### Laravel Basics
 - [Laravel 8 From Scratch](https://laracasts.com/series/laravel-8-from-scratch)
