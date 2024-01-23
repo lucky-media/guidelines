@@ -9,6 +9,7 @@ Set your compass straight with an overview of this enriching guide:
 - Roadmaps - Master the digital landscape with tutorials on frontend and backend technologies.
   - Frontend Roadmap
   - Backend Roadmap
+  - Design Roadmap
 - Editor Configuration - Unleash the power of Visual Studio Code with essential configurations and extensions.
 - Version Control - Master the art and science of preserving your valuable code.
   - Git - Learn the secrets of git and command your repo like a pro.
