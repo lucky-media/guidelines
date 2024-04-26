@@ -1,5 +1,5 @@
 # Lucky Media: Built on Equality, Teamwork, and Fun
-At Luckymedia, we champion equality, where the only things setting us apart are our responsibilities and salaries. The more we hone our skills, the bigger our roles and income grow.
+At Lucky Media, we champion equality, where the only things setting us apart are our responsibilities and salaries. The more we hone our skills, the bigger our roles and income grow.
 
 We've crafted a friendly environment where everyone matters, and every idea shines. We've got our general team rules, but flex them to accommodate special cases and unique needs. After all, we're a tight-knit team with a diverse range of personalities.
 
@@ -27,8 +27,8 @@ A typical day looks like this:
 - Part-time: 3.5 hours coding, 30 minutes reviews & teamwork
 
 ## Our Laugh-Filled, High-Quality Culture
-We take pride in delivering top-notch work, regardless of whether clients recognize the quality. Generous and flexible project deadlines allow us to thrive without stress or burnout. We encourage employees to breathe, ponder, plan, and work at their own pace, while respecting their individual strengths and weaknesses.
+We take pride in delivering top-notch work, regardless of whether clients recognize the quality. Generous and flexible project deadlines allow us to thrive without stress or burnout. We encourage employees to breathe, ponder, plan, and work at their own pace while respecting their strengths and weaknesses.
 
-Our team is all about jokes and fun, but we're also considerate of each other's feelings. If issues arise, we mediate to help resolve misunderstandings. So far, so good — smooth sailing here at Luckymedia!
+Our team is all about jokes and fun, but we're also considerate of each other's feelings. If issues arise, we mediate to help resolve misunderstandings. So far, so good — smooth sailing here at Lucky Media!
 
 > Interested in joining our merry band of tech wizards? Check out our **[open positions](https://www.luckymedia.dev/careers)** and apply today!
