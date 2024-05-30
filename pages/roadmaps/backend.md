@@ -23,5 +23,6 @@ Remember, we're assuming you're already equipped with the basics of databases an
 - [Rapid Laravel Development with Filament](https://laracasts.com/series/rapid-laravel-development-with-filament)
 - [Laravel Cookbook](https://laracasts.com/series/laravel-cookbook)
 
-### The Laravel Path
+### Laravel Roadmaps
 - [Learn the Laravel Path](https://laracasts.com/path)
+- [Laravel Daily Learning Path](https://laraveldaily.com/roadmap-learning-path)
