@@ -11,9 +11,9 @@ Unveil the secrets of creating a new version/release for a Starter Kit. Let's us
 
 1. Merge all changes with the `main` branch in `resumeapp`.
 2. Give the project a thorough check-up; make sure everything's spick and span.
-3. Hit `npm run build`.
+3. Hit `npm run build` in `resumeapp`.
 4. Got both `resume` and `resumeapp` repositories cloned? Perfect!
-5. Run this beauty: `php please starter-kit:export ../resume`. Watch as it exports build files from `resumeapp` to `resume` repository.
+5. Run this beauty: `php please starter-kit:export ../resume` in `resumeapp`. Watch as it exports build files from `resumeapp` to `resume` repository.
 6. Open the `resume` project to review the new changes. Discard any unnecessary files as needed.
 7. Pick a fancy version number, like `1.5`, and forge a new branch in the `resume` project (e.g., `git switch -c 1.5`). Commit, push, and show off your shiny new branch.
 8. Create a Pull Request (PR) for the new branch (e.g., 1.5).
