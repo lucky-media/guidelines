@@ -9,47 +9,36 @@ Infuse your projects with the vibrant hues of Tailwind CSS, our go-to styling fr
 
 ## Installation
 
-Kick things off by running:
+Start by creating a new Vite project:
 
 ```bash
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npm create vite@latest my-project
+cd my-project
 ```
 
-Create a fresh `postcss.config.js` file in the root directory with the following code:
+Continue by installing tailwindcss and @tailwindcss/vite:
+
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
+
+
+Afterwards add the @tailwindcss/vite plugin to your vite.config.ts file:
 
 ```js
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
 ```
 
-Now generate your configuration file:
-
-```bash
-npx tailwindcss init
-```
-
-This will produce a minimal config at the root of your project:
-
-```javascript
-module.exports = {
-  content: ["./components/**/*.js", "./pages/**/*.js"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
-
-Inject Tailwind into your CSS file:
+Now import Tailwind CSS to your CSS file:
 
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 ```
 
 ## Plugins
@@ -66,28 +55,23 @@ Most of our projects fancy these indispensable plugins:
 Slot in the plugins within the `tailwind.config.js` file at the root of your project:
 
 ```javascript
-module.exports = {
-  content: ['./components/**/*.js', './pages/**/*.js'],
+import debugScreens from 'tailwindcss-debug-screens'
+import bootstrapGrid from 'tailwind-bootstrap-grid'
+import forms from '@tailwindcss/forms'
+import typography from '@tailwindcss/typography'
+
+export default {
+  content: [
+    './src/**/*.{html,js,ts,jsx,tsx,astro}', // Update to match your project structure
+  ],
   theme: {
-      extend: {},
-  },
-  corePlugins: {
-      // To use the Bootstrap plugin, the default container must be disabled
-    container: false,
+    extend: {},
   },
   plugins: [
-    require('tailwind-bootstrap-grid')({
-      gridGutterWidth: '32px',
-      containerMaxWidths: {
-          sm: '640px',
-          md: '768px',
-          lg: '1024px',
-          xl: '1280px',
-          '2xl': '1536px',
-      },
-    }),
-    require('tailwindcss-debug-screens'),
-    require('@tailwindcss/typography'),
+    debugScreens,
+    bootstrapGrid,
+    forms,
+    typography,
   ],
 }
 ```
