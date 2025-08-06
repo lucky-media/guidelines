@@ -43,6 +43,7 @@ Now import Tailwind CSS to your CSS file:
 Most of our projects fancy these indispensable plugins:
 
 - [Tailwind Debug Screens](https://github.com/jorenvanhee/tailwindcss-debug-screens)
+- [Tailwind Boostrap Grid](https://github.com/karolis-sh/tailwind-bootstrap-grid)
 - [Tailwind Forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
@@ -52,6 +53,7 @@ Slot in the plugins within the `tailwind.config.js` file at the root of your pro
 
 ```javascript
 import debugScreens from "tailwindcss-debug-screens";
+import bootstrapGrid from "tailwind-bootstrap-grid";
 import forms from "@tailwindcss/forms";
 import typography from "@tailwindcss/typography";
 
@@ -62,7 +64,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [debugScreens, forms, typography],
+  plugins: [debugScreens, bootstrapGrid, forms, typography],
 };
 ```
 
@@ -83,20 +85,3 @@ export default Layout;
 ```
 
 The code checks if the environment is in `development`, revealing the responsive indicator. In `production`, it remains concealed.
-
-#### Tailwind Bootstrap Grid
-
-This plugin gifts you with every Bootstrap grid name in Tailwind style, making `col-6` in lieu of `w-3/5` more appealing. It comes equipped with default gutters and allows for easy adjustments via config.
-
-Here's a grid example crafted with this plugin:
-
-```html
-<div class="container">
-  <div class="row">
-    <div class="md:col-6 lg:col-3"></div>
-    <div class="md:col-6 lg:col-3"></div>
-    <div class="md:col-6 lg:col-3"></div>
-    <div class="md:col-6 lg:col-3"></div>
-  </div>
-</div>
-```
