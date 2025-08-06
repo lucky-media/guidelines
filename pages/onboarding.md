@@ -138,14 +138,81 @@ Our recommendations for optimal settings:
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 
-## Configure Git
+## Configure Git(Windows/Mac/Linux)
 
-Set up your Git identity:
+### 1. Set up your Git identity
+
+Run these commands in your terminal (Git Bash / Command Prompt / macOS Terminal):
 
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
+
+These settings are stored globally in your system. Git will use them for all repositories.
+
+### 2. Generate an SSH Key (For GitHub Authentication)
+
+SSH lets you securely connect to GitHub without entering your username and password every time.
+
+Run:
+
+```bash
+ssh-keygen -t ed25519 -C "your.email@example.com"
+```
+
+When prompted:
+
+1. Press Enter to accept the default file path (~/.ssh/id_ed25519)
+
+2. Set a passphrase (optional)
+
+### 3. Add Your SSH Key to the SSH Agent
+
+Ensure the SSH agent is running and add your key:
+
+On macOS/Linux:
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+On Windows (Git Bash):
+
+```bash
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_ed25519
+```
+
+### 4. Add the SSH Key to GitHub
+
+Copy your public key:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Then:
+
+1. Go to GitHub SSH settings
+
+2. Click "New SSH key"
+
+3. Paste the key and give it a title (e.g., My Laptop)
+
+4. Click "Add SSH key"
+
+### 5. Test SSH Connection 
+
+To verify everything works:
+
+```bash
+
+ssh -T git@github.com
+```
+You should see:
+Hi your-username! You've successfully authenticated...
 
 ## Install Discord
 
