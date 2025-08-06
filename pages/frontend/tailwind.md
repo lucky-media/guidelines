@@ -22,17 +22,14 @@ Continue by installing tailwindcss and @tailwindcss/vite:
 npm install tailwindcss @tailwindcss/vite
 ```
 
-
 Afterwards add the @tailwindcss/vite plugin to your vite.config.ts file:
 
 ```js
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
-})
+  plugins: [tailwindcss()],
+});
 ```
 
 Now import Tailwind CSS to your CSS file:
@@ -46,7 +43,6 @@ Now import Tailwind CSS to your CSS file:
 Most of our projects fancy these indispensable plugins:
 
 - [Tailwind Debug Screens](https://github.com/jorenvanhee/tailwindcss-debug-screens)
-- [Tailwind Boostrap Grid](https://github.com/karolis-sh/tailwind-bootstrap-grid)
 - [Tailwind Forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
@@ -55,25 +51,19 @@ Most of our projects fancy these indispensable plugins:
 Slot in the plugins within the `tailwind.config.js` file at the root of your project:
 
 ```javascript
-import debugScreens from 'tailwindcss-debug-screens'
-import bootstrapGrid from 'tailwind-bootstrap-grid'
-import forms from '@tailwindcss/forms'
-import typography from '@tailwindcss/typography'
+import debugScreens from "tailwindcss-debug-screens";
+import forms from "@tailwindcss/forms";
+import typography from "@tailwindcss/typography";
 
 export default {
   content: [
-    './src/**/*.{html,js,ts,jsx,tsx,astro}', // Update to match your project structure
+    "./src/**/*.{html,js,ts,jsx,tsx,astro}", // Update to match your project structure
   ],
   theme: {
     extend: {},
   },
-  plugins: [
-    debugScreens,
-    bootstrapGrid,
-    forms,
-    typography,
-  ],
-}
+  plugins: [debugScreens, forms, typography],
+};
 ```
 
 #### Tailwind Debug Screens
@@ -82,12 +72,10 @@ A nifty Tailwind CSS component that displays the active screen (responsive break
 
 ```jsx
 const Layout = ({ children }) => {
-  const inDevelopment = process.env.NODE_ENV === 'development';
+  const inDevelopment = process.env.NODE_ENV === "development";
 
   return (
-    <div className={`${inDevelopment ? 'debug-screens' : ''}`}>
-      {children}
-    </div>
+    <div className={`${inDevelopment ? "debug-screens" : ""}`}>{children}</div>
   );
 };
 
