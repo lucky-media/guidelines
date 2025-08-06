@@ -1,6 +1,8 @@
-# Mac Development Environment Setup Guide
+# Mac & Windows Development Environment Setup Guide
 
-Welcome to the team! This guide will help you set up your MacBook for development. Follow these steps to install the necessary tools and software.
+Welcome to the team! This guide will help you set up your MacBook or Windows machine for development. Follow these steps to install the necessary tools and software.
+
+## Mac Development Environment Setup Guide
 
 ## 1. Install Homebrew
 
@@ -51,7 +53,58 @@ VS Code is a popular code editor. Download it from the [official website](https:
 brew install --cask visual-studio-code
 ```
 
-### 5.1 VS Code Plugins
+## Windows Development Environment Setup Guide
+
+## 1. Install Git
+
+Git is essential for version control.
+
+Download and install from the official website:
+https://git-scm.com/downloads
+
+After installation, you can open Git Bash or use Git in Command Prompt / PowerShell
+
+## 2. Install NVM for Windows
+
+NVM allows you to manage multiple Node.js versions easily.
+
+Download NVM for Windows:
+https://github.com/coreybutler/nvm-windows/releases
+
+Download the latest .exe installer (e.g., nvm-setup.exe) and follow the installation wizard.
+
+Once installed, open a new Command Prompt and run:
+
+```bash
+nvm install lts
+nvm use lts
+```
+
+This installs and activates the latest LTS (Long-Term Support) version of Node.js.
+
+## 3. Install Laravel Herd for Windows
+
+Laravel Herd is now available for Windows and offers a fast local PHP environment.
+
+Download it from the official site:
+https://herd.laravel.com/
+
+After download:
+
+1. Run the .exe installer
+2. Follow the setup instructions
+3. Launch Laravel Herd and configure your local development folder
+
+Laravel Herd includes PHP, Composer, Laravel, and more.
+
+## 4. Install Visual Studio Code
+
+VS Code is a lightweight and powerful editor.
+
+Download from:
+https://code.visualstudio.com/
+
+## VS Code Plugins
 
 Our recommendations for optimal settings:
 
@@ -70,7 +123,7 @@ Our recommendations for optimal settings:
 }
 ```
 
-### 5.2 Recommended Extensions
+## Recommended Extensions
 
 - [Tailwind CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -85,7 +138,7 @@ Our recommendations for optimal settings:
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 
-## 6. Configure Git
+## Configure Git
 
 Set up your Git identity:
 
@@ -94,7 +147,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
-## 7. Install Discord
+## Install Discord
 
 We use Discord to stay in sync with our projects and work. You can [download](https://discord.com/download) and install it as any other Mac app.
 
