@@ -94,18 +94,12 @@ export default {
 
 #### Tailwind Debug Screens
 
-A nifty Tailwind CSS component that displays the active screen (responsive breakpoint) on the page. To power it up, include it in the `<body>` tag or `<Layout>` component. See the React example below:
+A nifty Tailwind CSS component that displays the active screen (responsive breakpoint) on the page. To power it up, include it in the `<body>` tag or `<Layout>` component.
 
-```jsx
-const Layout = ({ children }) => {
-  const inDevelopment = process.env.NODE_ENV === "development";
+```js
+<body class="debug-screens">
+  <h1 class="text-6xl font-bold">Hello Vite</h1>
+</body>
 
-  return (
-    <div className={`${inDevelopment ? "debug-screens" : ""}`}>{children}</div>
-  );
-};
-
-export default Layout;
 ```
 
-The code checks if the environment is in `development`, revealing the responsive indicator. In `production`, it remains concealed.
