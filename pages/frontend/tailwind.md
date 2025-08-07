@@ -16,13 +16,13 @@ npm create vite@latest my-project
 cd my-project
 ```
 
-Continue by installing tailwindcss and @tailwindcss/vite:
+Continue by installing tailwindcss and ``@tailwindcss/vite``:
 
 ```bash
 npm install tailwindcss @tailwindcss/vite
 ```
 
-Afterwards add the @tailwindcss/vite plugin to your vite.config.ts file:
+Afterwards add the @tailwindcss/vite plugin to your ``vite.config.ts`` file:
 
 ```js
 import { defineConfig } from "vite";
@@ -38,12 +38,37 @@ Now import Tailwind CSS to your CSS file:
 @import "tailwindcss";
 ```
 
+
+
+And you can start your build process by running :
+
+```bash
+npm run dev
+```
+
+To start using Tailwind in your HTML you must make sure that your compiled CSS is included in the ``<head>`` tag like this :
+
+```html
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet"> <!-- link to your CSS -->
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline"> <!--test it out-->
+    Hello world!
+  </h1>
+</body>
+</html>
+```
+
 ## Plugins
 
 Most of our projects fancy these indispensable plugins:
 
 - [Tailwind Debug Screens](https://github.com/jorenvanhee/tailwindcss-debug-screens)
-- [Tailwind Boostrap Grid](https://github.com/karolis-sh/tailwind-bootstrap-grid)
 - [Tailwind Forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
@@ -53,7 +78,6 @@ Slot in the plugins within the `tailwind.config.js` file at the root of your pro
 
 ```javascript
 import debugScreens from "tailwindcss-debug-screens";
-import bootstrapGrid from "tailwind-bootstrap-grid";
 import forms from "@tailwindcss/forms";
 import typography from "@tailwindcss/typography";
 
@@ -64,7 +88,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [debugScreens, bootstrapGrid, forms, typography],
+  plugins: [debugScreens, forms, typography],
 };
 ```
 
