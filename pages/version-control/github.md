@@ -59,7 +59,7 @@ Choose a merge strategy:
 
 3. Merge commit (for larger features with multiple commits)
 
-![Merging](/images/git_3.png)
+![Merging](/images/git_4.png)
 
 Once you've merged the pull request, please give the branch a ceremonious _delete_.
 
@@ -72,7 +72,7 @@ When you're keen to publish a fresh package and say goodbye to the commit histor
 git clone git@github.com:USERNAME/REPOSITORY.git
 cd REPOSITORY
 
-# Bid adieu to all local history
+# Bid farewell to all local history if you plan to use this repo for personal use
 rm -rf .git
 
 # Establish a new local repository
