@@ -20,7 +20,38 @@ We're giddy about building some of the best Statamic starter kits out there, emp
 - [Landtamic](https://statamic.com/starter-kits/luckymedia/landtamic) – our super-powerful, most popular paid kit, packed with 100+ design components and fantastic features.
 - [Résumé](https://statamic.com/starter-kits/luckymedia/resume) – the ultimate kit for crafting a personal site that showcases your skills and expertise.
 
+Each kit ships with:
+
+1. Tailwind CSS styling
+
+2. Blade components and Antlers templates
+
+3. SEO-ready markup
+
+4. Dark mode support
+
+5. Thoughtful mobile responsiveness
+
 We utilize Statamic in most of our website development projects, where clients need an intuitive, user-friendly CMS that packs a punch.
+
+### Developer Quickstart
+If you're new to Statamic, getting started is a breeze:
+
+```bash
+composer create-project statamic/statamic my-site
+cd my-site
+php artisan serve
+```
+
+Use `php please` to interact with Statamic’s powerful CLI.Think of it like Artisan, but CMS-focused.
+
+Example: `php please make:collection blog`
+
+You can also install any of our starter kits like so:
+
+```bash
+php please starter-kit:install luckymedia/landtamic
+```
 
 ## Filament Admin Panel
 

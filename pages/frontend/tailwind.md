@@ -16,13 +16,13 @@ npm create vite@latest my-project
 cd my-project
 ```
 
-Continue by installing tailwindcss and ``@tailwindcss/vite``:
+Continue by installing tailwindcss and `@tailwindcss/vite`:
 
 ```bash
 npm install tailwindcss @tailwindcss/vite
 ```
 
-Afterwards add the @tailwindcss/vite plugin to your ``vite.config.ts`` file:
+Afterwards add the @tailwindcss/vite plugin to your `vite.config.ts` file:
 
 ```js
 import { defineConfig } from "vite";
@@ -46,7 +46,7 @@ And you can start your build process by running :
 npm run dev
 ```
 
-To start using Tailwind in your HTML you must make sure that your compiled CSS is included in the ``<head>`` tag like this :
+To start using Tailwind in your HTML you must make sure that your compiled CSS is included in the `<head>` tag like this :
 
 ```html
 <!doctype html>
