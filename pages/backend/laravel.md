@@ -35,12 +35,25 @@ Each kit ships with:
 We utilize Statamic in most of our website development projects, where clients need an intuitive, user-friendly CMS that packs a punch.
 
 ### Developer Quickstart
+
 If you're new to Statamic, getting started is a breeze:
 
 ```bash
 composer create-project statamic/statamic my-site
 cd my-site
-php artisan serve
+```
+
+Set your APP URL by opening the .env file and set the APP_URL to match your project’s folder name or local domain.
+Example:
+
+```bash
+APP_URL=http://animatic.test
+```
+
+Run the local development server
+
+```bash
+php artisan serve(or npm run dev)
 ```
 
 Use `php please` to interact with Statamic’s powerful CLI.Think of it like Artisan, but CMS-focused.
