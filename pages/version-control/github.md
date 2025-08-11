@@ -26,7 +26,7 @@ fix/bug-name &rarr; bug fixes
 
 cleanup-name &rarr; maintenance and refactors
 
-### Making Pull Requests
+### Creating Pull Requests
 
 Once you've wrapped up your work on the `feature` branch and pushed it to `origin` like so:
 
@@ -72,7 +72,7 @@ When you're keen to publish a fresh package and say goodbye to the commit histor
 git clone git@github.com:USERNAME/REPOSITORY.git
 cd REPOSITORY
 
-# Bid farewell to all local history if you plan to use this repo for personal use
+# If you intend to repurpose this repository for personal use, clear all existing Git history
 rm -rf .git
 
 # Establish a new local repository
