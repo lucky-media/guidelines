@@ -138,7 +138,7 @@ Our recommendations for optimal settings:
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 
-## Configure Git(Windows/Mac/Linux)
+## Configure Git (Windows/Mac/Linux)
 
 ### 1. Set up your Git identity
 
