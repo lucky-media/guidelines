@@ -43,7 +43,7 @@ composer create-project statamic/statamic my-site
 cd my-site
 ```
 
-Set your APP URL by opening the .env file and set the APP_URL to match your project’s folder name or local domain.
+Set your `APP URL` by opening the `.env` file and set the `APP_URL` to match your project’s folder name or local domain.
 Example:
 
 ```bash
