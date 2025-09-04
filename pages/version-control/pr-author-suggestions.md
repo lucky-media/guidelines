@@ -1,3 +1,7 @@
+---
+title: "PR Author Suggestions"
+---
+
 # Suggestions for the PR Author
 
  Requesting review too early
