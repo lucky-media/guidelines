@@ -53,6 +53,8 @@ npm install
 This gave us a clean Astro setup with a `src/` folder, `astro.config.mjs`, and ready-to-go `npm run dev`.
 
 
+Tip: When creating a new Astro project, it’s a good idea to set it up in a separate folder so you don’t mix it with your existing files. Once you’ve finished the migration, you can delete the default starter code and move your project files into the root folder.
+
 ### 2. Install Tailwind CSS
 
 In our Next.js project, we were already using Tailwind. Astro integrates with it easily.
