@@ -44,7 +44,7 @@ Instead:
 * Do a quick check or research if something feels unfamiliar.
 * Only suggest changes if there's a clear benefit — and explain why.
 
-⠀⠀Bad:`Change this to useMemo()`Better:`Any reason you didn’t use useMemo() here? Might help avoid unnecessary recalculations.``React Docs – useMemo: `https://reactjs.org/docs/hooks-reference.html#usememo
+⠀⠀Bad:`Change this to useMemo()`Better:`Any reason you didn’t use useMemo() here? Might help avoid unnecessary recalculations.` React Docs – [`useMemo`](https://reactjs.org/docs/hooks-reference.html#usememo)'
 
 ###  Quick Reminder
  Authors: Share your thinking, not just your code. Reviewers: Ask before assuming. Suggest, don’t demand. Both: Bring data, docs, or context to the table.
