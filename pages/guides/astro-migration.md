@@ -266,3 +266,47 @@ For us, the migration was smooth because we:
 
 If you’re building **content-heavy sites** (marketing sites, blogs, documentation, product pages), Astro is worth serious consideration.
 
+
+## Our Custom Astro Starter Kit
+
+Our in-house **Astro Starter Kit** is a production-ready foundation for building content-focused websites quickly and consistently across projects.
+It combines a modern tech stack with a curated developer experience, so every new site starts with the same reliable, best-practice setup.
+
+###  What Sets It Apart
+
+* **Unified Stack** – Pre-configured with **Astro 5**, **TypeScript**, **Tailwind CSS 4**, and **Alpine.js**, giving you the flexibility of modern static-site generation plus interactive UI components.
+* **Team Standards Built-In** – ESLint, Prettier, Husky, and Commitlint are ready out of the box to enforce code style, automate formatting, and keep commits clean.
+
+###  Core Features
+
+*  Astro 5 – Fast, content-driven architecture with zero-JS by default.
+*  Tailwind CSS 4 – Latest utility-first framework with dark-mode and design-token support.
+*  Alpine.js – Lightweight, reactive JavaScript for drop-in interactivity.
+*  Responsive Design – Mobile-first breakpoints and fluid layouts.
+*  SEO & Open Graph – Pre-built SEO component with meta tags, sitemap generation, and link prefetching.
+*  TypeScript – Strict typing and path aliases (`@/`) for cleaner imports.
+*  Component Library – Reusable, theme-aware components with variants to speed up UI work.
+*  Favicon & Assets – Centralized favicon management and optimized asset pipeline.
+
+###  Quick Start
+
+Clone the repository and install dependencies:
+
+```bash
+git clone git@github.com:your-org/astro-starter-kit.git my-new-project
+cd my-new-project
+npm install
+npm run dev
+```
+
+Open `http://localhost:4321` and start building.
+
+
+
+**Why we built it:**
+This starter kit ensures every project at *Lucky Media* begins with the same proven stack, cutting setup time and guaranteeing consistent performance, accessibility, and maintainability across all client sites.
+
+For detailed setup and usage instructions, visit the
+[GitHub repository](https://github.com/lucky-media/astrostarter).
+
+
