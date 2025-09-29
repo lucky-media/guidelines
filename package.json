@@ -1,20 +1,17 @@
 {
-  "name": "guidelines",
-  "version": "0.1.0",
-  "private": true,
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "next": "^14.2.8",
-    "nextra": "^2.13.4",
-    "nextra-theme-docs": "^2.13.4",
-    "prism-react-renderer": "^2.0.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@astrojs/starlight": "^0.36.0",
+    "astro": "^5.6.1",
+    "sharp": "^0.34.2"
   }
 }
