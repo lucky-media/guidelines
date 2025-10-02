@@ -6,6 +6,7 @@ sidebar:
   badge:
     text: Draft
     variant: caution
+  order: 3
 ---
 
 # Migrating from Next.js to Astro: A Step-by-Step Guide

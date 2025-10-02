@@ -1,6 +1,8 @@
 ---
 title: Frontend
 slug: testing/frontend
+sidebar:
+  order: 1
 ---
 
 # Frontend Testing with Cypress: Ensuring a Flawless User Experience

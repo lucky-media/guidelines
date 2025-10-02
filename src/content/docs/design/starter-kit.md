@@ -1,6 +1,8 @@
 ---
 title: Web UI Starter
 slug: design/starter-kit
+sidebar:
+  order: 1
 ---
 
 Here at [Lucky Media](https://www.luckymedia.dev), we've cooked up a fantastic Figma starter kit, nicknamed [Web UI Starter](https://www.figma.com/community/file/1243858237628374539), that's full of versatile components, crowd-pleasing color palettes, on-point typography styles, sleek shadow styles, a snazzy layout grid, and so much more.

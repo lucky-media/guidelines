@@ -1,6 +1,8 @@
 ---
 title: Tailwind
 slug: frontend/tailwind
+sidebar:
+  order: 1
 ---
 
 # Tailwind CSS: Styling with Flair

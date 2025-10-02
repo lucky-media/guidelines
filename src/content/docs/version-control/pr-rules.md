@@ -1,6 +1,8 @@
 ---
 title: PR Rules
 slug: version-control/pr-rules
+sidebar:
+  order: 5
 ---
 
 Discover the five golden rules for creating sleek and manageable pull requests:

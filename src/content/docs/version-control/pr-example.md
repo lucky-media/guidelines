@@ -1,6 +1,8 @@
 ---
 title: PR Example
 slug: version-control/pr-example
+sidebar:
+  order: 4
 ---
 
 # Ticket Example: `Ordering`

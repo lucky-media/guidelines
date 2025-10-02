@@ -1,6 +1,8 @@
 ---
 title: Github
 slug: version-control/github
+sidebar:
+  order: 2
 ---
 
 # GitHub

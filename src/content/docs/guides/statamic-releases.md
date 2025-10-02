@@ -1,6 +1,8 @@
 ---
 title: Statamic Releases
 slug: guides/statamic-releases
+sidebar:
+  order: 2
 ---
 
 # Statamic Starter Kit Releases Guide

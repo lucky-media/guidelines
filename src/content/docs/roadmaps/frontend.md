@@ -1,6 +1,8 @@
 ---
 title: Frontend
 slug: roadmaps/frontend
+sidebar:
+  order: 1
 ---
 
 # Frontend Roadmap

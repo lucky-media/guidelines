@@ -1,6 +1,8 @@
 ---
 title: Laravel
 slug: backend/laravel
+sidebar:
+  order: 1
 ---
 
 # Laravel Development

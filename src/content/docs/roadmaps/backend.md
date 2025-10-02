@@ -1,6 +1,8 @@
 ---
 title: Backend
 slug: roadmaps/backend
+sidebar:
+  order: 2
 ---
 
 # Backend Roadmap
