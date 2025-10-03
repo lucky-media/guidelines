@@ -1,6 +1,8 @@
 ---
 title: Design
 slug: roadmaps/design
+sidebar:
+  order: 3
 ---
 
 # Design Roadmap

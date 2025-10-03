@@ -1,6 +1,8 @@
 ---
 title: For Designers
 slug: design/designers
+sidebar:
+  order: 3
 ---
 
 # Web UI Starter

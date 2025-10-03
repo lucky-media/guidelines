@@ -1,6 +1,8 @@
 ---
 title: Git
 slug: version-control/git
+sidebar:
+  order: 1
 ---
 
 # Git

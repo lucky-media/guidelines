@@ -1,6 +1,8 @@
 ---
 title: Code Reviews
 slug: version-control/code-reviews
+sidebar:
+  order: 6
 ---
 
 ### Always remember - it’s a human being on the other end of the review

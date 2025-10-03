@@ -1,6 +1,8 @@
 ---
 title: Alpine
 slug: frontend/alpine
+sidebar:
+  order: 2
 ---
 
 # Alpine.js

@@ -1,6 +1,8 @@
 ---
 title: Statamic Upgrade
 slug: guides/statamic-upgrade
+sidebar:
+  order: 1
 ---
 
 # Upgrading Statamic from v2 to v3

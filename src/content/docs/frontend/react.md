@@ -1,6 +1,8 @@
 ---
 title: React
 slug: frontend/react
+sidebar:
+  order: 3
 ---
 
 # React

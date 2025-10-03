@@ -1,6 +1,8 @@
 ---
 title: Pull Requests
 slug: version-control/pull-requests
+sidebar:
+  order: 3
 ---
 
 # Mastering Pull Requests

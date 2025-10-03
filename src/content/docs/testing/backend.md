@@ -1,6 +1,8 @@
 ---
 title: Backend
 slug: testing/backend
+sidebar:
+  order: 2
 ---
 
 # Backend Testing with Laravel: Building on a Foundation of Trust

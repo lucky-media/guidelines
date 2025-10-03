@@ -1,6 +1,8 @@
 ---
 title: Workflow
 slug: design/process
+sidebar:
+  order: 2
 ---
 
 # The Lucky Way

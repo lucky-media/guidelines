@@ -6,6 +6,7 @@ sidebar:
   badge:
     text: Draft
     variant: caution
+  order: 7
 ---
 
 # Suggestions for the PR Author

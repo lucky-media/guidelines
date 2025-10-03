@@ -1,6 +1,8 @@
 ---
 title: For Developers
 slug: design/devs
+sidebar:
+  order: 4
 ---
 
 # Introduction
