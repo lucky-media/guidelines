@@ -1,0 +1,19 @@
+---
+const { sidebar, hasSidebar } = Astro.locals.starlightRoute;
+import SidebarGroup from "@/components/SidebarGroup.astro";
+import SidebarLink from "@/components/SidebarLink.astro";
+---
+
+{
+    hasSidebar && (
+        <div class="flex flex-col gap-y-1 md:pl-25">
+            {sidebar.map((entry) =>
+                entry.type == "link" ? (
+                    <SidebarLink {...entry} />
+                ) : (
+                    <SidebarGroup {...entry} />
+                ),
+            )}
+        </div>
+    )
+}

@@ -1,0 +1,35 @@
+---
+import type { SidebarLink as SidebarLinkType } from "node_modules/@astrojs/starlight/utils/routing/types";
+import cn from "@/utils/cn";
+import Badge from "./Badge.astro";
+import { slugify } from "@/utils/sidebar";
+
+export interface Props extends SidebarLinkType {
+    parentId?: string;
+}
+
+const {
+    label,
+    href,
+    badge,
+    isCurrent,
+    parentId,
+    attrs: { class: className, ...attrs },
+} = Astro.props;
+
+const id = slugify(parentId, label, badge && badge.text);
+---
+
+<a
+    href={href}
+    {...attrs}
+    id={id}
+    class={cn(
+        className,
+        "leading-5 text-sm py-[3px] px-[5px] flex items-center gap-x-2",
+        isCurrent && "text-primary",
+    )}
+>
+    {label}
+    {badge && <Badge {...badge} />}
+</a>

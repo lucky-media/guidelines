@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base, starlight, theme, components, utilities;
+
+@import "@astrojs/starlight-tailwind";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+@theme {
+  --color-primary: #8099E9;
+  --color-dark-card: #262A37;
+  --color-dark-icon: #29324C;
+}
+
+[x-cloak] {
+    display: none;
+}
+
+#starlight__sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-zinc-600) var(--color-zinc-800);
+}
+
+@media (min-width: 768px) {
+    #starlight__sidebar {
+        @apply bg-transparent
+    }
+}

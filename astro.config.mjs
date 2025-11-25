@@ -1,10 +1,17 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import tailwindcss from "@tailwindcss/vite";
+import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://guidelines.luckymedia.dev",
+  vite: {
+    plugins: [tailwindcss({ optimize: { minify: true } })],
+  },
   integrations: [
+    alpinejs({ entrypoint: "./src/alpine.ts" }),
     starlight({
       title: "Lucky Media Developer Guide",
       description: "Lucky Media Developer Guide",
@@ -54,6 +61,13 @@ export default defineConfig({
           label: "Website",
           href: "https://luckymedia.dev",
         },
+      ],
+      components: {
+        Sidebar: "./src/overrides/Sidebar.astro",
+        // PageFrame: "./src/overrides/PageFrame.astro"
+      },
+      customCss: [
+        "./src/styles/global.css"
       ],
       sidebar: [
         {
