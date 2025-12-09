@@ -11,7 +11,7 @@ export default defineConfig({
     plugins: [tailwindcss({ optimize: { minify: true } })],
   },
   integrations: [
-    alpinejs({ entrypoint: "./src/alpine.ts" }),
+    alpinejs({ entrypoint: "./src/alpine.mjs" }),
     starlight({
       title: "Lucky Media Developer Guide",
       description: "Lucky Media Developer Guide",

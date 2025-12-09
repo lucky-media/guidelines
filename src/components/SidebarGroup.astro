@@ -20,18 +20,20 @@ const dropdownId = slugify(id, "dropdown");
 <div x-data={`{ isOpen: ${expanded} }`} class="w-full">
     <button
         @click="isOpen = !isOpen"
-        class="leading-5 text-sm py-[3px] px-[5px] flex items-center w-full"
+        class="leading-5 text-sm! py-[3px] px-[5px] flex items-center justify-between w-full"
         aria-expanded={expanded}
         :aria-expanded="isOpen"
         id={buttonId}
         aria-controls={dropdownId}
     >
-        <span class="w-full text-start">{label}</span>
-        {badge && <Badge {...badge} />}
-        <ArrowIcon
-            class="fill-zinc-300 size-3 transition"
-            :class="{'rotate-180': isOpen}"
-        />
+        <span>{label}</span>
+        <div class="flex items-center gap-1">
+            {badge && <Badge {...badge} />}
+            <ArrowIcon
+                class="fill-zinc-300 size-3 transition"
+                :class="{ 'rotate-90': isOpen, 'rotate-0': !isOpen }"
+            />
+        </div>
     </button>
     <div class="pl-2.5">
         <ul
