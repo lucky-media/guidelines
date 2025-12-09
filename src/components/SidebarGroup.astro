@@ -27,13 +27,13 @@ const dropdownId = slugify(id, "dropdown");
         aria-controls={dropdownId}
     >
         <span>{label}</span>
-        <div class="flex items-center gap-1">
+        <span class="flex items-center gap-1">
             {badge && <Badge {...badge} />}
             <ArrowIcon
                 class="fill-zinc-300 size-3 transition"
                 :class="{ 'rotate-90': isOpen, 'rotate-0': !isOpen }"
             />
-        </div>
+        </span>
     </button>
     <div class="pl-2.5">
         <ul
