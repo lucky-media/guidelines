@@ -114,7 +114,7 @@ The code checks if the environment is in `development`, revealing the responsive
 
 #### Tailwind Bootstrap Grid
 
-This plugin gifts you with every Bootstrap grid name in Tailwind style, making `col-6` in lieu of `w-3/5` more appealing. 1230
+This plugin gifts you with every Bootstrap grid name in Tailwind style, making `col-6` in lieu of `w-3/5` more appealing. 
 It comes equipped with default gutters and allows for easy adjustments via config.
 
 Here's a grid example crafted with this plugin:
