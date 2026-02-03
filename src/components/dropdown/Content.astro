@@ -1,0 +1,53 @@
+---
+// Content
+
+import cn from "@/utils/cn";
+import type { DropdownIdGroup, XProps } from "./utils";
+import type { ClassValue } from "clsx";
+import type { HTMLAttributes } from "astro/types";
+
+interface Props
+  extends
+    Omit<HTMLAttributes<"div">, "class" | "id" | "inert" | "role">,
+    Partial<Record<XProps, never>> {
+  "aria-id-group": DropdownIdGroup;
+  class?: ClassValue;
+  transition?: {
+    enter?: ClassValue;
+    enterStart?: ClassValue;
+    enterEnd?: ClassValue;
+    leave?: ClassValue;
+    leaveStart?: ClassValue;
+    leaveEnd?: ClassValue;
+  };
+}
+
+const {
+  "aria-id-group": ariaIdGroup,
+  class: className,
+  transition,
+  "x-cloak": cloak,
+  "x-show": show,
+  ...props
+} = Astro.props;
+---
+
+<div
+  id={ariaIdGroup.content}
+  class={cn("absolute z-10", className)}
+  x-cloak
+  x-transition:enter={cn(transition?.enter)}
+  x-transition:enter-start={cn(transition?.enterStart)}
+  x-transition:enter-end={cn(transition?.enterEnd)}
+  x-transition:leave={cn(transition?.leave)}
+  x-transition:leave-start={cn(transition?.leaveStart)}
+  x-transition:leave-end={cn(transition?.leaveEnd)}
+  x-show="isOpen"
+  :inert="!isOpen"
+  inert
+  role="menu"
+  aria-labelledby={props["aria-label"] ? undefined : ariaIdGroup.trigger}
+  {...props}
+>
+  <slot />
+</div>

@@ -1,0 +1,38 @@
+---
+import cn from "@/utils/cn";
+import { getCurrent } from "@/utils/sidebar";
+import { PAGE_TITLE_ID } from "node_modules/@astrojs/starlight/constants";
+
+const trail = getCurrent(Astro.locals.starlightRoute.sidebar);
+
+const isSingleElement = trail.length === 1;
+const isIntroduction = isSingleElement && trail[0].label === "Introduction";
+---
+
+<h1 id={PAGE_TITLE_ID} class="flex items-center gap-x-1">
+  {
+    isSingleElement && (
+      <span
+        class={cn("text-zinc-200", isIntroduction ? "text-4xl" : "text-sm")}
+      >
+        {trail[0].label}
+      </span>
+    )
+  }
+  {
+    !isSingleElement &&
+      trail.map((entry, index, array) => {
+        const isLast = index == array.length - 1;
+        return (
+          <>
+            <span
+              class={cn("text-xs text-zinc-400", isLast && "text-zinc-200")}
+            >
+              {entry.label}
+            </span>
+            {!isLast && <span>/</span>}
+          </>
+        );
+      })
+  }
+</h1>

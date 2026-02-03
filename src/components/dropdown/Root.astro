@@ -1,0 +1,24 @@
+---
+// Root
+
+import cn from "@/utils/cn";
+import type { ClassValue } from "clsx";
+
+interface Props {
+  class?: ClassValue;
+  "aria-label"?: string;
+}
+
+const { class: className, "aria-label": ariaLabel } = Astro.props;
+---
+
+<div
+  x-data="{ isOpen: false }"
+  class={cn("relative", className)}
+  @keydown.escape.window="isOpen = false"
+  role="group"
+  aria-label={ariaLabel}
+>
+  <slot name="trigger" />
+  <slot name="content" />
+</div>

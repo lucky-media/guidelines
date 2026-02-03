@@ -1,0 +1,44 @@
+---
+import TableOfContentsList from "@/components/TableOfContentsList.astro";
+const { toc } = Astro.locals.starlightRoute;
+---
+
+{
+  toc && (
+    <starlight-toc
+      data-min-h={toc.minHeadingLevel}
+      data-max-h={toc.maxHeadingLevel}
+    >
+      <nav aria-labelledby="starlight__on-this-page">
+        <h2 class="flex items-center gap-x-2.5">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.5 2.25C11.5 2.05109 11.4517 1.86032 11.3658 1.71967C11.2798 1.57902 11.1632 1.5 11.0417 1.5H0.958333C0.836776 1.5 0.720196 1.57902 0.634242 1.71967C0.548288 1.86032 0.5 2.05109 0.5 2.25C0.5 2.44891 0.548288 2.63968 0.634242 2.78033C0.720196 2.92098 0.836776 3 0.958333 3H11.0417C11.1632 3 11.2798 2.92098 11.3658 2.78033C11.4517 2.63968 11.5 2.44891 11.5 2.25ZM0.958333 5.25H10.2917C10.4132 5.25 10.5298 5.32902 10.6158 5.46967C10.7017 5.61032 10.75 5.80109 10.75 6C10.75 6.19891 10.7017 6.38968 10.6158 6.53033C10.5298 6.67098 10.4132 6.75 10.2917 6.75H0.958333C0.836776 6.75 0.720196 6.67098 0.634242 6.53033C0.548288 6.38968 0.5 6.19891 0.5 6C0.5 5.80109 0.548288 5.61032 0.634242 5.46967C0.720196 5.32902 0.836776 5.25 0.958333 5.25ZM0.958333 9H7.04167C7.16322 9 7.2798 9.07902 7.36576 9.21967C7.45171 9.36032 7.5 9.55109 7.5 9.75C7.5 9.94891 7.45171 10.1397 7.36576 10.2803C7.2798 10.421 7.16322 10.5 7.04167 10.5H0.958333C0.836776 10.5 0.720196 10.421 0.634242 10.2803C0.548288 10.1397 0.5 9.94891 0.5 9.75C0.5 9.55109 0.548288 9.36032 0.634242 9.21967C0.720196 9.07902 0.836776 9 0.958333 9Z"
+              fill="#D4D4D8"
+            />
+          </svg>
+          <span class="text-xs text-zinc-50">On this page</span>
+        </h2>
+        <TableOfContentsList toc={toc.items} />
+      </nav>
+    </starlight-toc>
+  )
+}
+
+<script
+  src="node_modules/@astrojs/starlight/components/TableOfContents/starlight-toc"
+></script>
+
+<style>
+  @import "tailwindcss";
+
+  starlight-toc > nav {
+    @apply bg-zinc-800 rounded-[10px] p-2.5 pr-[5px];
+  }
+</style>
