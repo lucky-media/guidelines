@@ -4,6 +4,9 @@ import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import alpinejs from "@astrojs/alpinejs";
 
+const override = (/** @type {string} */ name) =>
+  `./src/overrides/${name}.astro`;
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://guidelines.luckymedia.dev",
@@ -11,15 +14,11 @@ export default defineConfig({
     plugins: [tailwindcss({ optimize: { minify: true } })],
   },
   integrations: [
-    alpinejs({ entrypoint: "./src/alpine.mjs" }),
+    alpinejs({ entrypoint: "./src/alpine.ts" }),
     starlight({
-      title: "Lucky Media Developer Guide",
+      pagefind: true,
+      title: "Developer Guide",
       description: "Lucky Media Developer Guide",
-      logo: {
-        src: "/src/assets/logo.svg",
-        alt: "Developers Guide",
-        replacesTitle: true,
-      },
       head: [
         {
           tag: "meta",
@@ -50,25 +49,19 @@ export default defineConfig({
           },
         },
       ],
-      social: [
-        {
-          icon: "github",
-          label: "GitHub",
-          href: "https://github.com/lucky-media/guidelines",
-        },
-        {
-          icon: "external",
-          label: "Website",
-          href: "https://luckymedia.dev",
-        },
-      ],
       components: {
-        Sidebar: "./src/overrides/Sidebar.astro",
-        // PageFrame: "./src/overrides/PageFrame.astro"
+        Sidebar: override("Sidebar"),
+        Header: override("Header"),
+        Search: override("Search"),
+        SiteTitle: override("SiteTitle"),
+        ContentPanel: override("ContentPanel"),
+        PageTitle: override("PageTitle"),
+        TableOfContents: override("TableOfContents"),
+        TwoColumnContent: override("TwoColumnContent"),
+        PageFrame: override("PageFrame"),
+        PageSidebar: override("PageSidebar"),
       },
-      customCss: [
-        "./src/styles/global.css"
-      ],
+      customCss: ["./src/styles/global.css"],
       sidebar: [
         {
           label: "Introduction",

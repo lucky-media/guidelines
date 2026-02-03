@@ -1,0 +1,77 @@
+---
+import {
+  Dropdown,
+  DropdownContent,
+  DropdownTrigger,
+  DropdownItem,
+  generateIdGroup,
+} from "./dropdown";
+
+const website = "https://luckymedia.dev";
+const aboutPage = `${website}/about`;
+const contactPage = `${website}/contact`;
+
+const items = [
+  { label: "Home", link: website },
+  { label: "About", link: aboutPage },
+  { label: "Contact", link: contactPage },
+];
+
+const idGroup = generateIdGroup("company-menu");
+---
+
+<Dropdown class="max-w-80" aria-label="Company Dropdown">
+  <DropdownTrigger
+    slot="trigger"
+    aria-id-group={idGroup}
+    aria-label="Company Dropdown Trigger"
+    class="shadow-xs rounded-md text-sm px-4 py-2.5"
+  >
+    <span class="flex gap-2 items-center">
+      <span class="text-sm">Company</span>
+      <svg
+        class="w-4 h-4 ms-1.5 -me-0.5 transition-transform"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        viewBox="0 0 24 24"
+        :class="{ 'rotate-180': isOpen }"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m19 9-7 7-7-7"></path>
+      </svg>
+    </span>
+  </DropdownTrigger>
+  <DropdownContent
+    aria-id-group={idGroup}
+    slot="content"
+    transition={{
+      enter: "transition ease-out duration-100",
+      enterStart: "transform opacity-0 scale-95",
+      enterEnd: "transform opacity-0 scale-95",
+      leave: "transition ease-in duration-75",
+      leaveStart: "transition ease-in duration-75",
+      leaveEnd: "transition ease-in duration-75",
+    }}
+    aria-label="Company Links Menu"
+    class="bg-zinc-900 border-zinc-700 border p-2 text-sm rounded-md shadow-lg w-full"
+  >
+    {
+      items.map((item) => (
+        <DropdownItem
+          href={item.link}
+          aria-label={item.label}
+          class="text-zinc-400 hover:text-primary transition-colors p-2 rounded"
+        >
+          {item.label}
+        </DropdownItem>
+      ))
+    }
+  </DropdownContent>
+</Dropdown>

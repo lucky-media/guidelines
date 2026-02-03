@@ -1,0 +1,197 @@
+---
+import MobileMenuToggle from "virtual:starlight/components/MobileMenuToggle";
+import MobileTableOfContents from "virtual:starlight/components/MobileTableOfContents";
+import TableOfContents from "virtual:starlight/components/TableOfContents";
+
+const { hasSidebar, toc } = Astro.locals.starlightRoute;
+---
+
+<div class="page sl-flex">
+  <header class="header">
+    <slot name="header" />
+  </header>
+
+  <div class="flex pt-[68px] justify-center">
+    <div class="container relative content-grid">
+      {
+        hasSidebar && (
+          <nav
+            class="sidebar container-padding-left print:hidden"
+            aria-label={Astro.locals.t("sidebarNav.accessibleLabel")}
+          >
+            <MobileMenuToggle />
+            <div id="starlight__sidebar" class="sidebar-pane">
+              <div class="sidebar-content sl-flex">
+                <slot name="sidebar" />
+              </div>
+            </div>
+          </nav>
+        )
+      }
+
+      <div class="main">
+        <div class="main-pane">
+          <slot />
+        </div>
+      </div>
+
+      {
+        toc && (
+          <aside class="toc print:hidden">
+            <div class="lg:sl-hidden">
+              <MobileTableOfContents />
+            </div>
+
+            <div class="sl-hidden container-padding-right toc-desktop lg:sl-block">
+              <div class="right-sidebar-panel">
+                <TableOfContents />
+              </div>
+            </div>
+          </aside>
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  @import "tailwindcss";
+
+  @layer starlight.core {
+    .page {
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+
+      --inline-padding: 300px;
+    }
+
+    .header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: var(--sl-nav-height);
+      z-index: var(--sl-z-index-navbar);
+      border-bottom: 1px solid var(--sl-color-hairline-shade);
+      background-color: var(--sl-color-bg-nav);
+      padding-top: 20px;
+    }
+
+    :global([data-has-sidebar]) .header {
+      padding-inline-end: calc(
+        var(--sl-nav-gap) + var(--sl-nav-pad-x) + var(--sl-menu-button-size)
+      );
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+
+    .sidebar {
+      display: hidden;
+    }
+
+    .right-sidebar-panel {
+      display: hidden;
+    }
+
+    @media (width >= 64rem) {
+      .sidebar {
+        position: fixed;
+        top: 124px;
+        left: 0;
+        max-width: 415px;
+        width: 100%;
+        text-wrap: wrap;
+        height: calc(100vh - 124px);
+        overflow-y: auto;
+        display: block;
+      }
+
+      .sidebar .sidebar-content {
+        max-width: 140px;
+        width: 100%;
+        text-wrap: wrap;
+      }
+
+      .content-grid {
+        grid-template-columns: var(--inline-padding) 1fr;
+      }
+    }
+
+    @media (width >= 80rem) {
+      .toc-desktop {
+        display: block;
+        position: fixed;
+        top: 124px;
+        max-width: 415px;
+        width: 100%;
+        right: 0;
+        height: calc(100vh - 124px);
+        overflow-y: auto;
+        padding-right: 100px;
+      }
+
+      .toc-desktop nav {
+        max-width: 190px;
+        width: 100%;
+        text-wrap: wrap;
+      }
+
+      .main {
+        padding-inline: var(--inline-padding);
+        width: max-content;
+      }
+
+      .content-grid {
+        grid-template-columns: var(--inline-padding) 1fr var(--inline-padding);
+      }
+    }
+
+    .main {
+      width: 100dvw;
+      word-break: break-all;
+      word-wrap: break-word;
+    }
+
+    .toc {
+      a[aria-current="true"] {
+        color: var(--color-primary);
+      }
+    }
+
+    .content-grid:has(.sidebar):not(:has(.toc)) {
+      grid-template-columns: var(--inline-padding) 1fr;
+    }
+
+    .content-grid:not(:has(.sidebar)):has(.toc) {
+      grid-template-columns: 1fr var(--inline-padding);
+    }
+
+    .content-grid:not(:has(.sidebar)):not(:has(.toc)) {
+      grid-template-columns: 1fr;
+    }
+
+    .right-sidebar-panel {
+      padding: 1rem var(--sl-sidebar-pad-x);
+    }
+
+    .right-sidebar-panel :global(h2) {
+      font-size: var(--sl-text-h5);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .right-sidebar-panel :global(a) {
+      display: block;
+      font-size: var(--sl-text-xs);
+      color: var(--sl-color-gray-3);
+      text-decoration: none;
+    }
+
+    .right-sidebar-panel :global(a:hover) {
+      color: var(--sl-color-white);
+    }
+  }
+</style>

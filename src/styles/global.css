@@ -6,24 +6,105 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 
-
 @theme {
-  --color-primary: #8099E9;
-  --color-dark-card: #262A37;
-  --color-dark-icon: #29324C;
+  --color-primary: #8099e9;
+  --color-dark-card: #262a37;
+  --color-dark-icon: #29324c;
 }
 
 [x-cloak] {
-    display: none;
+  display: none;
+}
+
+@property --container-padding {
+  syntax: "<length>";
+  initial-value: 0rem;
+  inherits: false;
+}
+
+.container-padding-right {
+  padding-right: var(--container-padding);
+}
+
+.container-padding-left {
+  padding-left: var(--container-padding);
+}
+
+@media (width >= 40rem /* 640px */) {
+  .container-padding-left,
+  .container-padding-right {
+    --container-padding: 0rem;
+  }
+}
+
+@media (width >= 48rem /* 768px */) {
+  .container-padding-left,
+  .container-padding-right {
+    --container-padding: 0rem;
+  }
+}
+
+@media (width >= 64rem /* 1024px */) {
+  .container-padding-left,
+  .container-padding-right {
+    --container-padding: 0px;
+  }
+}
+
+@media (width >= 80rem /* 1280px */) {
+  .container-padding-left,
+  .container-padding-right {
+    --container-padding: 100px;
+  }
+}
+
+@media (width >= 96rem /* 1536px */) {
+  .container-padding-left,
+  .container-padding-right {
+    --container-padding: 150px;
+  }
+}
+
+html {
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  scrollbar-color: var(--color-zinc-900);
+  scroll-behavior: smooth;
 }
 
 #starlight__sidebar {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-zinc-600) var(--color-zinc-800);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-zinc-600) var(--color-zinc-800);
 }
 
 @media (min-width: 768px) {
-    #starlight__sidebar {
-        @apply bg-transparent
-    }
+  #starlight__sidebar {
+    @apply bg-transparent;
+  }
+}
+
+body,
+.page,
+.header,
+.dialog-frame {
+  @apply bg-zinc-900;
+}
+
+.sl-markdown-content {
+  ul,
+  ol {
+    @apply pl-5;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  a {
+    @apply text-primary hover:text-primary/80 transition-colors hover:underline;
+  }
 }

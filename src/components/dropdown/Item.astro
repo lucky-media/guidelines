@@ -1,0 +1,26 @@
+---
+import type { ClassValue } from "clsx";
+import cn from "@/utils/cn";
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends Omit<
+  HTMLAttributes<"a">,
+  "class" | "href" | "role" | ""
+> {
+  class: ClassValue;
+  href: string;
+}
+
+const { class: className, href, ...props } = Astro.props;
+---
+
+<a
+  @click="isOpen = false"
+  href={href}
+  class={cn("inline-flex items-center w-full", className)}
+  role="menuitem"
+  aria-roledescription={`links to ${href}`}
+  {...props}
+>
+  <slot />
+</a>
