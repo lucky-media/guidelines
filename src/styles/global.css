@@ -10,10 +10,33 @@
   --color-primary: #8099e9;
   --color-dark-card: #262a37;
   --color-dark-icon: #29324c;
+
+  --zinc-50: #fafafa;
+  --zing-300: #d4d4d8;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
 }
 
-:root {
-  --sl-font: "Manrope Variable", "sans-serif";
+@layer starlight.base {
+  :root {
+    --sl-font: "Manrope Variable", "sans-serif";
+    --sl-font-mono: "Roboto Mono Variable", "monospace";
+  }
+}
+
+@layer starlight.reset {
+  body {
+    background-color: var(--color-zinc-900) !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--sl-font-mono);
+  }
 }
 
 [x-cloak] {
@@ -29,4 +52,10 @@
   #starlight__sidebar {
     @apply bg-transparent;
   }
+}
+
+.right-sidebar-panel .sl-container {
+  background-color: var(--color-zinc-800);
+  padding: 10px;
+  border-radius: 10px;
 }

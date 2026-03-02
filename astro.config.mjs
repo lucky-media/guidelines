@@ -66,7 +66,11 @@ export default defineConfig({
         Sidebar: "./src/overrides/Sidebar.astro",
         // PageFrame: "./src/overrides/PageFrame.astro"
       },
-      customCss: ["./src/styles/global.css", "@fontsource-variable/manrope"],
+      customCss: [
+        "./src/styles/global.css",
+        "@fontsource-variable/manrope",
+        "@fontsource-variable/roboto-mono",
+      ],
       sidebar: [
         {
           label: "Introduction",
