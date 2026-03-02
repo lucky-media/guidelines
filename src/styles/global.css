@@ -6,24 +6,27 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 
-
 @theme {
-  --color-primary: #8099E9;
-  --color-dark-card: #262A37;
-  --color-dark-icon: #29324C;
+  --color-primary: #8099e9;
+  --color-dark-card: #262a37;
+  --color-dark-icon: #29324c;
+}
+
+:root {
+  --sl-font: "Manrope Variable", "sans-serif";
 }
 
 [x-cloak] {
-    display: none;
+  display: none;
 }
 
 #starlight__sidebar {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-zinc-600) var(--color-zinc-800);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-zinc-600) var(--color-zinc-800);
 }
 
 @media (min-width: 768px) {
-    #starlight__sidebar {
-        @apply bg-transparent
-    }
+  #starlight__sidebar {
+    @apply bg-transparent;
+  }
 }
