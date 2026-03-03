@@ -60,7 +60,15 @@
   }
 
   .sl-markdown-content ul li::marker {
+    color: var(--color-zinc-50);
+  }
+
+  .sl-markdown-content ul li:has(a)::marker {
     color: var(--color-primary);
+  }
+
+  .expressive-code .frame pre {
+    background-color: var(--color-dark-card);
   }
 }
 

@@ -65,6 +65,12 @@ export default defineConfig({
       components: {
         Sidebar: "./src/overrides/Sidebar.astro",
       },
+      expressiveCode: {
+        styleOverrides: {
+          borderRadius: "10px",
+          borderColor: "#8099e9",
+        },
+      },
       customCss: [
         "./src/styles/global.css",
         "@fontsource-variable/manrope",
