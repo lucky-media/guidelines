@@ -1,0 +1,78 @@
+---
+const { entry, sidebar, siteTitleHref } = Astro.locals.starlightRoute;
+
+// Find the path to the current page within the sidebar structure.
+function getBreadcrumbs(items: any[], path: any[] = []): any[] | null {
+  for (const item of items) {
+    if (item.type === "link" && item.isCurrent) {
+      return [...path, item];
+    }
+    if (item.type === "group") {
+      const found = getBreadcrumbs(item.entries, [...path, item]);
+      if (found) return found;
+    }
+  }
+  return null;
+}
+
+const breadcrumbs = Array.isArray(sidebar) ? getBreadcrumbs(sidebar) : null;
+---
+
+{
+  breadcrumbs && breadcrumbs.length > 0 && (
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
+      <ol>
+        <li>
+          <a href={siteTitleHref}>Home</a>
+        </li>
+        {breadcrumbs.map((bc, index) => {
+          const isLast = index === breadcrumbs.length - 1;
+          return (
+            <li>
+              <span class="separator">/</span>
+              {bc.type === "link" && !isLast ? (
+                <a href={bc.href}>{bc.label}</a>
+              ) : (
+                <span aria-current={isLast ? "page" : undefined}>
+                  {bc.label}
+                </span>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
+  )
+}
+
+<h1 id="_top">{entry.data.title}</h1>
+
+<style>
+  .breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+    margin-bottom: 1rem;
+  }
+  .separator {
+    margin-right: 0.5rem;
+    user-select: none;
+  }
+  .breadcrumbs a {
+    color: var(--sl-color-text-accent);
+    text-decoration: none;
+  }
+
+  @layer starlight.core {
+    h1 {
+      margin-top: 1rem;
+      font-size: var(--sl-text-h1);
+      line-height: var(--sl-line-height-headings);
+      font-weight: 600;
+      color: var(--sl-color-white);
+    }
+  }
+</style>

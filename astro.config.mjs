@@ -61,7 +61,8 @@ export default defineConfig({
         Header: "./src/overrides/Header.astro",
         Sidebar: "./src/overrides/Sidebar.astro",
         Pagination: "./src/overrides/Pagination.astro",
-        PageTitle: "./src/components/PageTitle.astro",
+        // This injects your breadcrumbs above every page title
+        PageTitle: "./src/components/Breadcrumbs.astro",
       },
       expressiveCode: {
         styleOverrides: {
