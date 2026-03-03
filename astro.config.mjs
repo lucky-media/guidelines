@@ -61,6 +61,7 @@ export default defineConfig({
         Header: "./src/overrides/Header.astro",
         Sidebar: "./src/overrides/Sidebar.astro",
         Pagination: "./src/overrides/Pagination.astro",
+        PageTitle: "./src/components/PageTitle.astro",
       },
       expressiveCode: {
         styleOverrides: {
