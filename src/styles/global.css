@@ -42,10 +42,12 @@
     }
   }
 
-  button[data-open-modal] {
-    background-color: var(--color-zinc-800);
-    border: none;
-    max-width: 42rem;
+  @media (min-width: 728px) {
+    button[data-open-modal] {
+      background-color: var(--color-zinc-800);
+      border: none;
+      max-width: 42rem;
+    }
   }
 
   button > kbd {
