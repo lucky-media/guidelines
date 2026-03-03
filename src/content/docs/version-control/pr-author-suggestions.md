@@ -3,6 +3,7 @@ title: PR Author Suggestions
 slug: version-control/pr-author-suggestions
 draft: true
 sidebar:
+  hidden: true
   badge:
     text: Draft
     variant: caution

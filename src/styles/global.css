@@ -56,7 +56,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--sl-font-mono);
   color: var(--color-zinc-50);
 }
 

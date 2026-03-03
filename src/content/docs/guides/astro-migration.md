@@ -3,6 +3,7 @@ title: Astro Migration
 slug: guides/astro-migration
 draft: true
 sidebar:
+  hidden: true
   badge:
     text: Draft
     variant: caution
