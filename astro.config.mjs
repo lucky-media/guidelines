@@ -64,6 +64,7 @@ export default defineConfig({
       ],
       components: {
         Sidebar: "./src/overrides/Sidebar.astro",
+        Pagination: "./src/overrides/Pagination.astro",
       },
       expressiveCode: {
         styleOverrides: {
