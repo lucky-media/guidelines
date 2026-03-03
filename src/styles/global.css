@@ -42,7 +42,7 @@
     }
   }
 
-  @media (min-width: 728px) {
+  @media (min-width: 769px) {
     button[data-open-modal] {
       background-color: var(--color-zinc-800);
       border: none;
@@ -121,8 +121,16 @@
   scrollbar-color: var(--color-zinc-600) var(--color-zinc-800);
 }
 
-@media (min-width: 768px) {
+.header .site-title img {
+  height: 3.5rem;
+}
+
+@media (min-width: 769px) {
   #starlight__sidebar {
     @apply bg-transparent;
+  }
+
+  .header .title-wrapper {
+    padding-left: 6.25rem;
   }
 }
