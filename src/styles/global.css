@@ -57,6 +57,40 @@ h4,
 h5,
 h6 {
   color: var(--color-zinc-50);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.sl-markdown-content {
+  h1:not(:where(.not-content *)) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  h2:not(:where(.not-content *)) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  h3:not(:where(.not-content *)) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h4:not(:where(.not-content *)) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  h5:not(:where(.not-content *)) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  h6:not(:where(.not-content *)) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: 769px) {
