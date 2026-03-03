@@ -46,9 +46,21 @@
 
   .sl-markdown-content a:not(:where(.not-content *)) {
     color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
+
   .sl-markdown-content a:hover:not(:where(.not-content *)) {
     color: var(--color-zinc-50);
+  }
+
+  .sl-markdown-content ul:not(:where(.not-content *)) {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+
+  .sl-markdown-content ul li::marker {
+    color: var(--color-primary);
   }
 }
 
