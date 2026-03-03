@@ -50,21 +50,22 @@ export default defineConfig({
           },
         },
       ],
-      social: [
-        {
-          icon: "github",
-          label: "GitHub",
-          href: "https://github.com/lucky-media/guidelines",
-        },
-        {
-          icon: "external",
-          label: "Website",
-          href: "https://luckymedia.dev",
-        },
-      ],
+      // social: [
+      //   {
+      //     icon: "github",
+      //     label: "GitHub",
+      //     href: "https://github.com/lucky-media/guidelines",
+      //   },
+      //   {
+      //     icon: "external",
+      //     label: "Website",
+      //     href: "https://luckymedia.dev",
+      //   },
+      // ],
       components: {
         Sidebar: "./src/overrides/Sidebar.astro",
         Pagination: "./src/overrides/Pagination.astro",
+        ThemeSelect: "./src/overrides/ThemeSelect.astro",
       },
       expressiveCode: {
         styleOverrides: {

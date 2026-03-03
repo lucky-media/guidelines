@@ -11,10 +11,10 @@
   --color-dark-card: #262a37;
   --color-dark-icon: #29324c;
 
-  --zinc-50: #fafafa;
-  --zing-300: #d4d4d8;
-  --zinc-800: #27272a;
-  --zinc-900: #18181b;
+  --color-zinc-50: #fafafa;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
 }
 
 :root {
@@ -105,6 +105,10 @@
   .toggle {
     border: none;
     background-color: var(--color-zinc-800);
+  }
+
+  .header .right-group {
+    display: none;
   }
 }
 
