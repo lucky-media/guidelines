@@ -134,6 +134,10 @@ code {
   border-radius: 6px;
 }
 
+.expressive-code .frame.is-terminal .header {
+  padding: 2px 10px !important;
+}
+
 pre code {
   background-color: transparent;
   border: none;
