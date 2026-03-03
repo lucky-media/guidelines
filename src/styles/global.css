@@ -17,17 +17,12 @@
   --zinc-900: #18181b;
 }
 
-@layer starlight.base {
-  :root {
-    --sl-font: "Manrope Variable", "sans-serif";
-    --sl-font-mono: "Roboto Mono Variable", "monospace";
-  }
-}
+:root {
+  --sl-font: "Manrope Variable", "sans-serif";
+  --sl-font-mono: "Roboto Mono Variable", "monospace";
 
-@layer starlight.reset {
-  body {
-    background-color: var(--color-zinc-900) !important;
-  }
+  --sl-color-bg-nav: var(--color-zinc-900);
+  --sl-color-text: var(--color-zinc-300);
 
   h1,
   h2,
@@ -36,6 +31,24 @@
   h5,
   h6 {
     font-family: var(--sl-font-mono);
+    color: var(--color-zinc-50);
+  }
+
+  button[data-open-modal] {
+    background-color: var(--color-zinc-800);
+    border: none;
+    max-width: 42rem;
+  }
+
+  button > kbd {
+    background-color: var(--color-zinc-900);
+  }
+
+  .sl-markdown-content a:not(:where(.not-content *)) {
+    color: var(--color-primary);
+  }
+  .sl-markdown-content a:hover:not(:where(.not-content *)) {
+    color: var(--color-zinc-50);
   }
 }
 
@@ -54,8 +67,7 @@
   }
 }
 
-.right-sidebar-panel .sl-container {
-  background-color: var(--color-zinc-800);
+.right-sidebar-panel:where(.astro-pb3aqygn) :where(a) {
   padding: 10px;
   border-radius: 10px;
 }

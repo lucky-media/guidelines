@@ -64,7 +64,6 @@ export default defineConfig({
       ],
       components: {
         Sidebar: "./src/overrides/Sidebar.astro",
-        // PageFrame: "./src/overrides/PageFrame.astro"
       },
       customCss: [
         "./src/styles/global.css",
