@@ -124,7 +124,3 @@ pre code {
   border: none;
   background-color: var(--color-zinc-800);
 }
-
-.header .right-group {
-  display: none;
-}
