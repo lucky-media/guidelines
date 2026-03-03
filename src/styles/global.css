@@ -23,99 +23,13 @@
 
   --sl-color-bg-nav: var(--color-zinc-900);
   --sl-color-text: var(--color-zinc-300);
-
-  sl-heading-wrapper,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--sl-font-mono);
-    color: var(--color-zinc-50);
-
-    code {
-      color: var(--color-zinc-50);
-      background-color: var(--color-dark-card);
-      border-radius: 6px;
-      border: 1px solid var(--color-primary);
-    }
-  }
-
-  @media (min-width: 769px) {
-    button[data-open-modal] {
-      background-color: var(--color-zinc-800);
-      border: none;
-      max-width: 42rem;
-    }
-  }
-
-  button > kbd {
-    background-color: var(--color-zinc-900);
-  }
-
-  .sl-markdown-content a:not(:where(.not-content *)) {
-    color: var(--color-primary);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-
-  .sl-markdown-content a:hover:not(:where(.not-content *)) {
-    color: var(--color-zinc-50);
-  }
-
-  .sl-markdown-content ul:not(:where(.not-content *)) {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-  }
-
-  .sl-markdown-content ul li::marker {
-    color: var(--color-zinc-50);
-  }
-
-  .sl-markdown-content ul li:has(a)::marker {
-    color: var(--color-primary);
-  }
-
-  code {
-    background-color: var(--color-dark-card);
-  }
-
-  .sl-markdown-content p code {
-    color: var(--color-zinc-50);
-    background-color: var(--color-dark-card);
-    border-radius: 6px;
-    border: 1px solid var(--color-primary);
-  }
-
-  .right-sidebar-panel .sl-container {
-    background-color: var(--color-zinc-800);
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .right-sidebar {
-    border: none;
-  }
-
-  .content-panel {
-    border: none;
-  }
-
-  .toggle {
-    border: none;
-    background-color: var(--color-zinc-800);
-  }
-
-  .header .right-group {
-    display: none;
-  }
 }
 
 [x-cloak] {
   display: none;
 }
 
+/* OVERRIDES STARLIGHT STYLES */
 #starlight__sidebar {
   scrollbar-width: thin;
   scrollbar-color: var(--color-zinc-600) var(--color-zinc-800);
@@ -133,4 +47,84 @@
   .header .title-wrapper {
     padding-left: 6.25rem;
   }
+}
+
+sl-heading-wrapper,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--sl-font-mono);
+  color: var(--color-zinc-50);
+}
+
+@media (min-width: 769px) {
+  button[data-open-modal] {
+    background-color: var(--color-zinc-800);
+    border: none;
+    max-width: 42rem;
+  }
+}
+
+button > kbd {
+  background-color: var(--color-zinc-900);
+}
+
+.sl-markdown-content a:not(:where(.not-content *)) {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sl-markdown-content a:hover:not(:where(.not-content *)) {
+  color: var(--color-zinc-50);
+}
+
+.sl-markdown-content ul:not(:where(.not-content *)) {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.sl-markdown-content ul li::marker {
+  color: var(--color-zinc-50);
+}
+
+.sl-markdown-content ul li:has(a)::marker {
+  color: var(--color-primary);
+}
+
+code {
+  background-color: var(--color-dark-card);
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+}
+
+pre code {
+  background-color: transparent;
+  border: none;
+}
+
+.right-sidebar-panel .sl-container {
+  background-color: var(--color-zinc-800);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.right-sidebar {
+  border: none;
+}
+
+.content-panel {
+  border: none;
+}
+
+.toggle {
+  border: none;
+  background-color: var(--color-zinc-800);
+}
+
+.header .right-group {
+  display: none;
 }
