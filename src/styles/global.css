@@ -79,7 +79,8 @@
   }
 }
 
-.right-sidebar-panel:where(.astro-pb3aqygn) :where(a) {
+.right-sidebar-panel .sl-container {
+  background-color: var(--color-zinc-800);
   padding: 10px;
   border-radius: 10px;
 }
