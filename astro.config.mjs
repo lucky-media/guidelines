@@ -30,6 +30,7 @@ export default defineConfig({
     starlight({
       title: "Lucky Media Developer Guide",
       description: "Lucky Media Developer Guide",
+      lastUpdated: true,
       logo: {
         src: "/src/assets/logo.svg",
         alt: "Developers Guide",
