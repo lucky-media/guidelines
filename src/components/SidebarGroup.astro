@@ -20,7 +20,7 @@ const dropdownId = slugify(id, "dropdown");
 <div x-data={`{ isOpen: ${expanded} }`} class="w-full">
   <button
     @click="isOpen = !isOpen"
-    class="leading-5 text-sm! py-[3px] px-[5px] flex items-center justify-between w-full"
+    class="leading-5 text-sm! py-[3px] px-[5px] flex items-center justify-between w-48"
     aria-expanded={expanded}
     :aria-expanded="isOpen"
     id={buttonId}
