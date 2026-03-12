@@ -22,7 +22,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss({ optimize: { minify: true } })],
     ssr: {
-      noExternal: ["axobject-query"],
+      noExternal: ["axobject-query", "zod"],
     },
   },
   integrations: [
