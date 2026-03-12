@@ -1,7 +1,3 @@
-import Alpine from "alpinejs";
-
-window.Alpine = Alpine;
-
-Alpine.start();
-
-export default Alpine;
+export default (Alpine) => {
+  window.Alpine = Alpine;
+};

@@ -1,12 +1,12 @@
 ---
-import type { SidebarGroup as SidebarGroupType } from "node_modules/@astrojs/starlight/utils/routing/types";
+import type { SidebarGroup } from "@/types/sidebar";
 import { checkIsCurrent, slugify } from "@/utils/sidebar";
 import SidebarLink from "./SidebarLink.astro";
 import ArrowIcon from "@/assets/arrow.svg";
 import Badge from "./Badge.astro";
 
-export interface Props extends SidebarGroupType {
-    parentId?: string;
+export interface Props extends SidebarGroup {
+  parentId?: string;
 }
 
 const { label, entries, collapsed, badge, parentId } = Astro.props;
@@ -18,40 +18,42 @@ const dropdownId = slugify(id, "dropdown");
 ---
 
 <div x-data={`{ isOpen: ${expanded} }`} class="w-full">
-    <button
-        @click="isOpen = !isOpen"
-        class="leading-5 text-sm! py-[3px] px-[5px] flex items-center justify-between w-full"
-        aria-expanded={expanded}
-        :aria-expanded="isOpen"
-        id={buttonId}
-        aria-controls={dropdownId}
+  <button
+    @click="isOpen = !isOpen"
+    class="leading-5 text-sm! py-[3px] px-[5px] flex items-center justify-between w-full"
+    aria-expanded={expanded}
+    :aria-expanded="isOpen"
+    id={buttonId}
+    aria-controls={dropdownId}
+  >
+    <span>{label}</span>
+    <span class="flex items-center gap-1">
+      {badge && <Badge {...badge} />}
+      <ArrowIcon
+        class="fill-zinc-300 size-3 transition"
+        :class="{ 'rotate-90': isOpen, 'rotate-0': !isOpen }"
+      />
+    </span>
+  </button>
+  <div class="pl-2.5">
+    <ul
+      {...!expanded ? { "x-cloak": true } : {}}
+      x-show="isOpen"
+      x-transition
+      class="border-l-[0.3px] border-l-zinc-300 py-1.5 pl-1.5 flex flex-col gap-y-1"
+      id={dropdownId}
     >
-        <span>{label}</span>
-        <span class="flex items-center gap-1">
-            {badge && <Badge {...badge} />}
-            <ArrowIcon
-                class="fill-zinc-300 size-3 transition"
-                :class="{ 'rotate-90': isOpen, 'rotate-0': !isOpen }"
-            />
-        </span>
-    </button>
-    <div class="pl-2.5">
-        <ul
-            {...!expanded ? { "x-cloak": true } : {}}
-            x-show="isOpen"
-            x-transition
-            class="border-l-[0.3px] border-l-zinc-300 py-1.5 pl-1.5 flex flex-col gap-y-1"
-            id={dropdownId}
-        >
-            {
-                entries
-                    .filter((entry) => entry.type === "link")
-                    .map((entry) => (
-                        <li>
-                            <SidebarLink {...entry} parentId={id} />
-                        </li>
-                    ))
-            }
-        </ul>
-    </div>
+      {
+        entries.map((entry) => (
+          <li>
+            {entry.type === "link" ? (
+              <SidebarLink {...entry} parentId={id} />
+            ) : (
+              <SidebarGroup {...entry} parentId={id} />
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </div>

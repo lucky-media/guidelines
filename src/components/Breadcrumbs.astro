@@ -1,14 +1,22 @@
 ---
-const { entry, sidebar, siteTitleHref } = Astro.locals.starlightRoute;
+import type { SidebarEntry } from "@/types/sidebar";
 
-// Find the path to the current page within the sidebar structure.
-function getBreadcrumbs(items: any[], path: any[] = []): any[] | null {
+const { sidebar, siteTitleHref } = Astro.locals.starlightRoute;
+
+type BreadcrumbItem = SidebarEntry & { label: string };
+
+/** Find the path to the current page within the sidebar structure. */
+function getBreadcrumbs(
+  items: SidebarEntry[],
+  path: BreadcrumbItem[] = []
+): BreadcrumbItem[] | null {
   for (const item of items) {
+    const itemWithLabel = item as BreadcrumbItem;
     if (item.type === "link" && item.isCurrent) {
-      return [...path, item];
+      return [...path, itemWithLabel];
     }
     if (item.type === "group") {
-      const found = getBreadcrumbs(item.entries, [...path, item]);
+      const found = getBreadcrumbs(item.entries, [...path, itemWithLabel]);
       if (found) return found;
     }
   }

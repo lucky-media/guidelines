@@ -37,7 +37,6 @@ const shouldRenderSearch =
         class="company-toggle"
         @click="open = !open"
         aria-haspopup="menu"
-        aria-expanded="false"
         :aria-expanded="open"
       >
         <span class="company-toggle-text"
@@ -91,6 +90,13 @@ const shouldRenderSearch =
       flex: 1;
       min-width: 0;
       justify-content: center;
+    }
+
+    /* Small screens: position search icon near the menu toggle */
+    @media (max-width: 49.999rem) {
+      .search-wrapper {
+        justify-content: flex-end;
+      }
     }
 
     .title-wrapper {

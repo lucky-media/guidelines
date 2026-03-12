@@ -1,4 +1,4 @@
-import type { SidebarEntry } from "node_modules/@astrojs/starlight/utils/routing/types";
+import type { SidebarEntry } from "@/types/sidebar";
 
 export const checkIsCurrent = (entries: SidebarEntry[]): boolean => {
   return entries.some((entry) =>

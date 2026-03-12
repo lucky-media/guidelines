@@ -21,6 +21,9 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss({ optimize: { minify: true } })],
+    ssr: {
+      noExternal: ["axobject-query"],
+    },
   },
   integrations: [
     alpinejs({ entrypoint: "./src/alpine.mjs" }),
@@ -50,15 +53,32 @@ export default defineConfig({
         {
           tag: "meta",
           attrs: {
-            name: "og:title",
+            property: "og:title",
             content: "Lucky Media Developer Guide",
           },
         },
         {
           tag: "meta",
           attrs: {
-            name: "og:image",
-            content: "/meta.jpeg",
+            property: "og:image",
+            content: new URL(
+              "/favicon.svg",
+              "https://guidelines.luckymedia.dev",
+            ).href,
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:url",
+            content: "https://guidelines.luckymedia.dev",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:type",
+            content: "website",
           },
         },
       ],
