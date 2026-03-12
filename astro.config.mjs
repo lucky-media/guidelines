@@ -3,10 +3,22 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import alpinejs from "@astrojs/alpinejs";
+import rehypeExternalLinks from "rehype-external-links";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://guidelines.luckymedia.dev",
+  markdown: {
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          target: "_blank",
+          rel: ["noopener", "noreferrer", "external"],
+        },
+      ],
+    ],
+  },
   vite: {
     plugins: [tailwindcss({ optimize: { minify: true } })],
   },
@@ -61,6 +73,8 @@ export default defineConfig({
         Header: "./src/overrides/Header.astro",
         Sidebar: "./src/overrides/Sidebar.astro",
         Pagination: "./src/overrides/Pagination.astro",
+        PageFrame: "./src/overrides/PageFrame.astro",
+        TwoColumnContent: "./src/overrides/TwoColumnContent.astro",
         // This injects your breadcrumbs above every page title
         PageTitle: "./src/components/Breadcrumbs.astro",
       },

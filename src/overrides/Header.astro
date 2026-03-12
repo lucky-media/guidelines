@@ -14,11 +14,11 @@ const shouldRenderSearch =
   config.components.Search !== "@astrojs/starlight/components/Search.astro";
 ---
 
-<div class="header container">
+<div class="header">
   <div class="title-wrapper sl-flex">
     <SiteTitle />
   </div>
-  <div class="sl-flex print:hidden">
+  <div class="search-wrapper sl-flex print:hidden">
     {shouldRenderSearch && <Search />}
   </div>
   <div class="sl-hidden md:sl-flex print:hidden right-group">
@@ -85,6 +85,12 @@ const shouldRenderSearch =
       justify-content: space-between;
       align-items: center;
       height: 100%;
+    }
+
+    .search-wrapper {
+      flex: 1;
+      min-width: 0;
+      justify-content: center;
     }
 
     .title-wrapper {

@@ -36,16 +36,18 @@
 }
 
 .header .site-title img {
-  height: 3.5rem;
+  height: 2rem;
+}
+
+@media (min-width: 769px) {
+  .header .site-title img {
+    height: 3.5rem;
+  }
 }
 
 @media (min-width: 769px) {
   #starlight__sidebar {
     @apply bg-transparent;
-  }
-
-  .header .title-wrapper {
-    padding-left: 6.25rem;
   }
 }
 
@@ -93,11 +95,26 @@ h6 {
   }
 }
 
-@media (min-width: 769px) {
+/* Small screens: icon-only, compact, near menu button */
+@media (max-width: 49.999rem) {
+  button[data-open-modal] {
+    width: auto;
+    min-width: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-zinc-800);
+    border: none;
+  }
+}
+
+/* Desktop: full search box */
+@media (min-width: 50rem) {
   button[data-open-modal] {
     background-color: var(--color-zinc-800);
     border: none;
-    max-width: 42rem;
+    width: 100%;
+    min-width: 0;
+    max-width: 600px;
   }
 }
 
@@ -147,10 +164,20 @@ pre code {
   border: none;
 }
 
+.right-sidebar-panel {
+  padding: 0 1.5rem;
+}
+
 .right-sidebar-panel .sl-container {
   background-color: var(--color-zinc-800);
   padding: 10px;
   border-radius: 10px;
+  width: 100%;
+  max-width: none;
+}
+
+.sl-container {
+  margin-inline: 0;
 }
 
 .right-sidebar {
@@ -164,4 +191,36 @@ pre code {
 .toggle {
   border: none;
   background-color: var(--color-zinc-800);
+}
+
+/* Layout: container, sticky nav & sidebars */
+.page-wrapper {
+  box-sizing: border-box;
+}
+
+/* Remove border-top from nav (mobile TOC) */
+mobile-starlight-toc nav {
+  border-top: none;
+}
+
+/* Nav: full width within container, consistent padding and layout */
+.page .header {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 50rem) {
+  .page .header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sl-nav-gap);
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 50rem) {
+  :global([data-has-sidebar]) .main-frame {
+    --sl-content-inline-start: 0;
+  }
 }
