@@ -29,10 +29,12 @@ const dropdownId = slugify(id, "dropdown");
     <span>{label}</span>
     <span class="flex items-center gap-1">
       {badge && <Badge {...badge} />}
-      <ArrowIcon
-        class="fill-zinc-300 size-3 transition"
+      <span
+        class="inline-flex transition duration-200"
         :class="{ 'rotate-90': isOpen, 'rotate-0': !isOpen }"
-      />
+      >
+        <ArrowIcon class="fill-zinc-300 size-3" />
+      </span>
     </span>
   </button>
   <div class="pl-2.5">

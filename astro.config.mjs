@@ -26,7 +26,7 @@ export default defineConfig({
     },
   },
   integrations: [
-    alpinejs({ entrypoint: "./src/alpine.mjs" }),
+    alpinejs(),
     starlight({
       title: "Lucky Media Developer Guide",
       description: "Lucky Media Developer Guide",

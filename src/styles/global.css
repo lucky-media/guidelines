@@ -13,6 +13,7 @@
 
   --color-zinc-50: #fafafa;
   --color-zinc-300: #d4d4d8;
+  --color-zinc-600: #52525b;
   --color-zinc-800: #27272a;
   --color-zinc-900: #18181b;
 }
@@ -145,8 +146,10 @@ button > kbd {
   color: var(--color-primary);
 }
 
-.content-panel {
-  padding: 0rem !important;
+.page-wrapper .content-panel,
+main .content-panel {
+  padding: 0;
+  border: none;
 }
 
 code {
@@ -155,8 +158,8 @@ code {
   border-radius: 6px;
 }
 
-.expressive-code .frame.is-terminal .header {
-  padding: 2px 10px !important;
+.sl-markdown-content .expressive-code .frame.is-terminal .header {
+  padding: 2px 10px;
 }
 
 pre code {
@@ -181,10 +184,6 @@ pre code {
 }
 
 .right-sidebar {
-  border: none;
-}
-
-.content-panel {
   border: none;
 }
 
