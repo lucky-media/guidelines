@@ -1,5 +1,4 @@
 {
-  "main": "dist/_worker.js/index.js",
   "name": "guidelines",
   "compatibility_date": "2025-11-26",
   "assets": {
