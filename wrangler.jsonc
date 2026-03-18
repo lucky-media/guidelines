@@ -1,0 +1,14 @@
+{
+  "main": "dist/_worker.js/index.js",
+  "name": "guidelines",
+  "compatibility_date": "2025-11-26",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "drop-trailing-slash",
+    "run_worker_first": false,
+  },
+  "observability": {
+    "enabled": true,
+  },
+}
