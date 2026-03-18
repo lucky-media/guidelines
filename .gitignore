@@ -15,6 +15,9 @@
 # production
 /build
 
+# dist
+/dist
+
 # misc
 .DS_Store
 *.pem
@@ -32,3 +35,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+.astro

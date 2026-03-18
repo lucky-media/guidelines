@@ -1,20 +1,29 @@
 {
-  "name": "guidelines",
-  "version": "0.1.0",
+  "name": "@lucky-media/guidelines",
+  "type": "module",
   "private": true,
+  "version": "0.2.0",
+  "description": "Lucky Media developer guidelines and documentation",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "next": "^14.2.8",
-    "nextra": "^2.13.4",
-    "nextra-theme-docs": "^2.13.4",
-    "prism-react-renderer": "^2.0.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@astrojs/alpinejs": "^0.4.9",
+    "@astrojs/starlight": "^0.36.0",
+    "@astrojs/starlight-tailwind": "^4.0.2",
+    "@fontsource-variable/manrope": "^5.2.8",
+    "@fontsource-variable/roboto-mono": "^5.2.8",
+    "astro": "^5.6.1",
+    "clsx": "^2.1.1",
+    "rehype-external-links": "^3.0.0",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.17"
   }
 }
