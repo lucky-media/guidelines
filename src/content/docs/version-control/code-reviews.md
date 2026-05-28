@@ -5,36 +5,30 @@ sidebar:
   order: 6
 ---
 
-### Always remember - it’s a human being on the other end of the review
+### There's a human on the other end of that review
 
-Review other people’s code like you’d like your code to be reviewed. To make sure you are communicating correctly, read your code review to yourself out loud and ask yourself, is this something I would want to be said to me? If not, think about changing the tone or content.
+Review code the way you'd want yours reviewed. Before you submit a comment, read it out loud. Would you be okay hearing that said to you? If not, rethink it.
 
-### Give clear suggestions or recommendations
+### Give actual suggestions, not just complaints
 
-Never tell someone that the code needs to be fixed without giving suggestions or recommendations on what to fix or how to fix it.
+Never tell someone their code is broken without explaining why and what to do about it.
 
-It is never a good idea to write “Fix this” without giving more explanation. Why does it need to be fixed? What suggestions do you have to fix it? How might someone figure it out?
+"Fix this" is not helpful. Why does it need to be fixed? What would you do instead? Give the person something to work with.
 
-### Always assume good intent.
+### Assume good intent
 
-Code may not be written how you would write it. Let’s say that more clearly: code is rarely written the same way by two different people. After all, code is a craft, not a task on an assembly line.
+Code is rarely written the same way by two different people. That's fine. Before you push back, take a moment to understand what the author was thinking. They had a reason. Try to find it.
 
-Tap into a sense of curiosity and appreciation while reviewing – curiosity to understand what the reviewer had in mind and gratitude for what the Coder did or tried to do.
+### Be clear about what you want and how important it is
 
-### Clarify the action and the level of importance.
+- Optional suggestion or style preference? Say so. ("Nit: not blocking, just a thought.")
+- Curious about a decision but it doesn't block the PR? Say so.
+- Must be fixed before merging? Say so.
 
-If you are making an optional suggestion, for example, a “nit” that isn't necessary before the code is approved for production, say so clearly.
+Don't make the author guess which category your comment falls into.
 
-If you wonder why the person made a particular choice, but it doesn’t affect whether the code should make it to production, say so clearly.
+### Leave some praise too
 
-If you are confident that the code needs to be fixed before it is ready for production, say so clearly.
-
-### Code feedback – and all feedback – includes praise.
-
-Code reviews present an excellent opportunity to thank you and appreciate your colleagues' work.
-
-If someone has written particularly elegant or maintainable code or has made a great decision about using a library, let them know!
-
-It is always the right time to give positive, specific feedback-- in life and in code reviews.
+Code reviews aren't just for catching problems. If someone wrote clean, maintainable code or made a smart library choice, say so. Positive feedback is always welcome — and it costs you nothing.
 
 > [Source](https://www.reddit.com/r/webdev/comments/utu3t3/five_golden_rules_about_code_reviews/)

@@ -7,43 +7,37 @@ sidebar:
 
 # Ticket Example: `Ordering`
 
-Let's delve into the step-by-step breakdown of a ticket titled `Ordering`.
+Here's a step-by-step breakdown of how to handle a ticket called `Ordering`.
 
-The client has enlisted these requirements:
+The client's requirements:
 
-- Users should navigate through a form to place an order.
-- The order form necessitates details like product/service, quantity, size, color, and other pertinent information.
-- Users should be able to send off the order form.
-- Client-side validation ensures that mandatory fields get filled and adhere to the anticipated format.
-- Server-side validation authenticates the order form data and abides by business rules.
-- Invalid data or submission failure cues error messages.
-- The client receives an order confirmation after a successful submission.
-- Users can keep tabs on their order status and track the progress.
+- Users can fill out a form to place an order.
+- The form collects product/service, quantity, size, color, and other relevant info.
+- Users can submit the form.
+- Client-side validation checks that required fields are filled and formatted correctly.
+- Server-side validation checks the data against business rules.
+- Invalid data or failed submissions show error messages.
+- A successful submission sends an order confirmation to the client.
+- Users can check their order status and track progress.
 
-These tasks emerge based on the requirements:
+Based on those requirements, here are the tasks:
 
-1. **Task: Craft the order form**
+1. **Task: Build the order form**
+   - Design the form with fields for product/service, quantity, size, color, and anything else needed.
 
-   - Design a user-enticing form to allow seamless order placements.
-   - Include fields for product/service, quantity, size, color, and other pertinent details.
+2. **Task: Implement form submission**
+   - Set up the submission flow so order data gets sent to the server.
 
-2. **Task: Actualize form submission**
-
-   - Establish a seamless submission process for users to send orders.
-   - Direct order data to server-side processing.
-
-3. **Task: Fortify order form validation**
-
-   - Client-side validation ensures that mandatory fields get filled and abide by the required format.
-   - Server-side validation checks if the necessary fields align with business rules.
-   - Invalid data or submission issues prompt error messages.
+3. **Task: Add form validation**
+   - Client-side: check required fields and format.
+   - Server-side: validate against business rules.
+   - Show error messages when validation fails.
 
 4. **Task: Order confirmation message**
+   - Show a confirmation message after a successful submission.
 
-   - Integrate a message confirming that an order was successfully submitted.
+5. **Task: Order tracking**
+   - Add a section where users can view their order status.
+   - Fetch order data from the database or relevant system.
 
-5. **Task: Bring order tracking to life**
-   - Introduce a section for users to access their order status and tracking information.
-   - Configure fetching data from a database or other systems to keep users informed.
-
-When the above tasks reach completion, users can comfortably fill out an order, validate submissions, receive confirmation, and monitor their order status.
+Once all tasks are done, users can place an order, see validation errors if something's wrong, get a confirmation when it goes through, and track their order status.

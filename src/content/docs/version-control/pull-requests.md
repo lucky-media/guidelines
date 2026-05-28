@@ -7,40 +7,40 @@ sidebar:
 
 # Mastering Pull Requests
 
-Let's say you have an `Orders` feature to implement that takes care of the whole ordering process. It's not wise to cram all of it in one pull request (PR).
+Let's say you have an `Orders` feature to implement that covers the entire ordering flow. Don't put all of that in one PR.
 
-Solution: Divide it into bite-sized PRs.
+**Split it into smaller PRs.**
 
-Here's a step-by-step playbook on how to do this:
+Here's how to do that:
 
 ### Analyze
 
-Examine the ticket requirements closely. Identify the core functionality awaiting implementation. This insight helps you spot the tasks to break down.
+Read the ticket requirements carefully. Identify the core pieces of functionality that need to be built. This tells you what can be broken down into separate tasks.
 
 ### Segment
 
-Deconstruct the ticket into smaller tasks you can tackle individually. Ponder on the various stages of the order process, like order placement, confirmation, and tracking. Dissect these stages further into mini-tasks.
+Break the ticket into smaller tasks you can work on independently. Think about the different stages — order placement, confirmation, tracking — then break each stage into smaller units of work.
 
 ### Prioritize
 
-Once you have your task lineup, arrange them based on importance or urgency. Contemplate factors like dependencies, sequence, and potential blockers that could hinder task completion.
+Order your tasks by importance or dependencies. Some tasks will be blocked by others. Figure out what needs to happen first.
 
-### Allocate Responsibility
+### Assign Responsibility
 
-Assign a specific individual or team to each mini-task. This way, everyone's clear about their role and can work autonomously without crossing paths.
+Assign each task to a specific person or team. Everyone should know what they're working on so there's no overlap or confusion.
 
-### Tackle the Tasks
+### Do the Work
 
-Commence working on the tasks, adhering to the priority list. Promote collaboration and communication among teams to ensure everyone stays in the loop.
+Work through the tasks in priority order. Keep communication open between team members so nothing gets missed.
 
-### Test and Refine
+### Test Before Marking Done
 
-Before ticking "done" on a task, scrutinize it to confirm it's functioning as intended. Refine and adjust until you achieve flawless results.
+Before closing a task, verify it works as expected. Fix what doesn't work before moving on.
 
-### Proceed to the Next Task
+### Move to the Next Task
 
-With one task wrapped up, advance to the next, repeating the process until all mini-tasks are accomplished.
+Once a task is done and tested, move to the next one. Repeat until all tasks are complete.
 
-### Conclusion
+### Summary
 
-Transform your Orders feature into smaller, easily-digestible tasks and watch it unfold seamlessly. Prioritize, communicate, and fine-tune your way to task completion.
+Breaking a large feature into smaller tasks makes development easier to manage, review, and ship. Prioritize, communicate, and test as you go.
