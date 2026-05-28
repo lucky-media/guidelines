@@ -1,3 +1,10 @@
+---
+title: Debugging
+slug: debugging
+---
+
+# Debugging Tips
+
 Found a bug? Here's how to fix it without losing your mind.
 
 Quick summary:
