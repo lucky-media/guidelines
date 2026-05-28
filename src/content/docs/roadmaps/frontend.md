@@ -7,9 +7,9 @@ sidebar:
 
 # Frontend Roadmap
 
-Embark on an exciting adventure in frontend development with our curated list of tutorials.
+This is your starting point for frontend development. The resources below are picked to get you moving fast.
 
-Keep in mind that we're diving headfirst, so be prepared with your basic knowledge of HTML, CSS, and JavaScript.
+We assume you already know the basics: HTML, CSS, and JavaScript. If not, go learn those first.
 
 ### HTML & CSS
 
