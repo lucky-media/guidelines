@@ -10,43 +10,41 @@ sidebar:
   order: 3
 ---
 
-# Migrating from Next.js to Astro: A Step-by-Step Guide
+# Migrating from Next.js to Astro
 
 ## Introduction
 
-If you’ve been working with **Next.js**, you’re used to React-first development, server-side rendering, and an opinionated approach to building modern web apps. But what if most of your app is static content, and you don’t need the full overhead of React on every page?
+If you use **Next.js**, you're used to React-first development, SSR, and a clear opinion on how to build web apps. That works great, until you realize most of your app is static content and you're shipping a ton of JavaScript for no good reason.
 
-That’s where **Astro** shines. Astro is a modern web framework built for **content-driven websites**. Its philosophy: _“Bring your own UI framework, but only ship what you need to the browser.”_
+That's where **Astro** fits in. Astro is a web framework built for **content-driven websites**. Its core idea: ship zero JavaScript by default, and only hydrate what actually needs it.
 
-Our team recently migrated one of our projects from Next.js to Astro, and in this article, I’ll walk you through:
+This guide covers:
 
-- **Why we migrated**
-- **Steps we took** (with real examples)
-- **How you can plan and execute your own migration**
+- **Why you might want to migrate**
+- **The steps we took** (with real examples)
+- **How to plan and run your own migration**
 
 ## Why Migrate from Next.js to Astro?
 
-Before diving into the how, let’s look at the _why_:
+1. **Zero JS by default**
+   Astro ships no JavaScript to the browser unless you opt in. This cuts bundle sizes significantly compared to React apps that hydrate globally.
 
-1. **Performance (Zero JS by default)**
-   Astro ships **no JavaScript** to the browser unless you explicitly opt in. This can reduce bundle sizes dramatically compared to React apps where hydration happens globally.
-
-2. **Simplicity for static sites**
-   Many projects don’t need full SSR. Astro defaults to **static site generation (SSG)** but still supports SSR if needed.
+2. **Simpler for static sites**
+   Many projects don't need full SSR. Astro defaults to **static site generation (SSG)** but supports SSR when you need it.
 
 3. **Framework flexibility**
-   Astro supports **React, Vue, Svelte, Solid, and more** inside `.astro` components. You don’t have to throw away existing React code — you can use it alongside new Astro components.
+   Astro supports **React, Vue, Svelte, Solid, and more** inside `.astro` components. You don't have to throw away your existing React code.
 
 4. **Built-in optimizations**
-   Image optimization, partial hydration (`client:load`, `client:visible`, etc.), and great defaults for SEO and accessibility.
+   Image optimization, partial hydration (`client:load`, `client:visible`, etc.), and solid defaults for SEO and accessibility come out of the box.
 
-## Our Migration Process
+## The Migration Process
 
-Here’s the high-level flow we followed when migrating from Next.js to Astro.
+Here's the step-by-step process we followed.
 
 ### 1. Create a New Astro Project
 
-We started fresh with a new Astro project.
+Start fresh with a new Astro project. Don't try to convert your Next.js repo in place.
 
 ```bash
 # Create new project
@@ -57,25 +55,19 @@ cd my-project
 npm install
 ```
 
-This gave us a clean Astro setup with a `src/` folder, `astro.config.mjs`, and ready-to-go `npm run dev`.
+This gives you a clean setup with a `src/` folder, `astro.config.mjs`, and a working `npm run dev`.
 
-Tip: When creating a new Astro project, it’s a good idea to set it up in a separate folder so you don’t mix it with your existing files. Once you’ve finished the migration, you can delete the default starter code and move your project files into the root folder.
+> **Tip:** Set up the new Astro project in a separate folder so it doesn't mix with your existing files. Once the migration is done, remove the starter code and move your project files into the root.
 
 ### 2. Install Tailwind CSS
 
-In our Next.js project, we were already using Tailwind. Astro integrates with it easily.
+If you were already using Tailwind in Next.js, adding it to Astro takes one command:
 
 ```bash
 npx astro add tailwind
 ```
 
-This command added:
-
-- `tailwind.config.js`
-- `postcss.config.mjs`
-- Updated `astro.config.mjs`
-
-Now we could start writing classes in `.astro` files or React components immediately.
+This adds `tailwind.config.js`, `postcss.config.mjs`, and updates `astro.config.mjs`. You can start writing Tailwind classes in `.astro` files or React components right away.
 
 Example:
 
@@ -91,14 +83,14 @@ Example:
 
 ### 3. Migrate Pages
 
-In Next.js, pages live in `/pages`. In Astro, they also live in `/src/pages`. The difference:
+In Next.js, pages live in `/pages`. In Astro, they live in `/src/pages`. The routing works the same way — the file path maps to the URL.
 
 - **Next.js:** `pages/index.js` → `http://localhost:3000/`
 - **Astro:** `src/pages/index.astro` → `http://localhost:4321/`
 
-We moved static pages first. Example migration:
+Start with your static pages. Here's a simple example:
 
-**Next.js (index.js):**
+**Next.js (`index.js`):**
 
 ```jsx
 export default function Home() {
@@ -121,14 +113,13 @@ import Layout from "../layouts/BaseLayout.astro";
 </Layout>
 ```
 
-Notice:
-
-- No hydration needed for static text.
-- Layout system replaces `_app.js`.
+Two things to note:
+- No hydration needed for static content.
+- The layout system replaces `_app.js`.
 
 ### 4. Keep Using React Where Needed
 
-Astro lets you bring over **existing React components**.
+You don't have to rewrite your React components. Drop them into Astro and mark how they should hydrate:
 
 Example:
 
@@ -140,15 +131,15 @@ import Counter from "../components/Counter.jsx";
 <Counter client:load />
 ```
 
-Here, `client:load` tells Astro to only hydrate the `Counter` component on the client, while the rest of the page stays static.
+`client:load` tells Astro to hydrate `Counter` on the client. Everything else on the page stays static. Most of our existing React components needed little or no changes.
 
 Our existing React components needed little to no change — we just dropped them into Astro and marked hydration.
 
 ### 5. Add Global Styles & Assets
 
-In Next.js, global CSS lives in `pages/_app.js`.
+In Next.js, global CSS goes in `pages/_app.js`.
 
-In Astro, we created `src/styles/global.css`:
+In Astro, create `src/styles/global.css`:
 
 ```css
 @import "tailwindcss";
@@ -158,13 +149,13 @@ body {
 }
 ```
 
-Then imported it in `astro.config.mjs` or directly in `src/layouts/BaseLayout.astro`.
+Import it in `astro.config.mjs` or directly in `src/layouts/BaseLayout.astro`.
 
-Assets like `favicon.svg` and images go in the `/public` folder (similar to Next.js).
+Static assets like `favicon.svg` and images go in the `/public` folder — same as Next.js.
 
-### 6. Setup Routing & i18n
+### 6. Set Up Routing and i18n
 
-Astro supports file-based routing just like Next.js. For multi-language support, we used dynamic routes:
+Astro uses file-based routing, just like Next.js. For multi-language support, use dynamic routes:
 
 ```
 src/pages/[lang]/index.astro
@@ -185,10 +176,10 @@ export async function getStaticPaths() {
 
 ### 7. Configure Build & Deploy
 
-Astro supports different outputs:
+Astro supports two output modes:
 
-- **Static (default):** Great for Netlify, Vercel, GitHub Pages
-- **SSR:** If you need server functions
+- **Static (default):** Works with Netlify, Vercel, GitHub Pages.
+- **SSR:** For when you need server-side rendering or API routes.
 
 Example from our `astro.config.mjs`:
 
@@ -202,88 +193,75 @@ export default defineConfig({
 });
 ```
 
-## What Others Can Do (Your Migration Playbook)
-
-If you’re considering a migration, here’s a practical step-by-step you can follow:
+## Your Migration Playbook
+Here's a checklist you can follow for your own migration:
 
 1. **Audit your Next.js app**
-
-   - Which parts are **static**? (Migrate first)
-   - Which parts need **client-side interactivity**? (Use React/Vue/Svelte inside Astro)
-   - Which APIs or server functions are being used? (Might need SSR or API routes in Astro)
+   - Which pages are static? Migrate those first.
+   - Which parts need client-side interactivity? Use React/Vue/Svelte inside Astro.
+   - Are you using server functions or API routes? You may need SSR or Astro API routes.
 
 2. **Create a fresh Astro project**
+   Don't mutate your Next.js repo. Start clean.
 
-   - Don’t try to mutate your Next.js repo into Astro. Start clean.
-
-3. **Install necessary integrations**
-
-   - Tailwind, MDX, i18n, etc.
+3. **Install integrations**
+   Tailwind, MDX, i18n — whatever you need.
 
 4. **Move static pages**
-
-   - Convert `pages/*.js` into `.astro` files.
+   Convert `pages/*.js` files to `.astro` files.
 
 5. **Move layouts**
+   Replace `_app.js` and `_document.js` with `src/layouts`.
 
-   - Replace `_app.js` and `_document.js` with `src/layouts`.
+6. **Add interactive components gradually**
+   Use `client:load`, `client:visible`, or `client:idle` to hydrate only when needed.
 
-6. **Bring in interactive components gradually**
+7. **Set up global styles and assets**
+   Import CSS files and put static assets in `/public`.
 
-   - Use `client:load`, `client:visible`, or `client:idle` to hydrate only when needed.
-
-7. **Set up global styles & assets**
-
-   - Import CSS and put static assets in `/public`.
-
-8. **Configure environment & build**
-
-   - Set up `.env`, update `astro.config.mjs`, test with `npm run build`.
+8. **Configure your build**
+   Set up `.env`, update `astro.config.mjs`, and test with `npm run build`.
 
 9. **Deploy**
-
-   - Try Vercel, Netlify, or your hosting provider.
+   Vercel, Netlify, or your preferred hosting provider all work well with Astro.
 
 10. **Iterate**
+    Replace React pages with Astro components over time as it makes sense.
 
-- Optimize, replace React pages with Astro components as you go.
+## Summary
 
-## Closing Thoughts
+Migrating from Next.js to Astro isn't about abandoning React. It's about **using React where you need it and skipping it where you don't**. The result is faster pages, smaller bundles, and a simpler codebase.
 
-Migrating from Next.js to Astro isn’t about abandoning React — it’s about **using React where you need it and dropping it where you don’t**. The payoff is faster sites, simpler codebases, and less JavaScript shipped to the client.
+What made our migration smooth:
+- We started with static pages.
+- We reused existing React components as-is.
+- Tailwind and i18n required minimal changes.
 
-For us, the migration was smooth because we:
-
-- Started with static pages
-- Reused existing React components
-- Leveraged Tailwind & i18n with minimal changes
-
-If you’re building **content-heavy sites** (marketing sites, blogs, documentation, product pages), Astro is worth serious consideration.
+If you're building **content-heavy sites**, marketing pages, blogs, docs, product pages, then Astro is worth a serious look.
 
 ## Our Custom Astro Starter Kit
 
-Our in-house **Astro Starter Kit** is a production-ready foundation for building content-focused websites quickly and consistently across projects.
-It combines a modern tech stack with a curated developer experience, so every new site starts with the same reliable, best-practice setup.
+Our in-house **Astro Starter Kit** is a production-ready base for building content-focused sites quickly and consistently. Every new project starts from the same reliable setup so we're not reinventing the wheel each time.
 
-### What Sets It Apart
+### What's Included
 
-- **Unified Stack** – Pre-configured with **Astro 5**, **TypeScript**, **Tailwind CSS 4**, and **Alpine.js**, giving you the flexibility of modern static-site generation plus interactive UI components.
-- **Team Standards Built-In** – ESLint, Prettier, Husky, and Commitlint are ready out of the box to enforce code style, automate formatting, and keep commits clean.
+- **Unified Stack** - Pre-configured with **Astro 5**, **TypeScript**, **Tailwind CSS 4**, and **Alpine.js**.
+- **Team Standards Built-In** - ESLint, Prettier, Husky, and Commitlint are set up out of the box to keep code style consistent and commits clean.
 
 ### Core Features
 
-- Astro 5 – Fast, content-driven architecture with zero-JS by default.
-- Tailwind CSS 4 – Latest utility-first framework with dark-mode and design-token support.
-- Alpine.js – Lightweight, reactive JavaScript for drop-in interactivity.
-- Responsive Design – Mobile-first breakpoints and fluid layouts.
-- SEO & Open Graph – Pre-built SEO component with meta tags, sitemap generation, and link prefetching.
-- TypeScript – Strict typing and path aliases (`@/`) for cleaner imports.
-- Component Library – Reusable, theme-aware components with variants to speed up UI work.
-- Favicon & Assets – Centralized favicon management and optimized asset pipeline.
+| Feature | Description |
+|---|---|
+| Astro 5 | Fast, content-driven architecture with zero-JS by default |
+| Tailwind CSS 4 | Utility-first CSS with dark-mode and design-token support |
+| Alpine.js | Lightweight reactive JS for drop-in interactivity |
+| Responsive Design | Mobile-first breakpoints and fluid layouts |
+| SEO & Open Graph | Pre-built SEO component, sitemap generation, and link prefetching |
+| TypeScript | Strict typing with path aliases (`@/`) for cleaner imports |
+| Component Library | Reusable, theme-aware components with variants |
+| Favicon & Assets | Centralized favicon management and optimized asset pipeline |
 
 ### Quick Start
-
-Clone the repository and install dependencies:
 
 ```bash
 git clone git@github.com:your-org/astro-starter-kit.git my-new-project
@@ -294,8 +272,6 @@ npm run dev
 
 Open `http://localhost:4321` and start building.
 
-**Why we built it:**
-This starter kit ensures every project at _Lucky Media_ begins with the same proven stack, cutting setup time and guaranteeing consistent performance, accessibility, and maintainability across all client sites.
+This starter kit makes sure every project at _Lucky Media_ begins with the same proven stack, less setup time, consistent performance, accessibility, and maintainability across all client sites.
 
-For detailed setup and usage instructions, visit the
-[GitHub repository](https://github.com/lucky-media/astrostarter).
+For full setup and usage instructions, see the [GitHub repository](https://github.com/lucky-media/astrostarter).

@@ -5,19 +5,19 @@ sidebar:
   order: 2
 ---
 
-# Backend Testing with Laravel: Building on a Foundation of Trust
+# Backend Testing with Laravel
 
-Our Laravel backend testing ensures our projects run like well-oiled machines. We dive into unit tests, feature tests, and Pest tests, providing you with a robust backend that won't let you down.
+Our Laravel backend tests cover unit tests, feature tests, and Pest tests. Here's what each one is, when to use it, and how to write it.
 
-## Importance of Backend Testing in Laravel
+## Why Backend Testing Matters
 
-In the digital realm, trust is paramount. Backend testing in Laravel safeguards our applications, ensuring optimal performance, scalability, and overall reliability. Catching issues early allows us to deliver exceptional digital solutions that bolster trust and confidence.
+Catching bugs in production is expensive. Catching them in tests is not. Backend testing in Laravel helps you verify that your code works correctly, keeps regressions from slipping through, and makes refactoring much less stressful.
 
-## Unit, Feature, and Pest Tests in Laravel
+## Unit Tests
 
-### Unit Tests
+Unit tests focus on a single function or small piece of logic in isolation. Put them in the `tests/Unit` directory.
 
-Unit tests focus on small pieces of code or individual functions. They help us maintain code integrity and verify that tiny components work as intended. Create unit tests within the `tests/Unit` directory. Let's say we have a specific functionality where we calculate the discount for a specific product.
+Here's an example that tests a discount calculation:
 
 ```php
 // Example of a simple unit test in Laravel
@@ -32,7 +32,7 @@ public function test_discount_for_product()
 
 ### Feature Tests
 
-Feature tests check how different parts of an application interact. They are invaluable for ensuring that our software functions cohesively. Create feature tests within the `tests/Feature` directory.
+Feature tests check how different parts of the app work together. They're useful for testing full request/response cycles. Put them in the `tests/Feature` directory.
 
 ```php
 // Example of a simple feature test in Laravel
@@ -48,13 +48,13 @@ public function test_admin_can_view_patients_index()
 
 ### Pest Tests
 
-Pest is a testing framework built on top of PHPUnit, offering a cleaner syntax and ease of use. Install Pest using Composer:
+[Pest](https://pestphp.com/) is a testing framework built on top of PHPUnit. It uses a cleaner, more readable syntax. Install it with:
 
 ```bash
 composer require pestphp/pest --dev
 ```
 
-Once installed, Pest tests can be created alongside unit and feature tests. Pest tests are cleaner and more readable.
+Pest tests live alongside your unit and feature tests. Here's the same feature test written in Pest:
 
 ```php
 // Pest Test example
@@ -66,3 +66,5 @@ it('allows admin to view patients index', function () {
       ->assertSessionHasNoErrors();
 }
 ```
+
+The behavior is identical — it's just easier to read at a glance.

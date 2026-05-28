@@ -7,53 +7,55 @@ sidebar:
 
 # Upgrading Statamic from v2 to v3
 
-Embark on a seamless transition from Statamic v2 to v3 by following our step-by-step guide. But first, ensure you've acquainted yourself with:
+This guide walks through upgrading a Statamic v2 site to v3. Before you start, read these two docs:
 
 - [Updating v2 to the Latest Version](https://v2.statamic.com/updating)
-- [The Official Upgrade Guide to v3](https://statamic.dev/upgrade-guide/v2-to-v3)
+- [Official v2 to v3 Upgrade Guide](https://statamic.dev/upgrade-guide/v2-to-v3)
 
-## Refreshing Your v2 with the Latest Version
+## Step 1: Update Your v2 Site to the Latest Version
 
-Snag the latest v2 version from the Statamic website. Keep in mind that v2 can be accessed through the account where your license was purchased.
+Download the latest v2 release from the Statamic website. You'll find it under the account where your license was purchased.
 
-1. Execute `php please version` to fetch your current v2 version.
-2. Extract the contents once you've acquired the local copy of Statamic.
-3. Replace the existing `statamic` folder in the v2 website with the new one.
-4. Complete the update with `php please update:housekeeping`.
+1. Run `php please version` to check your current v2 version.
+2. Download and extract the latest v2 release.
+3. Replace the existing `statamic` folder in your v2 project with the new one.
+4. Run `php please update:housekeeping` to finish the update.
 
-## Painless Migration to v3
+## Step 2: Migrate to v3
 
-Whip up a fresh Statamic website:
+Create a new Statamic v3 site:
 
 ```bash
 statamic new name-of-website
 ```
 
-Install the [migrator](https://github.com/statamic/migrator):
+Install the [migrator package](https://github.com/statamic/migrator):
 
 ```bash
 composer require statamic/migrator --dev --with-all-dependencies
 ```
 
-Clear the new site and double-check the `content`, `blueprints`, and `trees` folders for references to existing collections. Remove them all before proceeding.
+Clear the new site's default content. Check the `content`, `blueprints`, and `trees` folders for any references to existing collections and remove them before continuing.
 
 ```bash
 php please site:clear
 ```
 
-From the v2 installation, copy over the `assets`, `site`, and any other local folders.
+Copy the `assets`, `site`, and any other local folders from your v2 installation into the new v3 site.
 
-Commit everything to `git` for efficient change tracking during migration.
+Commit everything to git before running the migration. This makes it easy to see exactly what changes.
 
-Now, initiate the migration:
+Run the migration:
 
 ```bash
 php please migrate:site
 ```
 
-Ensure a smooth experience by checking the following:
+## Step 3: Review the Migrated Site
 
-1. Verify that assets load correctly in the layout file.
-2. Look out for deprecated tags like `entries`, `relate`, `pages`, etc.
-3. Inspect routes in `web.php`, eliminating unnecessary ones.
-4. Keep an eye on templates using `field_name | url`. Replace or eliminate them with `field_name:url`.
+After the migration runs, check the following:
+
+1. **Assets** - Confirm that assets load correctly in the layout file.
+2. **Deprecated tags** - Look for old tags like `entries`, `relate`, and `pages` and update them.
+3. **Routes** - Check `web.php` and remove any routes that are no longer needed.
+4. **URL modifiers** - Find any templates using `field_name | url` and replace them with `field_name:url`.
