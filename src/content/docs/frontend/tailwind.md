@@ -5,9 +5,9 @@ sidebar:
   order: 1
 ---
 
-# Tailwind CSS: Styling with Flair
+# Tailwind CSS
 
-Infuse your projects with the vibrant hues of Tailwind CSS, our go-to styling framework. We've compiled tips, tricks, and best practices to make your Tailwind journey a breeze.
+Tailwind CSS is our go-to styling framework. This page covers installation, plugins, and a few tips we use across projects.
 
 ## Extensions
 
@@ -16,13 +16,13 @@ Infuse your projects with the vibrant hues of Tailwind CSS, our go-to styling fr
 
 ## Installation
 
-Kick things off by running:
+Run the following to install Tailwind and its dependencies:
 
 ```bash
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
-Create a fresh `postcss.config.js` file in the root directory with the following code:
+Create a `postcss.config.js` file in the root of your project:
 
 ```js
 module.exports = {
@@ -51,7 +51,7 @@ module.exports = {
 };
 ```
 
-Inject Tailwind into your CSS file:
+Add the Tailwind directives to your CSS file:
 
 ```css
 @tailwind base;
@@ -61,16 +61,16 @@ Inject Tailwind into your CSS file:
 
 ## Plugins
 
-Most of our projects fancy these indispensable plugins:
+Most of our projects use these plugins:
 
 - [Tailwind Debug Screens](https://github.com/jorenvanhee/tailwindcss-debug-screens)
 - [Tailwind Boostrap Grid](https://github.com/karolis-sh/tailwind-bootstrap-grid)
 - [Tailwind Forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
-### Harnessing Plugins
+### Adding Plugins
 
-Slot in the plugins within the `tailwind.config.js` file at the root of your project:
+Add plugins inside `tailwind.config.js` at the root of your project:
 
 ```javascript
 module.exports = {
@@ -101,7 +101,7 @@ module.exports = {
 
 #### Tailwind Debug Screens
 
-A nifty Tailwind CSS component that displays the active screen (responsive breakpoint) on the page. To power it up, include it in the `<body>` tag or `<Layout>` component. See the React example below:
+This plugin shows the active responsive breakpoint on the page. Add the `debug-screens` class to your `<body>` tag or root layout component. Here's how to set it up in React so it only shows in development:
 
 ```jsx
 const Layout = ({ children }) => {
@@ -115,13 +115,13 @@ const Layout = ({ children }) => {
 export default Layout;
 ```
 
-The code checks if the environment is in `development`, revealing the responsive indicator. In `production`, it remains concealed.
+The `debug-screens` class is applied only when `NODE_ENV` is `development`. It won't show up in production.
 
 #### Tailwind Bootstrap Grid
 
-This plugin gifts you with every Bootstrap grid name in Tailwind style, making `col-6` in lieu of `w-3/5` more appealing. It comes equipped with default gutters and allows for easy adjustments via config.
+This plugin brings Bootstrap-style grid class names into Tailwind. So you can use `col-6` instead of `w-3/5`. It includes default gutters and is configurable via the plugin options.
 
-Here's a grid example crafted with this plugin:
+Here's a basic grid example using this plugin:
 
 ```html
 <div class="container">
