@@ -7,21 +7,17 @@ sidebar:
 
 # Frontend Testing with Cypress: Ensuring a Flawless User Experience
 
-Our secret to delivering top-notch user experiences lies in thorough frontend testing. We rely on Cypress, a powerful JavaScript testing tool, to take our frontend projects to the next level.
+We use [Cypress](https://www.cypress.io/) for frontend testing. It runs real browser tests, gives you live feedback, and works with React, Vue, Angular, and most other frontend frameworks.
 
-## Importance of Frontend Testing using Cypress
+## Setting Up Cypress
 
-In an ever-evolving digital world, flawless user interfaces are key to keeping users engaged. We use Cypress for its straightforward setup, real-time feedback, focus on usability, and consistent results. It also supports popular frameworks like React, Angular, and Vue, making it our go-to testing tool.
-
-## Setting Up Cypress Tests
-
-1. Install Cypress as a dependency:
+1. Install Cypress as a dev dependency:
 
 ```bash
 npm install cypress --save-dev
 ```
 
-2. Add Cypress commands to your package.json file:
+2. Add a test script to `package.json`:
 
 ```json
 {
@@ -37,11 +33,14 @@ npm install cypress --save-dev
 npm run test
 ```
 
-## A Simple Cypress Test Example
+Cypress will open its test runner and create example files so you have something to start from.
 
-1. Create a new file within the `cypress/e2e` directory and name it `my_first_test.cy.js`.
+## Writing Your First Test
 
-2. Add the following code to the file:
+1. Create a new file in the `cypress/e2e` directory. Name it `my_first_test.cy.js`.
+
+2. Add this code:
+
 
 ```javascript
 /// <reference types="cypress" />
@@ -66,6 +65,6 @@ describe("example to-do app", () => {
 npm run test
 ```
 
-4. Select the new test file from the Cypress Test Runner, and watch the magic happen.
+4. Select your test file from the Cypress Test Runner.
 
-Enjoy the assurance of a flawless frontend experience with our all-in-one Cypress guide.
+Cypress will open a browser and run through the test steps in real time.

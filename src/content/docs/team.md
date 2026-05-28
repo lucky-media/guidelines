@@ -3,43 +3,45 @@ title: Team
 slug: team
 ---
 
-# Lucky Media: Built on Equality, Teamwork, and Fun
+# The Lucky Media Team
 
-At Lucky Media, we champion equality, where the only things setting us apart are our responsibilities and salaries. The more we hone our skills, the bigger our roles and income grow.
+At Lucky Media, everyone is equal. The only differences between team members are responsibilities and salaries, both of which grow as your skills grow.
 
-We've crafted a friendly environment where everyone matters, and every idea shines. We've got our general team rules, but flex them to accommodate special cases and unique needs. After all, we're a tight-knit team with a diverse range of personalities.
+We've built a place where every person and every idea gets fair consideration. We have general team rules, but we apply them with common sense for edge cases. We're a small team with different personalities, and that's fine.
 
-Our crew can be divided into part-timers and full-timers, and we'll dive into their differences shortly.
+Team members are either part-time or full-time. More on that below.
 
-## Teamwork: Our Winning Secret Ingredient
+## Teamwork
 
-Teamwork is our most cherished asset. We count on our members to lend a hand, brainstorm together, and share knowledge. Helping out isn't just a nice thing to do — we treat it as actual work. This culture has boosted our team's professional growth and daily motivation.
+Helping each other is part of the job, not just a bonus. We expect team members to help, plan together, and share knowledge. This has been one of the main reasons our team keeps improving.
 
-Picture this: an experienced developer guiding an eager junior, who quickly learns the ropes and starts supporting their mentor too! That's the magic of our teamwork. It shows that everyone has something to offer, and we should always be humble.
+A senior dev helps a junior dev, the junior picks it up fast, and before long they're helping others too. That's how it's supposed to work. Everyone has something to contribute.
 
-Of course, we've noticed a limit to the wonders of helping each other. We cap assistance at 30 minutes per day to prevent teammates from becoming too dependent or lazy. We usually start by recommending solutions, and when things get tricky, we'll code together, keeping an eye on the clock, of course!
+That said, we cap direct help at **30 minutes per day** per person. We don't want anyone becoming dependent on others for answers they could find themselves. We usually start by pointing someone in the right direction, and if needed, we'll code through it together, with an eye on the time.
 
-## Staying in Touch
+## Communication
 
-Discord is our go-to communication hub where we organize daily operations. We have channels for company notifications, project-specific discussions, and sharing laughs. Sometimes, we even include our clients to enhance collaboration and build lasting relationships.
+We use **Discord** for day-to-day communication. We have channels for company announcements, individual projects, and general chat. Some clients are also in our Discord, which helps with collaboration.
 
-> And yes, we have our own custom bot — the life of the (Discord) party!
+> We also have a custom Discord bot. It does stuff.
 
-## Productivity & Work-Life Balance
+## Work Hours and Productivity
 
-We believe in flexible working hours, so everyone's routine accommodates their needs. And "work" isn't just coding — research, planning, and testing also count toward our effective work hours.
+We use flexible working hours. Everyone manages their own schedule. "Work" includes more than just writing code: research, planning, and testing all count.
 
-We don't nitpick over small breaks, but time tracking helps our part-time and full-time employees manage their hours. Clever adjustments to fit personal schedules are welcomed.
+We don't track every small break, but we do track hours so part-time and full-time employees stay on target.
 
 A typical day looks like this:
 
-- Full-time: 6 hours coding, 1 hour reviews & teamwork
-- Part-time: 3.5 hours coding, 30 minutes reviews & teamwork
+| Type | Coding | Reviews & Teamwork |
+|---|---|---|
+| Full-time | 6 hours | 1 hour |
+| Part-time | 3.5 hours | 30 minutes |
 
-## Our Laugh-Filled, High-Quality Culture
+## Quality and Culture
 
-We take pride in delivering top-notch work, regardless of whether clients recognize the quality. Generous and flexible project deadlines allow us to thrive without stress or burnout. We encourage employees to breathe, ponder, plan, and work at their own pace while respecting their strengths and weaknesses.
+We care about the quality of our work, even when clients don't notice the details. Deadlines are set with enough room so we're not rushing or burning out. We expect everyone to take time to think and plan before jumping into code.
 
-Our team is all about jokes and fun, but we're also considerate of each other's feelings. If issues arise, we mediate to help resolve misunderstandings. So far, so good — smooth sailing here at Lucky Media!
+The team has a good sense of humor and we keep things light, but we're also respectful of each other. If something goes wrong between team members, we talk it out.
 
-> Interested in joining our merry band of tech wizards? Check out our **[open positions](https://www.luckymedia.dev/careers)** and apply today!
+> Want to join? Check out our **[open positions](https://www.luckymedia.dev/careers)**.

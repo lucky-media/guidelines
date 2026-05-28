@@ -7,9 +7,9 @@ sidebar:
 
 # Design Roadmap
 
-Embark on an exciting adventure in Figma design system with our curated list of tutorials.
+This is your starting point for working with Figma design systems. The resources below cover the key things you need to know.
 
-Keep in mind that we're diving headfirst, so be prepared with your basic knowledge of Figma app.
+We assume you already know how to use the Figma app at a basic level. If not, start there first.
 
 ### General features of Figma
 

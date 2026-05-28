@@ -7,9 +7,9 @@ sidebar:
 
 # Backend Roadmap
 
-Ready to power up your backend development skills? Explore our selection of tutorials designed to give you a swift lift-off.
+This is your starting point for backend development. The resources below are picked to get you moving fast.
 
-Remember, we're assuming you're already equipped with the basics of databases and MVC.
+We assume you already know the basics: databases and MVC. If not, go learn those first.
 
 ### PHP Basics
 

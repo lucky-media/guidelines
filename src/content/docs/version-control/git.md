@@ -7,45 +7,44 @@ sidebar:
 
 # Git
 
-All our projects embrace the power of Git, and most find their home on Github. Let's go through some default practices we follow.
+All our projects use Git, and most live on GitHub. Here are the defaults we follow.
 
 ## The Workflow
 
-Hands off the `main` branch, especially if the project is live. During development, opt for a `dev` branch or feature branches. Merge features into the project via a `Pull Request` and then bid farewell to the branch.
+Don't touch the `main` branch directly, especially on a live project. During development, use a `dev` branch or feature branches. Merge into the project via a Pull Request, then delete the branch.
 
 ## Repo Naming
 
-Repo names should always sport **lowercase** and employ **kebab-case** if containing multiple words.
-Peek at these examples:
+Repo names should be **lowercase** and use **kebab-case** for multiple words.
 
 - Bad: `https://www.luckymedia.dev`, `www.luckymedia.dev`, `LuckyMedia.dev`, `LuckyMedia`
 - Good: `luckymedia.dev`, `lucky-media`
 
 ## Branches
 
-Initially, we juggle the `main` and `dev` branches during development. Once the project goes live, we shift gears to feature branch names.
+During development, we start with `main` and `dev`. Once the project is live, we switch to feature branches.
 
 ### Feature Branches
 
-There are no strict naming rules for feature branches, just ensure the name reflects the feature you're working on. Use lowercase letters and hyphens.
+No strict naming rules, but the name should reflect what you're working on. Use **lowercase** and use **kebab-case**.
 
-- Bad: `feature/section`, `feature-develop`, and a big no to `feature`
+- Bad: `feature/section`, `feature-develop`, `feature`
 - Good: `feature-header`, `fix-responsive-issue`, `chore-dependency-updates`
 
 ### Commits
 
-While working away on a `feature` or `dev` branch, you'll have to commit code. No hard and fast rules here, but make sure your commit descriptions are meaningful.
+No hard rules, but commit messages should be meaningful.
 
 - Bad: `wip`, `commit`, `changes`, `small change`
 - Good: `fixed responsive issue on header`, `updated dependencies`, `updated contact section`
 
 ### Pull Requests
 
-Once the feature is polished, create a pull request so another team member can review your work. Although we don't impose strict code review policies, it's wise to let a peer scrutinize your code. Keep these guidelines in mind:
+Once the feature is done, open a pull request so a teammate can review it. We don't have a strict review policy, but having another pair of eyes is always a good idea. Keep these in mind:
 
-- Reflect your work in the Pull Request name.
-- Offer a concise description of the work you've done.
-- Feel free to ask a team member to review something specific.
+- Name the PR to reflect the work.
+- Add a short description of what you did.
+- If you want specific feedback on something, ask for it.
 
 ## Git Tips
 

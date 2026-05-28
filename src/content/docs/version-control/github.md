@@ -7,18 +7,18 @@ sidebar:
 
 # GitHub
 
-All our projects reside in GitHub's welcoming embrace — the first thing you need to do is open a new GitHub account, if you haven't already.
+All our projects live on GitHub. If you don't have an account, make one first.
 
-### Embracing GitHub
+## CLI or Desktop
 
-Our team showcases a perfect blend — some boldly command the command line, while others find comfort in GitHub Desktop.
+Some of us use the command line, some use GitHub Desktop. Both work fine.
 
-- For CLI aficionados, there's no need for an extra step — just make sure you're authenticated with GitHub, using a PA token.
-- You can [download](https://desktop.github.com/) GitHub Desktop and unleash your potential.
+- If you're using the CLI, make sure you're authenticated with a Personal Access Token (PAT).
+- If you prefer a GUI, [download GitHub Desktop](https://desktop.github.com/).
 
-### Using Branches
+## Using Branches
 
-To avoid conflicts and enable smooth collaboration, never commit directly to main or master. Instead, follow this workflow:
+Never commit directly to `main` or `master`. Always branch off:
 
 ```bash
 # Create a new branch for your feature or fix
@@ -35,30 +35,25 @@ cleanup-name &rarr; maintenance and refactors
 
 ### Creating Pull Requests
 
-Once you've wrapped up your work on the `feature` branch and pushed it to `origin` like so:
+Once you've wrapped up your work on the `feature` branch, push it to `origin`:
 
 ```bash
 git push origin feature-name
 ```
 
-pay a visit to the repository and bask in the glow of this notification.
+Then go to the repository on GitHub. You'll see a prompt to open a pull request. Click **Compare & pull request**, add a name and description, and submit.
 
 ![Pull Request](/images/git_1.png)
 
-Then, click on Compare & pull request to grace your pull request with a fitting name and description.
-
 ### Asking for Reviews
 
-Tag teammates as reviewers by clicking “Reviewers” in the PR sidebar.
-Use draft pull requests (Create as draft) if your code isn't ready yet but you’d like early feedback.
+Tag teammates as reviewers using the **Reviewers** section in the PR sidebar. If your code isn't ready but you want early feedback, open it as a **Draft Pull Request**.
 
 ![Review](/images/git_2.png)
 
 ### Merging the Pull Request
 
-After approval and checks pass:
-
-Choose a merge strategy:
+Once it's approved and checks pass, choose a merge strategy:
 
 1. Squash & merge (preferred for small changes)
 
@@ -68,31 +63,31 @@ Choose a merge strategy:
 
 ![Merging](/images/git_4.png)
 
-Once you've merged the pull request, please give the branch a ceremonious _delete_.
+After merging, delete the branch.
 
 ### Removing the Repo's Entire History
 
-When you're keen to publish a fresh package and say goodbye to the commit history, these steps hold the answer:
+Use this when publishing a clean package or template. **This is irreversible.**
 
 ```bash
 # Clone the repo (skip if you've already got a cloned repo)
 git clone git@github.com:USERNAME/REPOSITORY.git
 cd REPOSITORY
 
-# If you intend to repurpose this repository for personal use, clear all existing Git history
+# Remove all existing Git history
 rm -rf .git
 
-# Establish a new local repository
+# Create a new local repo
 git init
 
-## If your default branch is 'master,' boldly switch to 'main.'
+## If your default branch is master, switch to main
 git branch -M main
 
-# Engage in a thorough addition
+# Stage and commit everything
 git add .
 git commit -m "First commit"
 
-# Launch historical annihilation on GitHub (irreversible)
+# Force push — this permanently erases history on GitHub
 git remote add origin git@github.com:USERNAME/REPOSITORY.git
 git push -u --force origin main
 ```
@@ -109,7 +104,7 @@ git fetch origin
 git rebase origin/main
 ```
 
-Or if you're using a fork:
+If you're working from a fork:
 
 ```bash
 git remote add upstream git@github.com:ORIGINAL_OWNER/REPO.git

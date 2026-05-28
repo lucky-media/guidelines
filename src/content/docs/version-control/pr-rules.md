@@ -5,24 +5,24 @@ sidebar:
   order: 5
 ---
 
-Discover the five golden rules for creating sleek and manageable pull requests:
+Five rules for pull requests that don't make your teammates suffer:
 
-### Laser-Focused Pull Requests
+### Keep it focused
 
-Aim for pull requests to zoom in on a specific set of features or fixes. This paves the way for easier reviews and reduces the odds of merge conflicts. Steer clear of formatting alterations, unrelated changes, and debugging code in pull requests. Ideally, a PR should feature no more than five (5) modified files.
+A PR should cover one specific feature or fix. This makes it easier to review and reduces the chance of merge conflicts. Don't include unrelated changes, formatting tweaks, or leftover debug code. A good target is **5 or fewer modified files**.
 
-### Crisp and Coherent Descriptions
+### Write a useful description
 
-Illuminate the rationale behind your changes – why they matter and how you tested them. This helps reviewers grasp the context, making their task a breeze. Don't hesitate to include screenshots or links to related issues or documents.
+Explain what changed, why it changed, and how you tested it. Reviewers shouldn't have to guess. Screenshots and links to related issues or docs are always helpful.
 
-### Rigorous Testing
+### Test before you open the PR
 
-Before proposing a pull request, double-check that your code performs flawlessly and nails relevant tests. The more exhaustive your testing, the smoother it will be for reviewers to confirm your changes are spot-on.
+Make sure your code works and passes relevant tests before requesting a review. The more confident you are in your changes, the faster the review goes.
 
-### Swift Feedback Response
+### Respond to feedback quickly
 
-Stay tuned to reviewer feedback and implement any requested adjustments posthaste. This keeps the review engine running and dials down frustration for all parties involved.
+When a reviewer leaves comments, address them promptly. Letting feedback sit for days slows everyone down and makes the review process frustrating.
 
-### Synergy with Reviewers
+### Treat the review as collaboration, not criticism
 
-See the review process as a teamwork opportunity, not a personal judgment. Embrace feedback and welcome suggestions, even if they're not always in tune with your thoughts. After all, our shared goal is to craft the finest possible code – and that's best achieved through collaboration.
+The reviewer isn't judging you, they're helping you ship better code. Take feedback seriously, ask questions if something is unclear, and remember that the goal is a good outcome for everyone.

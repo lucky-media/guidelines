@@ -7,29 +7,27 @@ sidebar:
 
 # React
 
-React, a remarkable open-source front-end JavaScript library, empowers developers to craft stunning user interfaces or UI components. Facebook and an engaged community of developers and companies ensure its maintenance. In the development of single-page or mobile applications, React serves as an exceptional foundation.
-
-Here at Lucky Media, we're smitten with React for web/desktop projects and React Native for mobile applications.
+React is an open-source front-end JavaScript library for building user interfaces and UI components. It's maintained by Meta and a large community of developers. We use React for web and desktop projects, and React Native for mobile apps.
 
 ## Websites
 
-Get off to a flying start with our phenomenal [Next Starter](https://github.com/lucky-media/nextstarter) powered by Next.js.
+We have a [Next Starter](https://github.com/lucky-media/nextstarter) built on Next.js to help you get started quickly.
 
-Our Next Starter is a fantastic boilerplate that includes:
+The Next Starter boilerplate includes:
 
 - TailwindCSS
 - Self-hosted Google Fonts via [FontSource](https://fontsource.org/)
 - Prettier and ESLint
 - Husky with pre-commit hooks for linting and fixing
-- Responsive menu-ready Layout Component
+- A responsive Layout Component with a menu
 - React Inline SVG for rendering SVGs
 - JS Config aliases
 
 ## Components
 
-We champion the use of tiny, composable Components woven with Tailwind to construct resilient UIs.
+We keep components small and composable, built with Tailwind, to make UIs easier to maintain.
 
-Take a peek at this Text Component example utilizing React:
+Here's a simple `Paragraph` text component:
 
 ```jsx
 import React from "react";
@@ -46,7 +44,7 @@ const Paragraph = ({ children, className, ...props }) => {
 };
 ```
 
-Now, feast your eyes on this Button component with multiple sizes and variants:
+Here's a `Button` component that supports multiple sizes and variants:
 
 ```jsx
 import React, { forwardRef } from "react";
@@ -107,7 +105,7 @@ const Button = forwardRef(
 export default Button;
 ```
 
-With the `cls` function, class rendering becomes a breeze while keeping the whitespace tidy. Here's the code for this handy function:
+The `cls` helper function cleans up whitespace in class strings:
 
 ```javascript
 export const cls = (input) =>

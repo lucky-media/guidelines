@@ -7,13 +7,13 @@ sidebar:
 
 # Introduction
 
-Here at [Lucky Media](https://www.luckymedia.dev), we cleverly craft our websites and apps with an array of distinctive tools. Curious developers, fear not – this guideline serves as your trusty reference point, illuminating our unique structure for Figma Starter Projects, the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539).
+At [Lucky Media](https://www.luckymedia.dev), we use a consistent set of tools across our projects. This page explains the structure of our Figma starter project, the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539), so you know what to expect before you start building.
 
 ## Web UI Starter
 
-We custom-make the majority of our projects with our ingenious Project Starter. Tailored specifically for our development techniques, our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is a Figma project brimming with innovation.
+The [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is a Figma project we use as the base for most of our projects. It is built around our development stack, so the components, colors, and styles map directly to what you will use in code.
 
-As a developer, prepare to encounter these remarkable components and frames:
+As a developer, you will find these components and frames in the project:
 
 - 404 Page
 - Alerts
@@ -33,12 +33,12 @@ As a developer, prepare to encounter these remarkable components and frames:
 - Pills/Badges
 - Radio Buttons
 - Text Styles
-- Thumbnail page
-- [12/4 Column Grid system · Bootstrap 4)](https://getbootstrap.com/docs/4.0/layout/grid/)
+- Thumbnail Page
+- [12/4 Column Grid system · Bootstrap 4](https://getbootstrap.com/docs/4.0/layout/grid/)
 - [V3 TailwindCSS Color Palette](https://tailwindcss.com/docs/customizing-colors)
 - [V3 TailwindCSS Shadows](https://tailwindcss.com/docs/drop-shadow)
 
-Our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is deftly divided into pages, which may vary according to project requirements and client desires. Fear not, as you'll typically find pages such as:
+The [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is split into pages. The exact pages vary per project, but you will typically see:
 
 - Thumbnail
 - Components
@@ -47,11 +47,11 @@ Our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) i
 
 ### Thumbnail
 
-The thumbnail page presents an Open Graph Image highlighting the Project Name and status. Though not explicitly for developers, it enhances our Figma Dashboard's view and boosts overall organization.
+The Thumbnail page shows an Open Graph image with the project name and status. It is mainly for keeping the Figma dashboard organized. Not something you need to worry about as a developer.
 
 ### Components
 
-On the enthralling Components page, you'll discover:
+The Components page contains:
 
 - 404 Page
 - Color Styles
@@ -63,20 +63,19 @@ On the enthralling Components page, you'll discover:
 - Text Styles
 - [V3 TailwindCSS Color Palette](https://tailwindcss.com/docs/customizing-colors)
 - [V3 TailwindCSS Shadows](https://tailwindcss.com/docs/drop-shadow)
-- [12/4 Column Grid system · Bootstrap 4)](https://getbootstrap.com/docs/4.0/layout/grid/)
+- [12/4 Column Grid system · Bootstrap 4](https://getbootstrap.com/docs/4.0/layout/grid/)
 
 ### 404 Page
 
-Behold a Frame for a `404 Page`, primed for Desktop and Mobile Screen sizes.
+A frame for a `404 Page`, sized for both desktop and mobile screens.
 
 ### Color Styles
 
-Crafted to suit client needs, our design team generates dazzling color palettes with shading and tints. A `Branding&Guideline booklet` may be provided, in which case, we'll import colors as styles. Additionally, each color is presented on a Frame with a name and HEX value, often accompanied by a JSON file for seamless Tailwind integration.
+The design team builds color palettes with shades and tints based on client requirements. If a `Branding & Guideline booklet` is provided, colors are imported as styles. Each color is shown on a frame with its name and HEX value. A JSON file is often included for easy Tailwind config integration.
 
 ### Components and Variants
 
-We toil tirelessly over components and variants, ensuring effortless changes and time efficiency.
-In the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539), prepare to find global components and variants such as:
+The [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) includes global components and variants that cover the most common UI patterns:
 
 - Alerts
 - Buttons
@@ -92,18 +91,16 @@ In the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539
 - Radio Buttons
 - User Dropdown
 
-For clarity, Components are labeled, and Figma utilizes layer naming construction and properties.
-
-### And so much more…
-
-From Alerts to User Dropdowns, the [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) is packed with an assortment of components intricately crafted for maximum efficiency and ease of use.
+Components are labeled clearly. Figma uses layer naming and component properties to keep everything structured and easy to inspect.
 
 ### Favicon, Footers, Navigation Bars, & OG/Meta Image
 
-Our [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) also contains Favicons with safe zone markers and containers, Footer and Navigation Bar variants for both desktop and mobile screens, and a default frame screen for OG/Meta Image.
+The [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) includes:
 
-### Text Styles & Tailwind Goodness
+- Favicons with safe zone markers and containers
+- Footer and Navigation Bar variants for desktop and mobile
+- A default frame for OG/Meta Image
 
-The Components page integrates a sleek typography structure for 'Heading' and 'Paragraph' Styles. Additionally, you'll find the default TailwindCSS Color Palette and Shadows, eliminating the need for config file tweaks.
+### Text Styles & Tailwind
 
-Get ready to embark on an exhilarating adventure through the wondrous world of Lucky Media's [Web UI Starter](https://www.figma.com/community/file/1243858237628374539) – a unique, game-changing approach to web and app development.
+The Components page includes Heading and Paragraph text styles. It also includes the default TailwindCSS Color Palette and Shadows, so you will not need to modify any Tailwind config files to match the design.
