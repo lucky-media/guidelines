@@ -3,115 +3,100 @@ title: Onboarding
 slug: onboarding
 ---
 
-# Mac & Windows Development Environment Setup Guide
+Development Environment Setup
 
-Welcome to the team! This guide will help you set up your MacBook or Windows machine for development. Follow these steps to install the necessary tools and software.
+Welcome to the team. This guide will get your Mac or Windows machine ready for development.
 
-## Mac Development Environment Setup Guide
+---
 
-## 1. Install Homebrew
+## Mac Setup
 
-Homebrew is a package manager for macOS. Install it by running this command in Terminal:
+### 1. Install Homebrew
+
+Homebrew is the package manager for macOS. Run this in Terminal:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## 2. Install Git
-
-Git is essential for version control. Install it using Homebrew:
+### 2. Install Git
 
 ```bash
 brew install git
 ```
 
-## 3. Install NVM (Node Version Manager)
+### 3. Install NVM (Node Version Manager)
 
-NVM allows you to manage multiple Node.js versions. Install it using this command:
+NVM lets you switch between Node.js versions.
 
 ```bash
 brew install nvm
 ```
 
-After installation, close and reopen your terminal, then run:
+Close and reopen your terminal, then install the latest LTS version of Node.js:
 
 ```bash
 nvm install --lts
 ```
 
-This installs the latest LTS version of Node.js.
+### 4. Install Laravel Herd
 
-## 4. Install Laravel Herd
+Laravel Herd is a macOS app that gives you a full PHP development environment.
 
-Laravel Herd is a native macOS application that provides a complete PHP development environment. To install:
+1. Go to [herd.laravel.com](https://herd.laravel.com/)
+2. Download and open the `.dmg` file
+3. Drag Laravel Herd to your Applications folder
+4. Launch it
 
-1. Visit the [Laravel Herd website](https://herd.laravel.com/)
-2. Download the latest version
-3. Open the downloaded `.dmg` file and drag Laravel Herd to your Applications folder
-4. Launch Laravel Herd from your Applications folder
-
-## 5. Install Visual Studio Code
-
-VS Code is a popular code editor. Download it from the [official website](https://code.visualstudio.com/) or install it using Homebrew:
+### 5. Install Visual Studio Code
 
 ```bash
 brew install --cask visual-studio-code
 ```
 
-## Windows Development Environment Setup Guide
+Or download it from [code.visualstudio.com](https://code.visualstudio.com/).
 
-## 1. Install Git
+---
 
-Git is essential for version control.
+## Windows Setup
 
-Download and install from the official website:
-https://git-scm.com/downloads
+### 1. Install Git
 
-After installation, you can open Git Bash or use Git in Command Prompt / PowerShell
+Download from: https://git-scm.com/downloads
 
-## 2. Install NVM for Windows
+After installation, use Git in Git Bash, Command Prompt, or PowerShell.
 
-NVM allows you to manage multiple Node.js versions easily.
+### 2. Install NVM for Windows
 
-Download NVM for Windows:
+Download the latest `nvm-setup.exe` from:
 https://github.com/coreybutler/nvm-windows/releases
 
-Download the latest .exe installer (e.g., nvm-setup.exe) and follow the installation wizard.
-
-Once installed, open a new Command Prompt and run:
+Run the installer, then open a new Command Prompt and run:
 
 ```bash
 nvm install lts
 nvm use lts
 ```
 
-This installs and activates the latest LTS (Long-Term Support) version of Node.js.
+### 3. Install Laravel Herd for Windows
 
-## 3. Install Laravel Herd for Windows
+Download from: https://herd.laravel.com/
 
-Laravel Herd is now available for Windows and offers a fast local PHP environment.
+1. Run the `.exe` installer
+2. Follow the setup steps
+3. Launch Laravel Herd and set your local development folder
 
-Download it from the official site:
-https://herd.laravel.com/
+Laravel Herd includes PHP, Composer, and Laravel out of the box.
 
-After download:
+### 4. Install Visual Studio Code
 
-1. Run the .exe installer
-2. Follow the setup instructions
-3. Launch Laravel Herd and configure your local development folder
+Download from: https://code.visualstudio.com/
 
-Laravel Herd includes PHP, Composer, Laravel, and more.
+---
 
-## 4. Install Visual Studio Code
+## VS Code Settings
 
-VS Code is a lightweight and powerful editor.
-
-Download from:
-https://code.visualstudio.com/
-
-## VS Code Plugins
-
-Our recommendations for optimal settings:
+Add these to your VS Code `settings.json`:
 
 ```json
 {
@@ -130,60 +115,54 @@ Our recommendations for optimal settings:
 
 ## Recommended Extensions
 
-- [Tailwind CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-- [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [ES7 React/Redux/GraphQL/React-Native Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
 - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 
-## Configure Git (Windows/Mac/Linux)
+---
 
-### 1. Set up your Git identity
+## Configure Git
 
-Run these commands in your terminal (Git Bash / Command Prompt / macOS Terminal):
+### 1. Set Your Git Identity
+
+Run these in your terminal:
 
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
-These settings are stored globally in your system. Git will use them for all repositories.
+Git uses these for every commit you make.
 
-### 2. Generate an SSH Key (For GitHub Authentication)
+### 2. Generate an SSH Key
 
-SSH lets you securely connect to GitHub without entering your username and password every time.
-
-Run:
+This lets you authenticate with GitHub without typing your password every time.
 
 ```bash
 ssh-keygen -t ed25519 -C "your.email@example.com"
 ```
 
-When prompted:
+When prompted, press Enter to accept the default file path. Set a passphrase if you want.
 
-1. Press Enter to accept the default file path (~/.ssh/id_ed25519)
+### 3. Add the SSH Key to the SSH Agent
 
-2. Set a passphrase (optional)
-
-### 3. Add Your SSH Key to the SSH Agent
-
-Ensure the SSH agent is running and add your key:
-
-On macOS/Linux:
+**macOS/Linux:**
 
 ```bash
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
 
-On Windows (Git Bash):
+**Windows (Git Bash):**
 
 ```bash
 eval $(ssh-agent -s)
@@ -200,44 +179,44 @@ cat ~/.ssh/id_ed25519.pub
 
 Then:
 
-1. Go to GitHub SSH settings
+1. Go to [GitHub SSH settings](https://github.com/settings/keys)
+2. Click **New SSH key**
+3. Paste the key and give it a name (e.g., `My Laptop`)
+4. Click **Add SSH key**
 
-2. Click "New SSH key"
-
-3. Paste the key and give it a title (e.g., My Laptop)
-
-4. Click "Add SSH key"
-
-### 5. Test SSH Connection
-
-To verify everything works:
+### 5. Test the Connection
 
 ```bash
-
 ssh -T git@github.com
 ```
 
 You should see:
+
+```
 Hi your-username! You've successfully authenticated...
+```
+
+---
 
 ## Install Discord
 
-We use Discord to stay in sync with our projects and work. You can [download](https://discord.com/download) and install it as any other Mac app.
+We use Discord for team communication. [Download it here](https://discord.com/download).
 
-> Ask the Lucky Media PM for an Invite to our server
+> Ask the Lucky Media PM for an invite to our server.
 
-## Optional Applications
+---
 
-- [Raycast](https://www.raycast.com/)
-- [iTerm](https://iterm2.com/)
+## Optional Apps
+
+- [Raycast](https://www.raycast.com/) – A better Spotlight.
+- [iTerm2](https://iterm2.com/) – A better Terminal.
+
+---
 
 ## Next Steps
 
-1. Clone the project repositories you'll be working on
-2. Set up your SSH keys for GitHub/GitLab
-3. Install any project-specific dependencies
-4. Familiarize yourself with our coding standards and workflows
+1. Clone the repos you'll be working on
+2. Install any project-specific dependencies
+3. Read through our coding standards and workflows
 
-If you encounter any issues during setup, don't hesitate to ask for help from your team lead or colleagues.
-
-Happy coding!
+If anything breaks during setup, ask your team lead or a colleague.
