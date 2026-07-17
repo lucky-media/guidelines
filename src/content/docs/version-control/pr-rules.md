@@ -5,7 +5,7 @@ sidebar:
   order: 5
 ---
 
-When you own a task, here is what I expect:
+When you own a task, here is what we expect:
 
 - **Understand the real problem first.** Don't jump straight to code. Example: the client says "make the homepage faster." A slow-loading hero image might be the real problem Look for the true cause before you build. not the framework. Ask why.
 
